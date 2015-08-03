@@ -1,0 +1,53 @@
+// buttons make the internet happen
+.button, button {
+	display: inline-block;
+	padding: 1em 2em;
+	color: $button-text-color;
+	text-align: center;
+	&:hover {
+		color: $button-text-color;
+	}
+}
+
+// Sizes
+.humongous-big {
+	font-size: $humongous-big-button-size;
+}
+.large {
+	font-size: $large-button-size;
+}
+.medium {
+	font-size: $medium-button-size;
+}
+.small {
+	font-size: $small-button-size;
+}
+.fill {
+	width: 100%;
+}
+
+// Colors
+.action {
+	background: $action-color;
+	@include transition;
+	&:hover {
+		background: darken($action-color, 15%);
+	}
+}
+
+.info {
+	@include transition;
+	background: $info-color;
+	&:hover {
+		background: darken($info-color, 15%);
+	}
+}
+.disabled {
+	background: $disabled-color;
+	color: darken($disabled-color, 20%);
+	&:hover {
+		text-decoration: none;
+		color: darken($disabled-color, 20%);
+		cursor:arrow;
+	}
+}

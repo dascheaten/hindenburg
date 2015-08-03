@@ -1,0 +1,46 @@
+// This value controls all of the rem values in the project.  Change it wisely...
+$base-font-size:16px;
+
+@import "reset";
+@import "functions";
+@import "mixins";
+
+// breakpoint variable between stylesheets
+$large-breakpoint: rem-me(1140);
+$medium-breakpoint: rem-me(900);
+$small-breakpoint: rem-me(600);
+$gutter: 30px;
+
+@import "settings";
+@import "grid";
+@import "typography";
+@import "alerts";
+@import "buttons";
+@import "forms";
+@import "modals";
+
+body {
+	background: #D6D6D6 image-url('hindenburg_bg.png') no-repeat center top;
+	margin-top: 23rem;
+}
+
+header {
+	background: rgba($white, 0.8);
+	padding:0.5rem 0 0 0;
+	margin-bottom: 2rem;
+}
+
+.color-me {
+	p {
+		background: #484848;
+		color:white;
+		font-size: 20px;
+		text-align: center;
+		padding:1rem;
+		border-radius: 3px;
+	}
+}
+
+hr {
+	margin: 4rem 1rem;
+}

@@ -1,0 +1,85 @@
+// Colors!!!
+$primary: #1E6F38;
+$secondary: #96C93F;
+$accent: rgb(224,228,204);
+$error: rgb(192,41,66);
+$success: rgb(138,155,15);
+$alert: rgb(255,144,0);
+$note: rgb(69,173,168);
+
+// gray scale CSS color names
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
+// Font settings
+$sans-serif:'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$serif: Georgia, "Times New Roman", Times, serif;
+$brand-font:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$body-copy:$sans-serif;
+
+// Headings
+$h1-font-size:rem-me(32);
+$h2-font-size:rem-me(28);
+$h3-font-size:rem-me(24);
+$h4-font-size:rem-me(20);
+$h5-font-size:rem-me(16);
+$h6-font-size:rem-me(16);
+$heading-color:$primary;
+$sub-head-color: $steel;
+
+// Body copy
+$body-copy-font-size: 14px;
+$body-copy-color: $steel;
+$body-copy-font-family: $sans-serif;
+
+// Links
+$link-color: $primary;
+
+// Buttons
+$action-color: $primary;
+$info-color: $secondary;
+$button-text-color: $white;
+$disabled-color: $gainsboro;
+
+$humongous-big-button-size: 3rem;
+$large-button-size:2rem;
+$medium-button-size:1.5rem;
+$small-button-size:$base-font-size;
+
+// Blockquote
+$bq-bg: $white;
+$bq-text: $serif;
+$bq-text-size: 1.5rem;
+$bq-color: $steel;
+
+//Forms
+$label-font-size: 18px;
+$label-font-color:$oil;
+$input-height: 60px; // Basic math is surprisingly difficult in SASS, so leave this value in pixels to calculate the padding and text size accordingly
+$input-bg:$white;
+$input-focus-bg:darken($input-bg,5%);
+$input-border-color:$primary;
+$input-border-focus-color:$secondary;
+$input-font-color:$oil;
+$input-placeholder-color:$jumbo;
+$input-placeholder-text-align: right;
+
+// Alerts
+$alert-bg:$white;

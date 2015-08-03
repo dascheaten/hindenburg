@@ -1,0 +1,192 @@
+// the section element is the new row
+.grid {
+	width:100%;
+	max-width: $large-breakpoint;
+	margin:0 auto;
+	display: table;
+	clear:both;
+	& .grid	:first-child {
+		padding-left:0;
+	}
+	& .grid .clm {
+		padding-left:0;
+	}
+}
+
+// column things
+.clm {
+	position: relative;
+	padding: gutter-maker($gutter);
+	float:left;
+}
+.clm.center {
+	position: relative;
+	padding-right: gutter-maker($gutter);
+	padding-left: gutter-maker($gutter);
+	padding-bottom: $gutter;
+	float:none;
+	clear:both;
+	margin:0 auto;
+}
+
+// here's the grid in all of it's gridy-ness
+// small settings
+.s-25 {
+	width: grid-calc(3);
+}
+.s-33 {
+	width: grid-calc(4);
+}
+.s-50 {
+	width: grid-calc(6);
+}
+.s-66 {
+	width: grid-calc(8);
+}
+.s-75 {
+	width: grid-calc(9);
+}
+.s-100 {
+	width: grid-calc(12);
+}
+// medium settings
+.m-25 {
+	width: grid-calc(3);
+}
+.m-33 {
+	width: grid-calc(4);
+}
+.m-50 {
+	width: grid-calc(6);
+}
+.m-66 {
+	width: grid-calc(8);
+}
+.m-75 {
+	width: grid-calc(9);
+}
+.m-100 {
+	width: grid-calc(12);
+}
+// large settings
+.l-25 {
+	width: grid-calc(3);
+}
+.l-33 {
+	width: grid-calc(4);
+}
+.l-50 {
+	width: grid-calc(6);
+}
+.l-66 {
+	width: grid-calc(8);
+}
+.l-75 {
+	width: grid-calc(9);
+}
+.l-100 {
+	width: grid-calc(12);
+}
+
+// large breakpoint
+@media (min-width: $medium-breakpoint) {
+	.l-clear {
+		clear:left;
+	}
+}
+
+// medium breakpoint
+@media (max-width: $medium-breakpoint) {
+	.m-clear {
+		clear:left;
+	}
+	.m-25 {
+		width: grid-calc(3);
+	}
+	.m-33 {
+		width: grid-calc(4);
+	}
+	.m-50 {
+		width: grid-calc(6);
+	}
+	.m-66 {
+		width: grid-calc(8);
+	}
+	.m-75 {
+		width: grid-calc(9);
+	}
+	.m-100 {
+		width: grid-calc(12);
+	}
+}
+
+// small breakpoint
+@media (max-width: $small-breakpoint) {
+	.s-clear {
+		clear:left;
+	}
+	.s-25 {
+		width: grid-calc(3);
+	}
+	.s-33 {
+		width: grid-calc(4);
+	}
+	.s-50 {
+		width: grid-calc(6);
+	}
+	.s-66 {
+		width: grid-calc(8);
+	}
+	.s-75 {
+		width: grid-calc(9);
+	}
+	.s-100 {
+		width: grid-calc(12);
+	}
+	.grid .grid .s-100 {
+		padding-right: 0;
+	}
+}
+
+// Clearing issues
+
+
+// old 12 column grid
+/*
+	.s-1 {
+		width: grid-calc(1);
+	}
+	.s-2 {
+		width: grid-calc(2);
+	}
+	.s-3 {
+		width: grid-calc(3);
+	}
+	.s-4 {
+		width: grid-calc(4);
+	}
+	.s-5 {
+		width: grid-calc(5);
+	}
+	.s-6 {
+		width: grid-calc(6);
+	}
+	.s-7 {
+		width: grid-calc(7);
+	}
+	.s-8 {
+		width: grid-calc(8);
+	}
+	.s-9 {
+		width: grid-calc(9);
+	}
+	.s-10 {
+		width: grid-calc(10);
+	}
+	.s-11 {
+		width: grid-calc(11);
+	}
+	.s-12 {
+		width: grid-calc(12);
+	}
+*/

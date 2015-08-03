@@ -1,0 +1,36 @@
+// Alerts
+.alert {
+	background: $alert-bg;
+	padding:1rem 2rem 1rem 1rem;
+	font-family: $body-copy-font-family;
+	border-left: 10px solid $primary;
+	color:$primary;
+	margin-bottom: $gutter;
+	position: relative;
+	@include shadow;
+	&.bad {
+		border-left: 10px solid $error;
+		color:$error;
+	}
+	&.good {
+		border-left: 10px solid $success;
+		color:$success;
+	}
+	&.warning {
+		border-left: 10px solid $alert;
+		color:$alert;
+	}
+	span.close {
+		content:x;
+		position:absolute;
+		display: block;
+		right:1rem;
+		top:1rem;
+		width: 1rem;
+		height: 1rem;
+		color:$black;
+		&:hover {
+			cursor:pointer;
+		}
+	}
+}
