@@ -6,19 +6,19 @@
 	width: 100vw;
 	height: 100vh;
 	display: block;
-	background: rgba(0,0,0,0.6);
+	background: $modal-close-bg;
 	position:fixed;
 	top:0;
 	left:0;
 	@include transition;
 	&:hover {
-		background: rgba(0,0,0,0.8);
+		background: $modal-close-hover-bg;
 	}
 }
 
 // window settings
 .modal {
-	background: $white;
+	background: $modal-window-bg;
 	z-index: 1001;
 	display: block;
 	position: fixed;
