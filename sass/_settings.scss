@@ -52,6 +52,17 @@ $body-copy-font-family: $sans-serif;
 // Links
 $link-color: $primary;
 
+// Header
+$header-bg:$white;
+
+// Navigation
+$nav-height:70px;
+$nav-direction:right; // Sets the float for the link
+$nav-padding:20px;
+$nav-hover-bg:$primary;
+$nav-hover-color:$white;
+$drop-marker-color:rgba($black, 0.4);
+
 // Buttons
 $action-color: $primary;
 $info-color: $secondary;

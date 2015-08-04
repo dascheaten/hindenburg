@@ -510,13 +510,116 @@ blockquote {
   padding: 2rem;
 }
 
+/* line 2, ../sass/_nav.scss */
+header {
+  background: #FFFFFF;
+}
+/* line 4, ../sass/_nav.scss */
+header.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+/* line 10, ../sass/_nav.scss */
+header.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+/* line 16, ../sass/_nav.scss */
+header .clm {
+  padding: 0;
+}
+/* line 19, ../sass/_nav.scss */
+header h1 {
+  display: inline-block;
+  height: 70px;
+  margin-bottom: 0;
+  width: 100%;
+}
+/* line 24, ../sass/_nav.scss */
+header h1 a {
+  height: 70px;
+}
+/* line 28, ../sass/_nav.scss */
+header nav {
+  float: right;
+  display: inline-block;
+}
+/* line 31, ../sass/_nav.scss */
+header nav ul li, header nav ol li {
+  display: inline-block;
+  height: 70px;
+  position: relative;
+}
+/* line 35, ../sass/_nav.scss */
+header nav ul li a, header nav ol li a {
+  padding: 23.33333px 20px;
+  display: block;
+}
+/* line 38, ../sass/_nav.scss */
+header nav ul li a:hover, header nav ol li a:hover {
+  background: #1E6F38;
+  color: #FFFFFF;
+}
+/* line 44, ../sass/_nav.scss */
+header nav ul li.drop a, header nav ol li.drop a {
+  padding: 23.33333px 30px 23.33333px 20px;
+}
+/* line 46, ../sass/_nav.scss */
+header nav ul li.drop a::after, header nav ol li.drop a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 34px;
+  right: 10px;
+  border: inset 4px;
+  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
+  border-top-style: solid;
+}
+/* line 60, ../sass/_nav.scss */
+header nav ul li.drop:hover ul, header nav ol li.drop:hover ul, header nav ul li.drop:hover ol, header nav ol li.drop:hover ol {
+  display: block;
+  background: #FFFFFF;
+  position: absolute;
+  top: 70px;
+  width: auto;
+  overflow: visible;
+  clip: auto;
+  left: auto;
+  right: 0;
+  z-index: 1000;
+}
+/* line 71, ../sass/_nav.scss */
+header nav ul li.drop:hover ul li, header nav ol li.drop:hover ul li, header nav ul li.drop:hover ol li, header nav ol li.drop:hover ol li {
+  display: list-item;
+  width: 100%;
+}
+/* line 74, ../sass/_nav.scss */
+header nav ul li.drop:hover ul li a, header nav ol li.drop:hover ul li a, header nav ul li.drop:hover ol li a, header nav ol li.drop:hover ol li a {
+  display: block;
+  width: 100%;
+}
+/* line 77, ../sass/_nav.scss */
+header nav ul li.drop:hover ul li a::after, header nav ol li.drop:hover ul li a::after, header nav ul li.drop:hover ol li a::after, header nav ol li.drop:hover ol li a::after {
+  border: 0;
+}
+/* line 84, ../sass/_nav.scss */
+header nav ul li.drop ul, header nav ol li.drop ul, header nav ul li.drop ol, header nav ol li.drop ol {
+  display: none;
+}
+
 /* line 2, ../sass/_alerts.scss */
 .alert {
   background: #FFFFFF;
   padding: 1rem 2rem 1rem 1rem;
   font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  border-left: 10px solid #1E6F38;
-  color: #1E6F38;
+  border-left: 10px solid #45ada8;
+  color: #45ada8;
   margin-bottom: 30px;
   position: relative;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -764,21 +867,14 @@ button {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 22, ../sass/base.scss */
+/* line 23, ../sass/base.scss */
 body {
-  background: #D6D6D6 url('/images/hindenburg_bg.png?1438601469') no-repeat center top;
+  background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }
 
-/* line 28, ../sass/base.scss */
-header {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 0.5rem 0 0 0;
-  margin-bottom: 2rem;
-}
-
-/* line 35, ../sass/base.scss */
+/* line 30, ../sass/base.scss */
 .color-me p, .color-me dd {
   background: #484848;
   color: white;
@@ -788,7 +884,7 @@ header {
   border-radius: 3px;
 }
 
-/* line 45, ../sass/base.scss */
+/* line 40, ../sass/base.scss */
 hr {
   margin: 4rem 1rem;
 }
