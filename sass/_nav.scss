@@ -1,6 +1,7 @@
 // Navigation
 header {
 	background: $header-bg;
+	z-index: 1000;
 	&.top {
 		position:absolute;
 		top:0;
@@ -22,70 +23,152 @@ header {
 		margin-bottom:0;
 		width: 100%;
 		a {
+			padding:$nav-padding;
+			display: block;
 			height: $nav-height;
 		}
 	}
 	nav {
 		float:$nav-direction;
 		display: inline-block;
-		ul li {
-			display: inline-block;
-			height: $nav-height;
-			position:relative;
-			a {
-				padding: $nav-height/3 $nav-padding;
-				display: block;
-				&:hover {
-					background: $nav-hover-bg;
-					color: $nav-hover-color;
-				}
-			}
-			&.drop {
-				a {
-					padding: $nav-height/3 ($nav-padding + 10px) $nav-height/3 $nav-padding;
-					&::after {
-						content: "";
-						display: block;
-						width: 0;
-						height: 0;
-						position:absolute;
-						top:($nav-height/2 - 1px);
-						right:10px;
-						border: inset 4px;
-						border-color: $drop-marker-color transparent transparent transparent;
-						border-top-style: solid;
+		.off-canvas {
+			display: none;
+		}
+		ul {
+			list-style-type: none;
+			&.divider {
+				li {
+					border-left:1px solid $divider-color;
+					width: auto;
+					margin-right:-4px;
+					&:hover {
+						background: $nav-hover-bg;
 					}
 				}
+			}
+			li {
+				display: inline-block;
+				height: $nav-height;
+				position:relative;
 				&:hover {
-					ul {
-						display: block;
-						background: $header-bg;
-						position: absolute;
-						top: $nav-height;
-						width: auto;
-						overflow: visible;
-						clip: auto;
-						left: auto;
-						right: 0;
-						z-index: 1000;
-						li {
-							display: list-item;
-							width: 100%;
-							a {
+					background: $nav-hover-bg;
+				}
+				a {
+					padding: (($nav-height - $nav-font-size)/2) $nav-padding;
+					font-size: $nav-font-size;
+					line-height: 1em;
+					display: block;
+					color:$nav-color;
+					&:hover {
+						color: $nav-hover-color;
+					}
+				}
+				&.drop {
+					a {
+						padding: (($nav-height - $nav-font-size)/2) $nav-padding + 10px (($nav-height - $nav-font-size)/2) $nav-padding;
+						font-size: $nav-font-size;
+						line-height: 1em;
+						color:$nav-color;
+						&::after {
+							content: "";
+							display: block;
+							width: 0;
+							height: 0;
+							position:absolute;
+							top:($nav-height/2 - 1px);
+							right:10px;
+							border: inset 4px;
+							border-color: $drop-marker-color transparent transparent transparent;
+							border-top-style: solid;
+						}
+					}
+					&:hover {
+						a {
+							color:$nav-hover-color;
+							&::after {
+								content: "";
 								display: block;
+								width: 0;
+								height: 0;
+								position:absolute;
+								top:($nav-height/2 - 1px);
+								right:10px;
+								border: inset 4px;
+								border-color: $nav-hover-color transparent transparent transparent;
+								border-top-style: solid;
+							}
+						}
+						ul {
+							display: block;
+							background: $header-bg;
+							position: absolute;
+							right:0;
+							left:auto;
+							top: $nav-height;
+							min-width: 100%;
+							overflow: visible;
+							li {
+								display: list-item;
 								width: 100%;
-								&::after {
-									border:0;
+								position:relative;
+								a {
+									display: block;
+									width: 100%;
+									white-space: nowrap;
+									color:$nav-color;
+									&::after {
+										border:0;
+									}
+									&:hover {
+										color:$nav-hover-color;
+									}
 								}
 							}
 						}
+					} 
+					ul {
+						display: none;					
 					}
-				} 
-				ul {
-					display: none;					
 				}
 			}
-		}
+		} 
+	}	
+}
+
+// goto off canvas on small
+@media (max-width: $small-breakpoint) {
+	header {
+		background: $header-bg;
+		z-index: 1000;
+		nav {
+			float:$nav-direction;
+			display: block;
+			.off-canvas {
+				display: block;
+			}
+			ul {
+				list-style-type: none;
+				background: $tuatara;
+				height: 100vh;
+				width: 50vh;
+				position:absolute;
+				right:-50vh;
+				@include transition;
+			}
+			.off-canvas.open + ul {
+				list-style-type: none;
+				background: $tuatara;
+				height: 100vh;
+				width: 100vh;
+				position:absolute;
+				overflow:scroll;
+				right:0vh;
+				top:$nav-height;
+				li {
+					display: block;
+					
+				}
+			}
+		} 
 	}
-	
 }

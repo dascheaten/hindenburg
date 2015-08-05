@@ -34,3 +34,13 @@ $(document).ready(function() {
 	});
 });
 
+// off canvas nav
+$('.off-canvas').bind('click', function() {
+	$(this).toggleClass('open');
+	if ($(this).hasClass('open')) {
+		$(this).text('Close');
+	}
+	else {
+		$(this).text('Menu');
+	}
+});

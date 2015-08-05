@@ -58,10 +58,13 @@ $header-bg:$white;
 // Navigation
 $nav-height:70px;
 $nav-direction:right; // Sets the float for the link
+$nav-font-size:$body-copy-font-size;
 $nav-padding:20px;
 $nav-hover-bg:$primary;
+$nav-color:$primary;
 $nav-hover-color:$white;
 $drop-marker-color:rgba($black, 0.4);
+$divider-color:$gainsboro;
 
 // Buttons
 $action-color: $primary;
