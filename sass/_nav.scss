@@ -98,7 +98,7 @@ header {
 								border-top-style: solid;
 							}
 						}
-						ul {
+						ul.drop-menu {
 							display: block;
 							background: $header-bg;
 							position: absolute;
@@ -125,9 +125,9 @@ header {
 								}
 							}
 						}
-					} 
-					ul {
-						display: none;					
+					}
+					ul.drop-menu {
+						display: none;
 					}
 				}
 			}
@@ -143,8 +143,12 @@ header {
 		nav {
 			float:$nav-direction;
 			display: block;
+			overflow:scroll;
 			.off-canvas {
 				display: block;
+				height: $nav-height;
+				padding-top: (($nav-height - $small-button-size)/2);
+				padding-bottom: (($nav-height - $small-button-size)/2);
 			}
 			ul {
 				list-style-type: none;
@@ -152,22 +156,68 @@ header {
 				height: 100vh;
 				width: 50vh;
 				position:absolute;
+				top:$nav-height;
 				right:-50vh;
-				@include transition;
+				overflow:scroll;
+				@include transition(.35s);
+				li {
+					display: block;
+					a {
+						color: $off-canvas-link-color;
+					}
+				}
 			}
 			.off-canvas.open + ul {
 				list-style-type: none;
-				background: $tuatara;
+				background: $off-canvas-bg;
 				height: 100vh;
-				width: 100vh;
 				position:absolute;
 				overflow:scroll;
 				right:0vh;
 				top:$nav-height;
 				li {
-					display: block;
-					
+					display: list-item;
+					border:none;
+					position: relative;
+					a {
+						color: $off-canvas-link-color;
+					}
 				}
+				li.drop, li.drop:hover {
+					ul.drop-menu {
+						display: none;
+						position:relative;
+						background: $off-canvas-drop-bg-color;
+						a {
+							color: $off-canvas-drop-link-color;
+							&::after {
+								border:none;
+							}
+						}
+					}
+					&.drop-open {
+						ul.drop-menu {
+							display: block;
+							top:0;
+							height: auto;
+							position:static;
+							background: $off-canvas-drop-bg-color;
+							li {
+								display: list-item;
+								position:relative;
+								a {
+									color: $off-canvas-drop-link-color;
+									&:hover {
+										color: $off-canvas-drop-link-color-hover;
+									}
+									&::after {
+										border:none;
+									}
+								}
+							}
+						}
+					}
+				} 
 			}
 		} 
 	}

@@ -44,3 +44,21 @@ $('.off-canvas').bind('click', function() {
 		$(this).text('Menu');
 	}
 });
+
+
+$('.drop').bind('click', function() {
+	if ($('.off-canvas').hasClass('open')) {
+		$(this).toggleClass('drop-open');
+		if ($(this).hasClass('drop-open')) {
+			var text = $(this).find('a:first').text();
+			$(this).attr('data-text', text)
+			$(this).find('a:first').text('Close');
+		}
+		else {
+			var textback = $(this).data('text');
+			$(this).find('a:first').text(textback);
+	
+		}
+	}
+});	
+

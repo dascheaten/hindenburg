@@ -25,7 +25,9 @@ body {
 	background-size: 100% auto;
 	margin-top: 23rem;
 }
-
+header {
+	@include shadow;
+}
 .color-me {
 	p {
 		background: #484848;
