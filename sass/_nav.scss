@@ -48,7 +48,7 @@ header {
 			}
 			li {
 				display: inline-block;
-				height: $nav-height;
+				height: auto;
 				position:relative;
 				&:hover {
 					background: $nav-hover-bg;
@@ -131,12 +131,12 @@ header {
 					}
 				}
 			}
-		} 
+		}
 	}	
 }
 
 // goto off canvas on small
-@media (max-width: $small-breakpoint) {
+@media (max-width: $nav-break-point) {
 	header {
 		background: $header-bg;
 		z-index: 1000;
@@ -144,6 +144,7 @@ header {
 			float:$nav-direction;
 			display: block;
 			overflow:scroll;
+				height: 100vh;
 			.off-canvas {
 				display: block;
 				height: $nav-height;
@@ -188,6 +189,7 @@ header {
 						display: none;
 						position:relative;
 						background: $off-canvas-drop-bg-color;
+						overflow:scroll;
 						a {
 							color: $off-canvas-drop-link-color;
 							&::after {
