@@ -177,6 +177,7 @@ header {
 				right:0vh;
 				top:0;
 				margin-top: $nav-height;
+				padding-bottom: $nav-height;
 				li {
 					display: list-item;
 					border:none;
@@ -204,6 +205,8 @@ header {
 							height: auto;
 							position:static;
 							background: $off-canvas-drop-bg-color;
+							height:110%;
+							min-height:100%;
 							li {
 								display: list-item;
 								position:relative;
