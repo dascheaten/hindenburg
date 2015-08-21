@@ -19,6 +19,8 @@ $gutter: 30px;
 @import "buttons";
 @import "forms";
 @import "modals";
+@import "panel";
+@import "tables";
 
 body {
 	background: #D6D6D6 image-url('hindenburg_bg.png') no-repeat center top;

@@ -1027,14 +1027,48 @@ button {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 23, ../sass/base.scss */
+/* line 2, ../sass/_panel.scss */
+.panel {
+  background: #FFFFFF;
+  border: 1px solid red;
+  padding: 15px;
+}
+
+/* line 2, ../sass/_tables.scss */
+table {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+/* line 8, ../sass/_tables.scss */
+table tr:nth-child(even) {
+  background: #EEEEEE;
+}
+/* line 11, ../sass/_tables.scss */
+table tr:nth-child(odd) {
+  background: #FFFFFF;
+}
+/* line 15, ../sass/_tables.scss */
+table tr td {
+  padding: 1em;
+}
+/* line 18, ../sass/_tables.scss */
+table tr th {
+  padding: 1em;
+  background: #1E6F38;
+  color: #FFFFFF;
+}
+
+/* line 25, ../sass/base.scss */
 body {
-  background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
+  background: #D6D6D6 url('/images/hindenburg_bg.png?1438601469') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }
 
-/* line 28, ../sass/base.scss */
+/* line 30, ../sass/base.scss */
 header {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1042,7 +1076,7 @@ header {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 32, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 .color-me p, .color-me dd {
   background: #484848;
   color: white;
@@ -1052,7 +1086,7 @@ header {
   border-radius: 3px;
 }
 
-/* line 42, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 hr {
   margin: 4rem 1rem;
 }

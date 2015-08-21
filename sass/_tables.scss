@@ -1,0 +1,25 @@
+// Tables sometimes are good
+table {
+	width: 100%;
+	background: $table-bg;
+	border:1px solid $table-border-color;
+	font-family: $body-copy;
+	font-size: $body-copy-font-size;
+	tr:nth-child(even) {
+		background: $table-alt-row;
+	}
+	tr:nth-child(odd) {
+		background: $table-bg;
+	}
+	tr {
+		td {
+			padding:1em;
+		}
+		th {
+			padding:1em;
+			background: $table-th-bg;
+			color:  $table-th-color;
+		}
+
+	}
+}
