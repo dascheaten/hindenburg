@@ -529,57 +529,57 @@ header.fixed {
   width: 100%;
   height: 70px;
 }
-/* line 17, ../sass/_nav.scss */
+/* line 18, ../sass/_nav.scss */
 header .clm {
   padding: 0;
 }
-/* line 20, ../sass/_nav.scss */
+/* line 21, ../sass/_nav.scss */
 header h1 {
   display: inline-block;
   height: 70px;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 25, ../sass/_nav.scss */
+/* line 26, ../sass/_nav.scss */
 header h1 a {
   padding: 20px;
   display: block;
   height: 70px;
 }
-/* line 31, ../sass/_nav.scss */
+/* line 32, ../sass/_nav.scss */
 header nav {
   float: right;
   display: inline-block;
 }
-/* line 34, ../sass/_nav.scss */
+/* line 35, ../sass/_nav.scss */
 header nav .off-canvas {
   display: none;
 }
-/* line 37, ../sass/_nav.scss */
+/* line 38, ../sass/_nav.scss */
 header nav ul, header nav ol {
   list-style-type: none;
 }
-/* line 40, ../sass/_nav.scss */
+/* line 41, ../sass/_nav.scss */
 header nav ul.divider li, header nav ol.divider li {
   border-left: 1px solid #DDDDDD;
   width: auto;
   margin-right: -4px;
 }
-/* line 44, ../sass/_nav.scss */
+/* line 45, ../sass/_nav.scss */
 header nav ul.divider li:hover, header nav ol.divider li:hover {
   background: #1E6F38;
 }
-/* line 49, ../sass/_nav.scss */
+/* line 50, ../sass/_nav.scss */
 header nav ul li, header nav ol li {
   display: inline-block;
   height: auto;
   position: relative;
 }
-/* line 53, ../sass/_nav.scss */
+/* line 54, ../sass/_nav.scss */
 header nav ul li:hover, header nav ol li:hover {
   background: #1E6F38;
 }
-/* line 56, ../sass/_nav.scss */
+/* line 57, ../sass/_nav.scss */
 header nav ul li a, header nav ol li a {
   padding: 28px 20px;
   font-size: 14px;
@@ -587,18 +587,18 @@ header nav ul li a, header nav ol li a {
   display: block;
   color: #1E6F38;
 }
-/* line 62, ../sass/_nav.scss */
+/* line 63, ../sass/_nav.scss */
 header nav ul li a:hover, header nav ol li a:hover {
   color: #FFFFFF;
 }
-/* line 67, ../sass/_nav.scss */
+/* line 68, ../sass/_nav.scss */
 header nav ul li.drop a, header nav ol li.drop a {
   padding: 28px 30px 28px 20px;
   font-size: 14px;
   line-height: 1em;
   color: #1E6F38;
 }
-/* line 72, ../sass/_nav.scss */
+/* line 73, ../sass/_nav.scss */
 header nav ul li.drop a::after, header nav ol li.drop a::after {
   content: "";
   display: block;
@@ -611,11 +611,11 @@ header nav ul li.drop a::after, header nav ol li.drop a::after {
   border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
   border-top-style: solid;
 }
-/* line 86, ../sass/_nav.scss */
+/* line 87, ../sass/_nav.scss */
 header nav ul li.drop:hover a, header nav ol li.drop:hover a {
   color: #FFFFFF;
 }
-/* line 88, ../sass/_nav.scss */
+/* line 89, ../sass/_nav.scss */
 header nav ul li.drop:hover a::after, header nav ol li.drop:hover a::after {
   content: "";
   display: block;
@@ -628,7 +628,7 @@ header nav ul li.drop:hover a::after, header nav ol li.drop:hover a::after {
   border-color: #FFFFFF transparent transparent transparent;
   border-top-style: solid;
 }
-/* line 101, ../sass/_nav.scss */
+/* line 102, ../sass/_nav.scss */
 header nav ul li.drop:hover ul.drop-menu, header nav ol li.drop:hover ul.drop-menu, header nav ul li.drop:hover ol.drop-menu, header nav ol li.drop:hover ol.drop-menu {
   display: block;
   background: #FFFFFF;
@@ -639,53 +639,53 @@ header nav ul li.drop:hover ul.drop-menu, header nav ol li.drop:hover ul.drop-me
   min-width: 100%;
   overflow: visible;
 }
-/* line 110, ../sass/_nav.scss */
+/* line 111, ../sass/_nav.scss */
 header nav ul li.drop:hover ul.drop-menu li, header nav ol li.drop:hover ul.drop-menu li, header nav ul li.drop:hover ol.drop-menu li, header nav ol li.drop:hover ol.drop-menu li {
   display: list-item;
   width: 100%;
   position: relative;
 }
-/* line 114, ../sass/_nav.scss */
+/* line 115, ../sass/_nav.scss */
 header nav ul li.drop:hover ul.drop-menu li a, header nav ol li.drop:hover ul.drop-menu li a, header nav ul li.drop:hover ol.drop-menu li a, header nav ol li.drop:hover ol.drop-menu li a {
   display: block;
   width: 100%;
   white-space: nowrap;
   color: #1E6F38;
 }
-/* line 119, ../sass/_nav.scss */
+/* line 120, ../sass/_nav.scss */
 header nav ul li.drop:hover ul.drop-menu li a::after, header nav ol li.drop:hover ul.drop-menu li a::after, header nav ul li.drop:hover ol.drop-menu li a::after, header nav ol li.drop:hover ol.drop-menu li a::after {
   border: 0;
 }
-/* line 122, ../sass/_nav.scss */
+/* line 123, ../sass/_nav.scss */
 header nav ul li.drop:hover ul.drop-menu li a:hover, header nav ol li.drop:hover ul.drop-menu li a:hover, header nav ul li.drop:hover ol.drop-menu li a:hover, header nav ol li.drop:hover ol.drop-menu li a:hover {
   color: #FFFFFF;
 }
-/* line 129, ../sass/_nav.scss */
+/* line 130, ../sass/_nav.scss */
 header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header nav ul li.drop ol.drop-menu, header nav ol li.drop ol.drop-menu {
   display: none;
 }
 
 @media (max-width: 56.25rem) {
-  /* line 140, ../sass/_nav.scss */
+  /* line 141, ../sass/_nav.scss */
   header {
     background: #FFFFFF;
     z-index: 1000;
   }
-  /* line 143, ../sass/_nav.scss */
+  /* line 144, ../sass/_nav.scss */
   header nav {
     float: right;
     display: block;
     overflow: scroll;
     background: #444444;
   }
-  /* line 148, ../sass/_nav.scss */
+  /* line 149, ../sass/_nav.scss */
   header nav .off-canvas {
     display: block;
     height: 70px;
     padding-top: 27px;
     padding-bottom: 27px;
   }
-  /* line 154, ../sass/_nav.scss */
+  /* line 155, ../sass/_nav.scss */
   header nav ul, header nav ol {
     list-style-type: none;
     background: #444444;
@@ -700,15 +700,15 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
   }
-  /* line 163, ../sass/_nav.scss */
+  /* line 164, ../sass/_nav.scss */
   header nav ul li, header nav ol li {
     display: block;
   }
-  /* line 165, ../sass/_nav.scss */
+  /* line 166, ../sass/_nav.scss */
   header nav ul li a, header nav ol li a {
     color: #FFFFFF;
   }
-  /* line 170, ../sass/_nav.scss */
+  /* line 171, ../sass/_nav.scss */
   header nav .off-canvas.open + ul, header nav .off-canvas.open + ol {
     list-style-type: none;
     background: #444444;
@@ -721,32 +721,32 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     margin-top: 70px;
     padding-bottom: 70px;
   }
-  /* line 181, ../sass/_nav.scss */
+  /* line 182, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li, header nav .off-canvas.open + ol li {
     display: list-item;
     border: none;
     position: relative;
   }
-  /* line 185, ../sass/_nav.scss */
+  /* line 186, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li a, header nav .off-canvas.open + ol li a {
     color: #FFFFFF;
   }
-  /* line 190, ../sass/_nav.scss */
+  /* line 191, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop ul.drop-menu, header nav .off-canvas.open + ol li.drop ul.drop-menu, header nav .off-canvas.open + ul li.drop ol.drop-menu, header nav .off-canvas.open + ol li.drop ol.drop-menu, header nav .off-canvas.open + ul li.drop:hover ul.drop-menu, header nav .off-canvas.open + ol li.drop:hover ul.drop-menu, header nav .off-canvas.open + ul li.drop:hover ol.drop-menu, header nav .off-canvas.open + ol li.drop:hover ol.drop-menu {
     display: none;
     position: relative;
     background: #FFFFFF;
     overflow: scroll;
   }
-  /* line 195, ../sass/_nav.scss */
+  /* line 196, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop ul.drop-menu a, header nav .off-canvas.open + ol li.drop ul.drop-menu a, header nav .off-canvas.open + ul li.drop ol.drop-menu a, header nav .off-canvas.open + ol li.drop ol.drop-menu a, header nav .off-canvas.open + ul li.drop:hover ul.drop-menu a, header nav .off-canvas.open + ol li.drop:hover ul.drop-menu a, header nav .off-canvas.open + ul li.drop:hover ol.drop-menu a, header nav .off-canvas.open + ol li.drop:hover ol.drop-menu a {
     color: #1E6F38;
   }
-  /* line 197, ../sass/_nav.scss */
+  /* line 198, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop ul.drop-menu a::after, header nav .off-canvas.open + ol li.drop ul.drop-menu a::after, header nav .off-canvas.open + ul li.drop ol.drop-menu a::after, header nav .off-canvas.open + ol li.drop ol.drop-menu a::after, header nav .off-canvas.open + ul li.drop:hover ul.drop-menu a::after, header nav .off-canvas.open + ol li.drop:hover ul.drop-menu a::after, header nav .off-canvas.open + ul li.drop:hover ol.drop-menu a::after, header nav .off-canvas.open + ol li.drop:hover ol.drop-menu a::after {
     border: none;
   }
-  /* line 203, ../sass/_nav.scss */
+  /* line 204, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu {
     display: block;
     height: auto;
@@ -755,24 +755,158 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     height: 110%;
     min-height: 100%;
   }
-  /* line 210, ../sass/_nav.scss */
+  /* line 211, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li {
     display: list-item;
     position: relative;
   }
-  /* line 213, ../sass/_nav.scss */
+  /* line 214, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a {
     color: #1E6F38;
   }
-  /* line 215, ../sass/_nav.scss */
+  /* line 216, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a:hover, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a:hover {
     color: #FFFFFF;
   }
-  /* line 218, ../sass/_nav.scss */
+  /* line 219, ../sass/_nav.scss */
   header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a::after, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a::after, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a::after, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a::after {
     border: none;
   }
 }
+/* line 2, ../sass/_mega-menu.scss */
+header.mega-menu {
+  background: #FFFFFF;
+  z-index: 1000;
+}
+/* line 5, ../sass/_mega-menu.scss */
+header.mega-menu.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+/* line 11, ../sass/_mega-menu.scss */
+header.mega-menu.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+/* line 17, ../sass/_mega-menu.scss */
+header.mega-menu .clm {
+  padding: 0;
+}
+/* line 20, ../sass/_mega-menu.scss */
+header.mega-menu h1 {
+  display: inline-block;
+  height: 70px;
+  margin-bottom: 0;
+  width: 100%;
+}
+/* line 25, ../sass/_mega-menu.scss */
+header.mega-menu h1 a {
+  padding: 20px;
+  display: block;
+  height: 70px;
+}
+/* line 31, ../sass/_mega-menu.scss */
+header.mega-menu nav {
+  float: right;
+  display: inline-block;
+}
+/* line 34, ../sass/_mega-menu.scss */
+header.mega-menu nav .off-canvas {
+  display: none;
+}
+/* line 37, ../sass/_mega-menu.scss */
+header.mega-menu nav ul, header.mega-menu nav ol {
+  list-style-type: none;
+}
+/* line 40, ../sass/_mega-menu.scss */
+header.mega-menu nav ul.divider li, header.mega-menu nav ol.divider li {
+  border-left: 1px solid #DDDDDD;
+  width: auto;
+  margin-right: -4px;
+}
+/* line 44, ../sass/_mega-menu.scss */
+header.mega-menu nav ul.divider li:hover, header.mega-menu nav ol.divider li:hover {
+  background: #1E6F38;
+}
+/* line 49, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li, header.mega-menu nav ol li {
+  display: inline-block;
+  height: auto;
+  position: relative;
+}
+/* line 53, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li:hover, header.mega-menu nav ol li:hover {
+  background: #1E6F38;
+}
+/* line 56, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li a, header.mega-menu nav ol li a {
+  padding: 28px 20px;
+  font-size: 14px;
+  line-height: 1em;
+  display: block;
+  color: #1E6F38;
+}
+/* line 62, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li a:hover, header.mega-menu nav ol li a:hover {
+  color: #FFFFFF;
+}
+/* line 67, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop a, header.mega-menu nav ol li.drop a {
+  padding: 28px 30px 28px 20px;
+  font-size: 14px;
+  line-height: 1em;
+  color: #1E6F38;
+}
+/* line 72, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop a::after, header.mega-menu nav ol li.drop a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 34px;
+  right: 10px;
+  border: inset 4px;
+  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
+  border-top-style: solid;
+}
+/* line 85, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop ul.drop-menu, header.mega-menu nav ol li.drop ul.drop-menu, header.mega-menu nav ul li.drop ol.drop-menu, header.mega-menu nav ol li.drop ol.drop-menu {
+  display: none;
+  background: #FFFFFF;
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: 70px;
+  min-width: 100%;
+  overflow: visible;
+}
+/* line 94, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop ul.drop-menu li, header.mega-menu nav ol li.drop ul.drop-menu li, header.mega-menu nav ul li.drop ol.drop-menu li, header.mega-menu nav ol li.drop ol.drop-menu li {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+/* line 98, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop ul.drop-menu li a, header.mega-menu nav ol li.drop ul.drop-menu li a, header.mega-menu nav ul li.drop ol.drop-menu li a, header.mega-menu nav ol li.drop ol.drop-menu li a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  color: #1E6F38;
+}
+/* line 103, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop ul.drop-menu li a::after, header.mega-menu nav ol li.drop ul.drop-menu li a::after, header.mega-menu nav ul li.drop ol.drop-menu li a::after, header.mega-menu nav ol li.drop ol.drop-menu li a::after {
+  border: 0;
+}
+/* line 106, ../sass/_mega-menu.scss */
+header.mega-menu nav ul li.drop ul.drop-menu li a:hover, header.mega-menu nav ol li.drop ul.drop-menu li a:hover, header.mega-menu nav ul li.drop ol.drop-menu li a:hover, header.mega-menu nav ol li.drop ol.drop-menu li a:hover {
+  color: #FFFFFF;
+}
+
 /* line 2, ../sass/_alerts.scss */
 .alert {
   background: #FFFFFF;
@@ -1117,37 +1251,44 @@ ul.pricing-table .not-included, ol.pricing-table .not-included {
 
 /* line 2, ../sass/_progress-bar.scss */
 .progress-bar {
-  height: 10px;
+  height: 20px;
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid #DDDDDD;
-  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  box-sizing: content-box;
 }
 /* line 8, ../sass/_progress-bar.scss */
 .progress-bar.round {
   border-radius: 1000px;
-  height: 10px;
+  height: 20px;
 }
 /* line 11, ../sass/_progress-bar.scss */
 .progress-bar.round .complete {
   background: #1E6F38;
-  height: 8px;
+  height: 20px;
   border-top-left-radius: 1000px;
   border-bottom-left-radius: 1000px;
 }
 /* line 18, ../sass/_progress-bar.scss */
-.progress-bar.tick-marks {
-  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="1px" viewBox="0 0 10 1" enable-background="new 0 0 10 1" xml:space="preserve"><rect x="9" fill="$progress-tick-color" width=".1" height="1"/></svg>');
+.progress-bar .tick-marks {
+  height: 5px;
+  width: 100%;
+  display: block;
+  margin-left: 6px;
+  margin-top: 1px;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="1px" viewBox="0 0 10 1" enable-background="new 0 0 10 1" xml:space="preserve"><rect x="9" fill="#000000" width=".1" height="1"/></svg>');
   background-repeat: repeat;
   background-size: 10%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-/* line 23, ../sass/_progress-bar.scss */
+/* line 30, ../sass/_progress-bar.scss */
 .progress-bar .complete {
   background: #1E6F38;
-  height: 8px;
+  height: 20px;
 }
 
-/* line 30, ../sass/_progress-bar.scss */
+/* line 37, ../sass/_progress-bar.scss */
 .progress-radial {
   position: relative;
   width: 134px;
@@ -1156,7 +1297,7 @@ ul.pricing-table .not-included, ol.pricing-table .not-included {
   border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
-/* line 37, ../sass/_progress-bar.scss */
+/* line 44, ../sass/_progress-bar.scss */
 .progress-radial .overlay {
   width: 90px;
   height: 90px;
@@ -1171,87 +1312,87 @@ ul.pricing-table .not-included, ol.pricing-table .not-included {
   line-height: 15px;
   font-size: 16px;
 }
-/* line 51, ../sass/_progress-bar.scss */
+/* line 58, ../sass/_progress-bar.scss */
 .progress-radial.progress-0 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(90deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 55, ../sass/_progress-bar.scss */
+/* line 62, ../sass/_progress-bar.scss */
 .progress-radial.progress-5 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(108deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 59, ../sass/_progress-bar.scss */
+/* line 66, ../sass/_progress-bar.scss */
 .progress-radial.progress-10 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(126deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 63, ../sass/_progress-bar.scss */
+/* line 70, ../sass/_progress-bar.scss */
 .progress-radial.progress-15 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(144deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 67, ../sass/_progress-bar.scss */
+/* line 74, ../sass/_progress-bar.scss */
 .progress-radial.progress-20 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(162deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 71, ../sass/_progress-bar.scss */
+/* line 78, ../sass/_progress-bar.scss */
 .progress-radial.progress-25 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(180deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 75, ../sass/_progress-bar.scss */
+/* line 82, ../sass/_progress-bar.scss */
 .progress-radial.progress-30 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(198deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 79, ../sass/_progress-bar.scss */
+/* line 86, ../sass/_progress-bar.scss */
 .progress-radial.progress-35 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(216deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 83, ../sass/_progress-bar.scss */
+/* line 90, ../sass/_progress-bar.scss */
 .progress-radial.progress-40 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(234deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 87, ../sass/_progress-bar.scss */
+/* line 94, ../sass/_progress-bar.scss */
 .progress-radial.progress-45 {
   background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(252deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 91, ../sass/_progress-bar.scss */
+/* line 98, ../sass/_progress-bar.scss */
 .progress-radial.progress-50 {
   background-image: linear-gradient(-90deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 95, ../sass/_progress-bar.scss */
+/* line 102, ../sass/_progress-bar.scss */
 .progress-radial.progress-55 {
   background-image: linear-gradient(-72deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 99, ../sass/_progress-bar.scss */
+/* line 106, ../sass/_progress-bar.scss */
 .progress-radial.progress-60 {
   background-image: linear-gradient(-54deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 103, ../sass/_progress-bar.scss */
+/* line 110, ../sass/_progress-bar.scss */
 .progress-radial.progress-65 {
   background-image: linear-gradient(-36deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 107, ../sass/_progress-bar.scss */
+/* line 114, ../sass/_progress-bar.scss */
 .progress-radial.progress-70 {
   background-image: linear-gradient(-18deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 111, ../sass/_progress-bar.scss */
+/* line 118, ../sass/_progress-bar.scss */
 .progress-radial.progress-75 {
   background-image: linear-gradient(0deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 115, ../sass/_progress-bar.scss */
+/* line 122, ../sass/_progress-bar.scss */
 .progress-radial.progress-80 {
   background-image: linear-gradient(18deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 119, ../sass/_progress-bar.scss */
+/* line 126, ../sass/_progress-bar.scss */
 .progress-radial.progress-85 {
   background-image: linear-gradient(36deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 123, ../sass/_progress-bar.scss */
+/* line 130, ../sass/_progress-bar.scss */
 .progress-radial.progress-90 {
   background-image: linear-gradient(54deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 127, ../sass/_progress-bar.scss */
+/* line 134, ../sass/_progress-bar.scss */
 .progress-radial.progress-95 {
   background-image: linear-gradient(72deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
-/* line 131, ../sass/_progress-bar.scss */
+/* line 138, ../sass/_progress-bar.scss */
 .progress-radial.progress-100 {
   background-image: linear-gradient(90deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
 }
@@ -1288,14 +1429,36 @@ img.iconic {
   fill: #c02942;
 }
 
-/* line 28, ../sass/base.scss */
+/* line 2, ../sass/_tooltips.scss */
+.tooltip {
+  color: #1E6F38;
+  font-style: italic;
+  position: relative;
+  cursor: help;
+}
+
+/* line 8, ../sass/_tooltips.scss */
+.this-tip {
+  background: #000000;
+  color: #FFFFFF;
+  display: block;
+  position: absolute;
+  top: 20px;
+  width: 200px;
+  padding: 0.5rem;
+  text-align: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* line 30, ../sass/base.scss */
 body {
   background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }
 
-/* line 33, ../sass/base.scss */
+/* line 35, ../sass/base.scss */
 header {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1303,7 +1466,7 @@ header {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 37, ../sass/base.scss */
+/* line 39, ../sass/base.scss */
 .color-me p, .color-me dd {
   background: #484848;
   color: white;
@@ -1313,7 +1476,7 @@ header {
   border-radius: 3px;
 }
 
-/* line 47, ../sass/base.scss */
+/* line 49, ../sass/base.scss */
 hr {
   margin: 4rem 1rem;
 }

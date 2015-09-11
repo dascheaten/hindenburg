@@ -1,0 +1,19 @@
+// Tooltips
+.tooltip {
+	color:$primary;
+	font-style: italic;
+	position: relative;
+	cursor: help;
+}
+.this-tip {
+	background:$black;
+	color:$white;
+	display: block;
+	position: absolute;
+	top:20px;
+	width: 200px;
+	padding:0.5rem;
+	text-align: center;
+	z-index: 1000;
+	cursor: pointer;
+}

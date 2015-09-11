@@ -62,3 +62,20 @@ $('.drop').bind('click', function() {
 	}
 });	
 
+// Tool Tips
+$('span.tooltip').mouseenter(function() {
+	var tip = $(this).attr('data-tip');
+	var content = $(this).html();
+	if (!$(this).hasClass('tip-open')){
+		$(this).addClass('tip-open').html(content + '<div class="this-tip">' + tip + '</div>');
+	} else {
+		$(this).removeClass('tip-open');
+		$('.this-tip').remove();
+	}
+});
+$('span.tooltip').mouseleave(function() {
+	if ($(this).hasClass('tip-open')) {
+		$(this).removeClass('tip-open');
+		$('.this-tip').remove();
+	}
+});

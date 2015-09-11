@@ -1,0 +1,116 @@
+// Navigation
+header.mega-menu {
+	background: $header-bg;
+	z-index: 1000;
+	&.top {
+		position:absolute;
+		top:0;
+		width: 100%;
+		height: $nav-height;
+	}
+	&.fixed {
+		position:fixed;
+		top:0;
+		width: 100%;
+		height: $nav-height;
+	}
+	.clm {
+		padding:0;
+	}
+	h1 {
+		display: inline-block;
+		height: $nav-height;
+		margin-bottom:0;
+		width: 100%;
+		a {
+			padding:$nav-padding;
+			display: block;
+			height: $nav-height;
+		}
+	}
+	nav {
+		float:$nav-direction;
+		display: inline-block;
+		.off-canvas {
+			display: none;
+		}
+		ul {
+			list-style-type: none;
+			&.divider {
+				li {
+					border-left:1px solid $divider-color;
+					width: auto;
+					margin-right:-4px;
+					&:hover {
+						background: $nav-hover-bg;
+					}
+				}
+			}
+			li {
+				display: inline-block;
+				height: auto;
+				position:relative;
+				&:hover {
+					background: $nav-hover-bg;
+				}
+				a {
+					padding: (($nav-height - $nav-font-size)/2) $nav-padding;
+					font-size: $nav-font-size;
+					line-height: 1em;
+					display: block;
+					color:$nav-color;
+					&:hover {
+						color: $nav-hover-color;
+					}
+				}
+				&.drop {
+					a {
+						padding: (($nav-height - $nav-font-size)/2) $nav-padding + 10px (($nav-height - $nav-font-size)/2) $nav-padding;
+						font-size: $nav-font-size;
+						line-height: 1em;
+						color:$nav-color;
+						&::after {
+							content: "";
+							display: block;
+							width: 0;
+							height: 0;
+							position:absolute;
+							top:($nav-height/2 - 1px);
+							right:10px;
+							border: inset 4px;
+							border-color: $drop-marker-color transparent transparent transparent;
+							border-top-style: solid;
+						}
+					}
+					ul.drop-menu {
+						display: none;
+						background: $header-bg;
+						position: absolute;
+						right:0;
+						left:auto;
+						top: $nav-height;
+						min-width: 100%;
+						overflow: visible;
+						li {
+							display: inline-block ;
+							width: 100%;
+							position:relative;
+							a {
+								display: block;
+								width: 100%;
+								white-space: nowrap;
+								color:$nav-color;
+								&::after {
+									border:0;
+								}
+								&:hover {
+									color:$nav-hover-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
