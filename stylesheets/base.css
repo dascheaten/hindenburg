@@ -1439,16 +1439,27 @@ img.iconic {
 
 /* line 8, ../sass/_tooltips.scss */
 .this-tip {
-  background: #000000;
+  background: rgba(0, 0, 0, 0.8);
   color: #FFFFFF;
   display: block;
   position: absolute;
-  top: 20px;
+  top: 1.5em;
   width: 200px;
-  padding: 0.5rem;
-  text-align: center;
+  padding: 0.75rem;
+  text-align: left;
   z-index: 1000;
-  cursor: pointer;
+}
+/* line 18, ../sass/_tooltips.scss */
+.this-tip::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -12px;
+  border: inset 6px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+  border-top-style: solid;
 }
 
 /* line 30, ../sass/base.scss */

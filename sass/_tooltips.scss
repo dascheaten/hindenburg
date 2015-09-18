@@ -6,14 +6,24 @@
 	cursor: help;
 }
 .this-tip {
-	background:$black;
-	color:$white;
+	background:$tooltip-bg;
+	color:$tooltip-color;
 	display: block;
 	position: absolute;
-	top:20px;
+	top:1.5em;
 	width: 200px;
-	padding:0.5rem;
-	text-align: center;
+	padding:0.75rem;
+	text-align: left;
 	z-index: 1000;
-	cursor: pointer;
+	&::before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		position:absolute;
+		top: ($tooltip-tail-size * -2);
+		border: inset $tooltip-tail-size;
+		border-color: transparent transparent $tooltip-bg transparent;
+		border-top-style: solid;
+	}
 }
