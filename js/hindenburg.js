@@ -1,30 +1,30 @@
 // hide the modals and the background on load
 $(document).ready(function() {
 	if ($('.modal-go').length) {
-		$('body').append('<a class="modal_bg"></a>');
+		$('body').append('<a class="modal-bg"></a>');
 		$('.modal').hide();
-		$('.modal_bg').hide();
+		$('.modal-bg').hide();
 	}
 	
 	// Show me modal windows
 	$('.modal-go').bind('click', function() {
 		var dis_modal = $(this).attr('data-modal-id')
-		$('.modal').hide().removeClass('modal_on');
-		$('.modal_bg').fadeIn();
-		$('#' + dis_modal).fadeIn().addClass('modal_on');
+		$('.modal').hide().removeClass('modal-on');
+		$('.modal-bg').fadeIn();
+		$('#' + dis_modal).fadeIn().addClass('modal-on');
 	});
 
 	// Close on button
 	$('.close').bind('click', function() {
-		$('.modal_bg').fadeOut();
-		$('.modal').fadeOut().removeClass('modal_on');
+		$('.modal-bg').fadeOut();
+		$('.modal').fadeOut().removeClass('modal-on');
 	});
 
 	// close on background click, sometimes
-	$('.modal_bg').bind('click', function() {
-		var close_bg = $('.modal_on').attr('data-modal-closebg')
+	$('.modal-bg').bind('click', function() {
+		var close_bg = $('.modal-on').attr('data-modal-closebg')
 		if (close_bg != 'false') {
-			$('.modal_bg').fadeOut();
+			$('.modal-bg').fadeOut();
 			$('.modal').fadeOut();
 		}
 	});
@@ -32,6 +32,13 @@ $(document).ready(function() {
 	$('span.close').bind('click', function() {
 		$(this).parent().slideUp();
 	});
+	
+	// Set the Mega Menu close anchor
+	if ($('.mega-menu').length) {
+		$('body').append('<a class="mega-menu-bg"></a>');
+		$('.mega-menu-bg').hide();
+	}
+	
 });
 
 // off canvas nav
@@ -45,22 +52,33 @@ $('.off-canvas').bind('click', function() {
 	}
 });
 
-
+// Functions for both the Mega Menu
 $('.drop').bind('click', function() {
-	if ($('.off-canvas').hasClass('open')) {
-		$(this).toggleClass('drop-open');
-		if ($(this).hasClass('drop-open')) {
-			var text = $(this).find('a:first').text();
-			$(this).attr('data-text', text)
-			$(this).find('a:first').text('Close');
-		}
-		else {
-			var textback = $(this).data('text');
-			$(this).find('a:first').text(textback);
+	if ($('nav').hasClass('mega-menu')) {
+		$('.drop-menu').slideToggle();
+		$('.mega-menu-bg').show();
+	} else {
+		if ($('.off-canvas').hasClass('open')) {
+			$(this).toggleClass('drop-open');
+			if ($(this).hasClass('drop-open')) {
+				var text = $(this).find('a:first').text();
+				$(this).attr('data-text', text)
+				$(this).find('a:first').text('Close');
+			}
+			else {
+				var textback = $(this).data('text');
+				$(this).find('a:first').text(textback);
 	
+			}
 		}
 	}
 });	
+
+$('a.mega-menu-bg').bind('click', function() {
+	alert('click');
+	$(this).hide();
+	$('.drop-menu').hide();
+});
 
 // Tool Tips
 $('span.tooltip').mouseenter(function() {

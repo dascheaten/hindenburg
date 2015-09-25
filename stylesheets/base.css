@@ -547,40 +547,40 @@ header h1 a {
   height: 70px;
 }
 /* line 32, ../sass/_nav.scss */
-header nav {
+header nav.inline {
   float: right;
   display: inline-block;
 }
 /* line 35, ../sass/_nav.scss */
-header nav .off-canvas {
+header nav.inline .off-canvas {
   display: none;
 }
 /* line 38, ../sass/_nav.scss */
-header nav ul, header nav ol {
+header nav.inline ul, header nav.inline ol {
   list-style-type: none;
 }
 /* line 41, ../sass/_nav.scss */
-header nav ul.divider li, header nav ol.divider li {
+header nav.inline ul.divider li, header nav.inline ol.divider li {
   border-left: 1px solid #DDDDDD;
   width: auto;
   margin-right: -4px;
 }
 /* line 45, ../sass/_nav.scss */
-header nav ul.divider li:hover, header nav ol.divider li:hover {
+header nav.inline ul.divider li:hover, header nav.inline ol.divider li:hover {
   background: #1E6F38;
 }
 /* line 50, ../sass/_nav.scss */
-header nav ul li, header nav ol li {
+header nav.inline ul li, header nav.inline ol li {
   display: inline-block;
   height: auto;
   position: relative;
 }
 /* line 54, ../sass/_nav.scss */
-header nav ul li:hover, header nav ol li:hover {
+header nav.inline ul li:hover, header nav.inline ol li:hover {
   background: #1E6F38;
 }
 /* line 57, ../sass/_nav.scss */
-header nav ul li a, header nav ol li a {
+header nav.inline ul li a, header nav.inline ol li a {
   padding: 28px 20px;
   font-size: 14px;
   line-height: 1em;
@@ -588,18 +588,18 @@ header nav ul li a, header nav ol li a {
   color: #1E6F38;
 }
 /* line 63, ../sass/_nav.scss */
-header nav ul li a:hover, header nav ol li a:hover {
+header nav.inline ul li a:hover, header nav.inline ol li a:hover {
   color: #FFFFFF;
 }
 /* line 68, ../sass/_nav.scss */
-header nav ul li.drop a, header nav ol li.drop a {
+header nav.inline ul li.drop a, header nav.inline ol li.drop a {
   padding: 28px 30px 28px 20px;
   font-size: 14px;
   line-height: 1em;
   color: #1E6F38;
 }
 /* line 73, ../sass/_nav.scss */
-header nav ul li.drop a::after, header nav ol li.drop a::after {
+header nav.inline ul li.drop a::after, header nav.inline ol li.drop a::after {
   content: "";
   display: block;
   width: 0;
@@ -612,11 +612,11 @@ header nav ul li.drop a::after, header nav ol li.drop a::after {
   border-top-style: solid;
 }
 /* line 87, ../sass/_nav.scss */
-header nav ul li.drop:hover a, header nav ol li.drop:hover a {
+header nav.inline ul li.drop:hover a, header nav.inline ol li.drop:hover a {
   color: #FFFFFF;
 }
 /* line 89, ../sass/_nav.scss */
-header nav ul li.drop:hover a::after, header nav ol li.drop:hover a::after {
+header nav.inline ul li.drop:hover a::after, header nav.inline ol li.drop:hover a::after {
   content: "";
   display: block;
   width: 0;
@@ -629,7 +629,7 @@ header nav ul li.drop:hover a::after, header nav ol li.drop:hover a::after {
   border-top-style: solid;
 }
 /* line 102, ../sass/_nav.scss */
-header nav ul li.drop:hover ul.drop-menu, header nav ol li.drop:hover ul.drop-menu, header nav ul li.drop:hover ol.drop-menu, header nav ol li.drop:hover ol.drop-menu {
+header nav.inline ul li.drop:hover ul.drop-menu, header nav.inline ol li.drop:hover ul.drop-menu, header nav.inline ul li.drop:hover ol.drop-menu, header nav.inline ol li.drop:hover ol.drop-menu {
   display: block;
   background: #FFFFFF;
   position: absolute;
@@ -640,28 +640,28 @@ header nav ul li.drop:hover ul.drop-menu, header nav ol li.drop:hover ul.drop-me
   overflow: visible;
 }
 /* line 111, ../sass/_nav.scss */
-header nav ul li.drop:hover ul.drop-menu li, header nav ol li.drop:hover ul.drop-menu li, header nav ul li.drop:hover ol.drop-menu li, header nav ol li.drop:hover ol.drop-menu li {
+header nav.inline ul li.drop:hover ul.drop-menu li, header nav.inline ol li.drop:hover ul.drop-menu li, header nav.inline ul li.drop:hover ol.drop-menu li, header nav.inline ol li.drop:hover ol.drop-menu li {
   display: list-item;
   width: 100%;
   position: relative;
 }
 /* line 115, ../sass/_nav.scss */
-header nav ul li.drop:hover ul.drop-menu li a, header nav ol li.drop:hover ul.drop-menu li a, header nav ul li.drop:hover ol.drop-menu li a, header nav ol li.drop:hover ol.drop-menu li a {
+header nav.inline ul li.drop:hover ul.drop-menu li a, header nav.inline ol li.drop:hover ul.drop-menu li a, header nav.inline ul li.drop:hover ol.drop-menu li a, header nav.inline ol li.drop:hover ol.drop-menu li a {
   display: block;
   width: 100%;
   white-space: nowrap;
   color: #1E6F38;
 }
 /* line 120, ../sass/_nav.scss */
-header nav ul li.drop:hover ul.drop-menu li a::after, header nav ol li.drop:hover ul.drop-menu li a::after, header nav ul li.drop:hover ol.drop-menu li a::after, header nav ol li.drop:hover ol.drop-menu li a::after {
+header nav.inline ul li.drop:hover ul.drop-menu li a::after, header nav.inline ol li.drop:hover ul.drop-menu li a::after, header nav.inline ul li.drop:hover ol.drop-menu li a::after, header nav.inline ol li.drop:hover ol.drop-menu li a::after {
   border: 0;
 }
 /* line 123, ../sass/_nav.scss */
-header nav ul li.drop:hover ul.drop-menu li a:hover, header nav ol li.drop:hover ul.drop-menu li a:hover, header nav ul li.drop:hover ol.drop-menu li a:hover, header nav ol li.drop:hover ol.drop-menu li a:hover {
+header nav.inline ul li.drop:hover ul.drop-menu li a:hover, header nav.inline ol li.drop:hover ul.drop-menu li a:hover, header nav.inline ul li.drop:hover ol.drop-menu li a:hover, header nav.inline ol li.drop:hover ol.drop-menu li a:hover {
   color: #FFFFFF;
 }
 /* line 130, ../sass/_nav.scss */
-header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header nav ul li.drop ol.drop-menu, header nav ol li.drop ol.drop-menu {
+header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-menu, header nav.inline ul li.drop ol.drop-menu, header nav.inline ol li.drop ol.drop-menu {
   display: none;
 }
 
@@ -672,21 +672,21 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     z-index: 1000;
   }
   /* line 144, ../sass/_nav.scss */
-  header nav {
+  header nav.inline, header nav.mega-menu {
     float: right;
     display: block;
     overflow: scroll;
     background: #444444;
   }
   /* line 149, ../sass/_nav.scss */
-  header nav .off-canvas {
+  header nav.inline .off-canvas, header nav.mega-menu .off-canvas {
     display: block;
     height: 70px;
     padding-top: 27px;
     padding-bottom: 27px;
   }
   /* line 155, ../sass/_nav.scss */
-  header nav ul, header nav ol {
+  header nav.inline ul, header nav.inline ol, header nav.mega-menu ul, header nav.mega-menu ol {
     list-style-type: none;
     background: #444444;
     min-height: 100vh;
@@ -701,15 +701,15 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     transition: all 0.35s ease-in-out;
   }
   /* line 164, ../sass/_nav.scss */
-  header nav ul li, header nav ol li {
+  header nav.inline ul li, header nav.inline ol li, header nav.mega-menu ul li, header nav.mega-menu ol li {
     display: block;
   }
   /* line 166, ../sass/_nav.scss */
-  header nav ul li a, header nav ol li a {
+  header nav.inline ul li a, header nav.inline ol li a, header nav.mega-menu ul li a, header nav.mega-menu ol li a {
     color: #FFFFFF;
   }
   /* line 171, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul, header nav .off-canvas.open + ol {
+  header nav.inline .off-canvas.open + ul, header nav.inline .off-canvas.open + ol, header nav.mega-menu .off-canvas.open + ul, header nav.mega-menu .off-canvas.open + ol {
     list-style-type: none;
     background: #444444;
     min-height: 100vh;
@@ -722,32 +722,32 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     padding-bottom: 70px;
   }
   /* line 182, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li, header nav .off-canvas.open + ol li {
+  header nav.inline .off-canvas.open + ul li, header nav.inline .off-canvas.open + ol li, header nav.mega-menu .off-canvas.open + ul li, header nav.mega-menu .off-canvas.open + ol li {
     display: list-item;
     border: none;
     position: relative;
   }
   /* line 186, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li a, header nav .off-canvas.open + ol li a {
+  header nav.inline .off-canvas.open + ul li a, header nav.inline .off-canvas.open + ol li a, header nav.mega-menu .off-canvas.open + ul li a, header nav.mega-menu .off-canvas.open + ol li a {
     color: #FFFFFF;
   }
   /* line 191, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop ul.drop-menu, header nav .off-canvas.open + ol li.drop ul.drop-menu, header nav .off-canvas.open + ul li.drop ol.drop-menu, header nav .off-canvas.open + ol li.drop ol.drop-menu, header nav .off-canvas.open + ul li.drop:hover ul.drop-menu, header nav .off-canvas.open + ol li.drop:hover ul.drop-menu, header nav .off-canvas.open + ul li.drop:hover ol.drop-menu, header nav .off-canvas.open + ol li.drop:hover ol.drop-menu {
+  header nav.inline .off-canvas.open + ul li.drop ul.drop-menu, header nav.inline .off-canvas.open + ol li.drop ul.drop-menu, header nav.inline .off-canvas.open + ul li.drop ol.drop-menu, header nav.inline .off-canvas.open + ol li.drop ol.drop-menu, header nav.inline .off-canvas.open + ul li.drop:hover ul.drop-menu, header nav.inline .off-canvas.open + ol li.drop:hover ul.drop-menu, header nav.inline .off-canvas.open + ul li.drop:hover ol.drop-menu, header nav.inline .off-canvas.open + ol li.drop:hover ol.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop ul.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop ul.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop ol.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop ol.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop:hover ul.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop:hover ul.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop:hover ol.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop:hover ol.drop-menu {
     display: none;
     position: relative;
     background: #FFFFFF;
     overflow: scroll;
   }
   /* line 196, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop ul.drop-menu a, header nav .off-canvas.open + ol li.drop ul.drop-menu a, header nav .off-canvas.open + ul li.drop ol.drop-menu a, header nav .off-canvas.open + ol li.drop ol.drop-menu a, header nav .off-canvas.open + ul li.drop:hover ul.drop-menu a, header nav .off-canvas.open + ol li.drop:hover ul.drop-menu a, header nav .off-canvas.open + ul li.drop:hover ol.drop-menu a, header nav .off-canvas.open + ol li.drop:hover ol.drop-menu a {
+  header nav.inline .off-canvas.open + ul li.drop ul.drop-menu a, header nav.inline .off-canvas.open + ol li.drop ul.drop-menu a, header nav.inline .off-canvas.open + ul li.drop ol.drop-menu a, header nav.inline .off-canvas.open + ol li.drop ol.drop-menu a, header nav.inline .off-canvas.open + ul li.drop:hover ul.drop-menu a, header nav.inline .off-canvas.open + ol li.drop:hover ul.drop-menu a, header nav.inline .off-canvas.open + ul li.drop:hover ol.drop-menu a, header nav.inline .off-canvas.open + ol li.drop:hover ol.drop-menu a, header nav.mega-menu .off-canvas.open + ul li.drop ul.drop-menu a, header nav.mega-menu .off-canvas.open + ol li.drop ul.drop-menu a, header nav.mega-menu .off-canvas.open + ul li.drop ol.drop-menu a, header nav.mega-menu .off-canvas.open + ol li.drop ol.drop-menu a, header nav.mega-menu .off-canvas.open + ul li.drop:hover ul.drop-menu a, header nav.mega-menu .off-canvas.open + ol li.drop:hover ul.drop-menu a, header nav.mega-menu .off-canvas.open + ul li.drop:hover ol.drop-menu a, header nav.mega-menu .off-canvas.open + ol li.drop:hover ol.drop-menu a {
     color: #1E6F38;
   }
   /* line 198, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop ul.drop-menu a::after, header nav .off-canvas.open + ol li.drop ul.drop-menu a::after, header nav .off-canvas.open + ul li.drop ol.drop-menu a::after, header nav .off-canvas.open + ol li.drop ol.drop-menu a::after, header nav .off-canvas.open + ul li.drop:hover ul.drop-menu a::after, header nav .off-canvas.open + ol li.drop:hover ul.drop-menu a::after, header nav .off-canvas.open + ul li.drop:hover ol.drop-menu a::after, header nav .off-canvas.open + ol li.drop:hover ol.drop-menu a::after {
+  header nav.inline .off-canvas.open + ul li.drop ul.drop-menu a::after, header nav.inline .off-canvas.open + ol li.drop ul.drop-menu a::after, header nav.inline .off-canvas.open + ul li.drop ol.drop-menu a::after, header nav.inline .off-canvas.open + ol li.drop ol.drop-menu a::after, header nav.inline .off-canvas.open + ul li.drop:hover ul.drop-menu a::after, header nav.inline .off-canvas.open + ol li.drop:hover ul.drop-menu a::after, header nav.inline .off-canvas.open + ul li.drop:hover ol.drop-menu a::after, header nav.inline .off-canvas.open + ol li.drop:hover ol.drop-menu a::after, header nav.mega-menu .off-canvas.open + ul li.drop ul.drop-menu a::after, header nav.mega-menu .off-canvas.open + ol li.drop ul.drop-menu a::after, header nav.mega-menu .off-canvas.open + ul li.drop ol.drop-menu a::after, header nav.mega-menu .off-canvas.open + ol li.drop ol.drop-menu a::after, header nav.mega-menu .off-canvas.open + ul li.drop:hover ul.drop-menu a::after, header nav.mega-menu .off-canvas.open + ol li.drop:hover ul.drop-menu a::after, header nav.mega-menu .off-canvas.open + ul li.drop:hover ol.drop-menu a::after, header nav.mega-menu .off-canvas.open + ol li.drop:hover ol.drop-menu a::after {
     border: none;
   }
   /* line 204, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu {
+  header nav.inline .off-canvas.open + ul li.drop.drop-open ul.drop-menu, header nav.inline .off-canvas.open + ol li.drop.drop-open ul.drop-menu, header nav.inline .off-canvas.open + ul li.drop.drop-open ol.drop-menu, header nav.inline .off-canvas.open + ol li.drop.drop-open ol.drop-menu, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ul.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ul.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ol.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ol.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu {
     display: block;
     height: auto;
     position: static;
@@ -756,113 +756,76 @@ header nav ul li.drop ul.drop-menu, header nav ol li.drop ul.drop-menu, header n
     min-height: 100%;
   }
   /* line 211, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li {
+  header nav.inline .off-canvas.open + ul li.drop.drop-open ul.drop-menu li, header nav.inline .off-canvas.open + ol li.drop.drop-open ul.drop-menu li, header nav.inline .off-canvas.open + ul li.drop.drop-open ol.drop-menu li, header nav.inline .off-canvas.open + ol li.drop.drop-open ol.drop-menu li, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ul.drop-menu li, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ul.drop-menu li, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ol.drop-menu li, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ol.drop-menu li, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li {
     display: list-item;
     position: relative;
   }
   /* line 214, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a {
+  header nav.inline .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a, header nav.inline .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a, header nav.inline .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a, header nav.inline .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a {
     color: #1E6F38;
   }
   /* line 216, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a:hover, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a:hover, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a:hover, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a:hover {
+  header nav.inline .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a:hover, header nav.inline .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a:hover, header nav.inline .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a:hover, header nav.inline .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a:hover, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a:hover, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a:hover, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a:hover, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a:hover, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a:hover {
     color: #FFFFFF;
   }
   /* line 219, ../sass/_nav.scss */
-  header nav .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a::after, header nav .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a::after, header nav .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a::after, header nav .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a::after, header nav .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a::after {
+  header nav.inline .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a::after, header nav.inline .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a::after, header nav.inline .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a::after, header nav.inline .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a::after, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a::after, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a::after, header nav.inline .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a::after, header nav.inline .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ul.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ul.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ul li.drop.drop-open ol.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ol li.drop.drop-open ol.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ul.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ul.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ul li.drop:hover.drop-open ol.drop-menu li a::after, header nav.mega-menu .off-canvas.open + ol li.drop:hover.drop-open ol.drop-menu li a::after {
     border: none;
   }
 }
 /* line 2, ../sass/_mega-menu.scss */
-header.mega-menu {
-  background: #FFFFFF;
-  z-index: 1000;
-}
-/* line 5, ../sass/_mega-menu.scss */
-header.mega-menu.top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 70px;
-}
-/* line 11, ../sass/_mega-menu.scss */
-header.mega-menu.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 70px;
-}
-/* line 17, ../sass/_mega-menu.scss */
-header.mega-menu .clm {
-  padding: 0;
-}
-/* line 20, ../sass/_mega-menu.scss */
-header.mega-menu h1 {
-  display: inline-block;
-  height: 70px;
-  margin-bottom: 0;
-  width: 100%;
-}
-/* line 25, ../sass/_mega-menu.scss */
-header.mega-menu h1 a {
-  padding: 20px;
-  display: block;
-  height: 70px;
-}
-/* line 31, ../sass/_mega-menu.scss */
-header.mega-menu nav {
+nav.mega-menu {
   float: right;
   display: inline-block;
 }
-/* line 34, ../sass/_mega-menu.scss */
-header.mega-menu nav .off-canvas {
+/* line 5, ../sass/_mega-menu.scss */
+nav.mega-menu .off-canvas {
   display: none;
 }
-/* line 37, ../sass/_mega-menu.scss */
-header.mega-menu nav ul, header.mega-menu nav ol {
+/* line 8, ../sass/_mega-menu.scss */
+nav.mega-menu ul, nav.mega-menu ol {
   list-style-type: none;
 }
-/* line 40, ../sass/_mega-menu.scss */
-header.mega-menu nav ul.divider li, header.mega-menu nav ol.divider li {
+/* line 11, ../sass/_mega-menu.scss */
+nav.mega-menu ul.divider li, nav.mega-menu ol.divider li {
   border-left: 1px solid #DDDDDD;
   width: auto;
   margin-right: -4px;
 }
-/* line 44, ../sass/_mega-menu.scss */
-header.mega-menu nav ul.divider li:hover, header.mega-menu nav ol.divider li:hover {
+/* line 15, ../sass/_mega-menu.scss */
+nav.mega-menu ul.divider li:hover, nav.mega-menu ol.divider li:hover {
   background: #1E6F38;
 }
-/* line 49, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li, header.mega-menu nav ol li {
+/* line 20, ../sass/_mega-menu.scss */
+nav.mega-menu ul li, nav.mega-menu ol li {
   display: inline-block;
   height: auto;
-  position: relative;
 }
-/* line 53, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li:hover, header.mega-menu nav ol li:hover {
+/* line 23, ../sass/_mega-menu.scss */
+nav.mega-menu ul li:hover, nav.mega-menu ol li:hover {
   background: #1E6F38;
 }
-/* line 56, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li a, header.mega-menu nav ol li a {
+/* line 26, ../sass/_mega-menu.scss */
+nav.mega-menu ul li a, nav.mega-menu ol li a {
   padding: 28px 20px;
   font-size: 14px;
   line-height: 1em;
   display: block;
   color: #1E6F38;
 }
-/* line 62, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li a:hover, header.mega-menu nav ol li a:hover {
+/* line 32, ../sass/_mega-menu.scss */
+nav.mega-menu ul li a:hover, nav.mega-menu ol li a:hover {
   color: #FFFFFF;
 }
-/* line 67, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop a, header.mega-menu nav ol li.drop a {
+/* line 37, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop a, nav.mega-menu ol li.drop a {
   padding: 28px 30px 28px 20px;
   font-size: 14px;
   line-height: 1em;
   color: #1E6F38;
 }
-/* line 72, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop a::after, header.mega-menu nav ol li.drop a::after {
+/* line 42, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop a::after, nav.mega-menu ol li.drop a::after {
   content: "";
   display: block;
   width: 0;
@@ -874,37 +837,53 @@ header.mega-menu nav ul li.drop a::after, header.mega-menu nav ol li.drop a::aft
   border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
   border-top-style: solid;
 }
-/* line 85, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop ul.drop-menu, header.mega-menu nav ol li.drop ul.drop-menu, header.mega-menu nav ul li.drop ol.drop-menu, header.mega-menu nav ol li.drop ol.drop-menu {
-  display: none;
-  background: #FFFFFF;
-  position: absolute;
-  right: 0;
-  left: auto;
-  top: 70px;
-  min-width: 100%;
-  overflow: visible;
+/* line 56, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop:hover a, nav.mega-menu ol li.drop:hover a {
+  color: #FFFFFF;
 }
-/* line 94, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop ul.drop-menu li, header.mega-menu nav ol li.drop ul.drop-menu li, header.mega-menu nav ul li.drop ol.drop-menu li, header.mega-menu nav ol li.drop ol.drop-menu li {
+/* line 61, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu, nav.mega-menu ol li.drop ul.drop-menu, nav.mega-menu ul li.drop ol.drop-menu, nav.mega-menu ol li.drop ol.drop-menu {
+  display: none;
+  position: fixed;
+  background: #000000;
+  left: 0;
+  right: 0;
+  top: 70px;
+  width: 100vw;
+}
+/* line 69, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu.c-4 li, nav.mega-menu ol li.drop ul.drop-menu.c-4 li, nav.mega-menu ul li.drop ol.drop-menu.c-4 li, nav.mega-menu ol li.drop ol.drop-menu.c-4 li {
+  width: 24%;
+}
+/* line 72, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu li, nav.mega-menu ol li.drop ul.drop-menu li, nav.mega-menu ul li.drop ol.drop-menu li, nav.mega-menu ol li.drop ol.drop-menu li {
   display: inline-block;
+}
+/* line 75, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu li ul.sub-menu li, nav.mega-menu ol li.drop ul.drop-menu li ul.sub-menu li, nav.mega-menu ul li.drop ol.drop-menu li ul.sub-menu li, nav.mega-menu ol li.drop ol.drop-menu li ul.sub-menu li, nav.mega-menu ul li.drop ul.drop-menu li ol.sub-menu li, nav.mega-menu ol li.drop ul.drop-menu li ol.sub-menu li, nav.mega-menu ul li.drop ol.drop-menu li ol.sub-menu li, nav.mega-menu ol li.drop ol.drop-menu li ol.sub-menu li {
+  display: list-item;
   width: 100%;
-  position: relative;
+}
+
+/* line 88, ../sass/_mega-menu.scss */
+.mega-menu-bg {
+  z-index: 800;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /* line 98, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop ul.drop-menu li a, header.mega-menu nav ol li.drop ul.drop-menu li a, header.mega-menu nav ul li.drop ol.drop-menu li a, header.mega-menu nav ol li.drop ol.drop-menu li a {
-  display: block;
-  width: 100%;
-  white-space: nowrap;
-  color: #1E6F38;
-}
-/* line 103, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop ul.drop-menu li a::after, header.mega-menu nav ol li.drop ul.drop-menu li a::after, header.mega-menu nav ul li.drop ol.drop-menu li a::after, header.mega-menu nav ol li.drop ol.drop-menu li a::after {
-  border: 0;
-}
-/* line 106, ../sass/_mega-menu.scss */
-header.mega-menu nav ul li.drop ul.drop-menu li a:hover, header.mega-menu nav ol li.drop ul.drop-menu li a:hover, header.mega-menu nav ul li.drop ol.drop-menu li a:hover, header.mega-menu nav ol li.drop ol.drop-menu li a:hover {
-  color: #FFFFFF;
+.mega-menu-bg:hover {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* line 2, ../sass/_alerts.scss */
@@ -1124,7 +1103,7 @@ button {
 }
 
 /* line 4, ../sass/_modals.scss */
-.modal_bg {
+.modal-bg {
   z-index: 1000;
   width: 100vw;
   height: 100vh;
@@ -1140,7 +1119,7 @@ button {
   transition: all 0.5s ease-in-out;
 }
 /* line 14, ../sass/_modals.scss */
-.modal_bg:hover {
+.modal-bg:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 

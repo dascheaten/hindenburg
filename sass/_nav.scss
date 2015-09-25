@@ -29,7 +29,7 @@ header {
 			height: $nav-height;
 		}
 	}
-	nav {
+	nav.inline {
 		float:$nav-direction;
 		display: inline-block;
 		.off-canvas {
@@ -141,7 +141,7 @@ header {
 	header {
 		background: $header-bg;
 		z-index: 1000;
-		nav {
+		nav.inline, nav.mega-menu {
 			float:$nav-direction;
 			display: block;
 			overflow:scroll;

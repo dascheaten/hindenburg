@@ -1,116 +1,101 @@
-// Navigation
-header.mega-menu {
-	background: $header-bg;
-	z-index: 1000;
-	&.top {
-		position:absolute;
-		top:0;
-		width: 100%;
-		height: $nav-height;
+// Mega Menu
+nav.mega-menu {
+	float:$nav-direction;
+	display: inline-block;
+	.off-canvas {
+		display: none;
 	}
-	&.fixed {
-		position:fixed;
-		top:0;
-		width: 100%;
-		height: $nav-height;
-	}
-	.clm {
-		padding:0;
-	}
-	h1 {
-		display: inline-block;
-		height: $nav-height;
-		margin-bottom:0;
-		width: 100%;
-		a {
-			padding:$nav-padding;
-			display: block;
-			height: $nav-height;
-		}
-	}
-	nav {
-		float:$nav-direction;
-		display: inline-block;
-		.off-canvas {
-			display: none;
-		}
-		ul {
-			list-style-type: none;
-			&.divider {
-				li {
-					border-left:1px solid $divider-color;
-					width: auto;
-					margin-right:-4px;
-					&:hover {
-						background: $nav-hover-bg;
-					}
-				}
-			}
+	ul {
+		list-style-type: none;
+		&.divider {
 			li {
-				display: inline-block;
-				height: auto;
-				position:relative;
+				border-left:1px solid $divider-color;
+				width: auto;
+				margin-right:-4px;
 				&:hover {
 					background: $nav-hover-bg;
 				}
+			}
+		}
+		li {
+			display: inline-block;
+			height: auto;
+			&:hover {
+				background: $nav-hover-bg;
+			}
+			a {
+				padding: (($nav-height - $nav-font-size)/2) $nav-padding;
+				font-size: $nav-font-size;
+				line-height: 1em;
+				display: block;
+				color:$nav-color;
+				&:hover {
+					color: $nav-hover-color;
+				}
+			}
+			&.drop {
 				a {
-					padding: (($nav-height - $nav-font-size)/2) $nav-padding;
+					padding: (($nav-height - $nav-font-size)/2) $nav-padding + 10px (($nav-height - $nav-font-size)/2) $nav-padding;
 					font-size: $nav-font-size;
 					line-height: 1em;
-					display: block;
 					color:$nav-color;
-					&:hover {
-						color: $nav-hover-color;
+					&::after {
+						content: "";
+						display: block;
+						width: 0;
+						height: 0;
+						position:absolute;
+						top:($nav-height/2 - 1px);
+						right:10px;
+						border: inset 4px;
+						border-color: $drop-marker-color transparent transparent transparent;
+						border-top-style: solid;
 					}
 				}
-				&.drop {
+				&:hover {
 					a {
-						padding: (($nav-height - $nav-font-size)/2) $nav-padding + 10px (($nav-height - $nav-font-size)/2) $nav-padding;
-						font-size: $nav-font-size;
-						line-height: 1em;
-						color:$nav-color;
-						&::after {
-							content: "";
-							display: block;
-							width: 0;
-							height: 0;
-							position:absolute;
-							top:($nav-height/2 - 1px);
-							right:10px;
-							border: inset 4px;
-							border-color: $drop-marker-color transparent transparent transparent;
-							border-top-style: solid;
-						}
+						color:$nav-hover-color;
 					}
-					ul.drop-menu {
-						display: none;
-						background: $header-bg;
-						position: absolute;
-						right:0;
-						left:auto;
-						top: $nav-height;
-						min-width: 100%;
-						overflow: visible;
-						li {
-							display: inline-block ;
-							width: 100%;
-							position:relative;
-							a {
-								display: block;
+				}
+				// Mega menu stylz take over
+				ul.drop-menu {
+					display: none;
+					position:fixed;
+					background: $black;
+					left:0;
+					right:0;
+					top:$nav-height;
+					width: 100vw;
+					&.c-4  li {
+						width: 24%;
+					}
+					li {
+						display: inline-block;
+						ul.sub-menu {
+							li {
+								display: list-item;
 								width: 100%;
-								white-space: nowrap;
-								color:$nav-color;
-								&::after {
-									border:0;
-								}
-								&:hover {
-									color:$nav-hover-color;
-								}
 							}
 						}
 					}
 				}
 			}
 		}
+	}
+}
+
+// Mega Menu Close
+.mega-menu-bg {
+	z-index: 800;
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	background: $modal-close-bg;
+	position:fixed;
+	top:0;
+	left:0;
+	@include transition;
+	&:hover {
+		background: $modal-close-hover-bg;
 	}
 }
