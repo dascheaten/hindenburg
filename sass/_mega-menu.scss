@@ -39,29 +39,18 @@ nav.mega-menu {
 					font-size: $nav-font-size;
 					line-height: 1em;
 					color:$nav-color;
-					&::after {
-						content: "";
-						display: block;
-						width: 0;
-						height: 0;
-						position:absolute;
-						top:($nav-height/2 - 1px);
-						right:10px;
-						border: inset 4px;
-						border-color: $drop-marker-color transparent transparent transparent;
-						border-top-style: solid;
-					}
 				}
 				&:hover {
 					a {
 						color:$nav-hover-color;
+
 					}
 				}
 				// Mega menu stylz take over
 				ul.drop-menu {
 					display: none;
 					position:fixed;
-					background: $black;
+					background: $mega-menu-bg;
 					left:0;
 					right:0;
 					top:$nav-height;
@@ -71,31 +60,31 @@ nav.mega-menu {
 					}
 					li {
 						display: inline-block;
+						background: $mega-menu-bg;
+						a {
+							color:$mega-menu-link-color;
+							&:hover {
+								color:$mega-menu-link-hover;
+								background: $mega-menu-link-bg;
+							}
+						}
 						ul.sub-menu {
 							li {
 								display: list-item;
 								width: 100%;
+								background: $mega-menu-bg;
+								a {
+									color:$mega-menu-link-color;
+									&:hover {
+										color:$mega-menu-link-hover;
+										background: $mega-menu-link-bg;
+									}
+								}
 							}
 						}
 					}
 				}
 			}
 		}
-	}
-}
-
-// Mega Menu Close
-.mega-menu-bg {
-	z-index: 800;
-	width: 100vw;
-	height: 100vh;
-	display: block;
-	background: $modal-close-bg;
-	position:fixed;
-	top:0;
-	left:0;
-	@include transition;
-	&:hover {
-		background: $modal-close-hover-bg;
 	}
 }

@@ -824,66 +824,52 @@ nav.mega-menu ul li.drop a, nav.mega-menu ol li.drop a {
   line-height: 1em;
   color: #1E6F38;
 }
-/* line 42, ../sass/_mega-menu.scss */
-nav.mega-menu ul li.drop a::after, nav.mega-menu ol li.drop a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 34px;
-  right: 10px;
-  border: inset 4px;
-  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
-  border-top-style: solid;
-}
-/* line 56, ../sass/_mega-menu.scss */
+/* line 44, ../sass/_mega-menu.scss */
 nav.mega-menu ul li.drop:hover a, nav.mega-menu ol li.drop:hover a {
   color: #FFFFFF;
 }
-/* line 61, ../sass/_mega-menu.scss */
+/* line 50, ../sass/_mega-menu.scss */
 nav.mega-menu ul li.drop ul.drop-menu, nav.mega-menu ol li.drop ul.drop-menu, nav.mega-menu ul li.drop ol.drop-menu, nav.mega-menu ol li.drop ol.drop-menu {
   display: none;
   position: fixed;
-  background: #000000;
+  background: #F9F9F9;
   left: 0;
   right: 0;
   top: 70px;
   width: 100vw;
 }
-/* line 69, ../sass/_mega-menu.scss */
+/* line 58, ../sass/_mega-menu.scss */
 nav.mega-menu ul li.drop ul.drop-menu.c-4 li, nav.mega-menu ol li.drop ul.drop-menu.c-4 li, nav.mega-menu ul li.drop ol.drop-menu.c-4 li, nav.mega-menu ol li.drop ol.drop-menu.c-4 li {
   width: 24%;
 }
-/* line 72, ../sass/_mega-menu.scss */
+/* line 61, ../sass/_mega-menu.scss */
 nav.mega-menu ul li.drop ul.drop-menu li, nav.mega-menu ol li.drop ul.drop-menu li, nav.mega-menu ul li.drop ol.drop-menu li, nav.mega-menu ol li.drop ol.drop-menu li {
   display: inline-block;
+  background: #F9F9F9;
 }
-/* line 75, ../sass/_mega-menu.scss */
+/* line 64, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu li a, nav.mega-menu ol li.drop ul.drop-menu li a, nav.mega-menu ul li.drop ol.drop-menu li a, nav.mega-menu ol li.drop ol.drop-menu li a {
+  color: #1E6F38;
+}
+/* line 66, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu li a:hover, nav.mega-menu ol li.drop ul.drop-menu li a:hover, nav.mega-menu ul li.drop ol.drop-menu li a:hover, nav.mega-menu ol li.drop ol.drop-menu li a:hover {
+  color: #FFFFFF;
+  background: #1E6F38;
+}
+/* line 72, ../sass/_mega-menu.scss */
 nav.mega-menu ul li.drop ul.drop-menu li ul.sub-menu li, nav.mega-menu ol li.drop ul.drop-menu li ul.sub-menu li, nav.mega-menu ul li.drop ol.drop-menu li ul.sub-menu li, nav.mega-menu ol li.drop ol.drop-menu li ul.sub-menu li, nav.mega-menu ul li.drop ul.drop-menu li ol.sub-menu li, nav.mega-menu ol li.drop ul.drop-menu li ol.sub-menu li, nav.mega-menu ul li.drop ol.drop-menu li ol.sub-menu li, nav.mega-menu ol li.drop ol.drop-menu li ol.sub-menu li {
   display: list-item;
   width: 100%;
+  background: #F9F9F9;
 }
-
-/* line 88, ../sass/_mega-menu.scss */
-.mega-menu-bg {
-  z-index: 800;
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  background: rgba(255, 255, 255, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+/* line 76, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu li ul.sub-menu li a, nav.mega-menu ol li.drop ul.drop-menu li ul.sub-menu li a, nav.mega-menu ul li.drop ol.drop-menu li ul.sub-menu li a, nav.mega-menu ol li.drop ol.drop-menu li ul.sub-menu li a, nav.mega-menu ul li.drop ul.drop-menu li ol.sub-menu li a, nav.mega-menu ol li.drop ul.drop-menu li ol.sub-menu li a, nav.mega-menu ul li.drop ol.drop-menu li ol.sub-menu li a, nav.mega-menu ol li.drop ol.drop-menu li ol.sub-menu li a {
+  color: #1E6F38;
 }
-/* line 98, ../sass/_mega-menu.scss */
-.mega-menu-bg:hover {
-  background: rgba(255, 255, 255, 0.8);
+/* line 78, ../sass/_mega-menu.scss */
+nav.mega-menu ul li.drop ul.drop-menu li ul.sub-menu li a:hover, nav.mega-menu ol li.drop ul.drop-menu li ul.sub-menu li a:hover, nav.mega-menu ul li.drop ol.drop-menu li ul.sub-menu li a:hover, nav.mega-menu ol li.drop ol.drop-menu li ul.sub-menu li a:hover, nav.mega-menu ul li.drop ul.drop-menu li ol.sub-menu li a:hover, nav.mega-menu ol li.drop ul.drop-menu li ol.sub-menu li a:hover, nav.mega-menu ul li.drop ol.drop-menu li ol.sub-menu li a:hover, nav.mega-menu ol li.drop ol.drop-menu li ol.sub-menu li a:hover {
+  color: #FFFFFF;
+  background: #1E6F38;
 }
 
 /* line 2, ../sass/_alerts.scss */

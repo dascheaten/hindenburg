@@ -33,12 +33,6 @@ $(document).ready(function() {
 		$(this).parent().slideUp();
 	});
 	
-	// Set the Mega Menu close anchor
-	if ($('.mega-menu').length) {
-		$('body').append('<a class="mega-menu-bg"></a>');
-		$('.mega-menu-bg').hide();
-	}
-	
 });
 
 // off canvas nav
@@ -52,33 +46,32 @@ $('.off-canvas').bind('click', function() {
 	}
 });
 
-// Functions for both the Mega Menu
+// Functions for off canvans nav
 $('.drop').bind('click', function() {
-	if ($('nav').hasClass('mega-menu')) {
-		$('.drop-menu').slideToggle();
-		$('.mega-menu-bg').show();
-	} else {
-		if ($('.off-canvas').hasClass('open')) {
-			$(this).toggleClass('drop-open');
-			if ($(this).hasClass('drop-open')) {
-				var text = $(this).find('a:first').text();
-				$(this).attr('data-text', text)
-				$(this).find('a:first').text('Close');
-			}
-			else {
-				var textback = $(this).data('text');
-				$(this).find('a:first').text(textback);
-	
-			}
+	if ($('.off-canvas').hasClass('open')) {
+		$(this).toggleClass('drop-open');
+		if ($(this).hasClass('drop-open')) {
+			var text = $(this).find('a:first').text();
+			$(this).attr('data-text', text)
+			$(this).find('a:first').text('Close');
+		}
+		else {
+			var textback = $(this).data('text');
+			$(this).find('a:first').text(textback);
+
 		}
 	}
 });	
 
-$('a.mega-menu-bg').bind('click', function() {
-	alert('click');
-	$(this).hide();
-	$('.drop-menu').hide();
-});
+// Functions for Mega Menu
+if ($('nav').hasClass('mega-menu')) {
+	$('.drop').mouseenter(function() {
+		$(this).children('.drop-menu').slideDown();
+	});
+	$('.drop').mouseleave(function() {
+		$('.drop-menu').slideUp();
+	});
+}
 
 // Tool Tips
 $('span.tooltip').mouseenter(function() {
