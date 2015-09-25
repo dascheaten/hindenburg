@@ -32,6 +32,8 @@ $(document).ready(function() {
 	$('span.close').bind('click', function() {
 		$(this).parent().slideUp();
 	});
+
+	$('input[type=range]').change();
 	
 });
 
@@ -92,17 +94,7 @@ $('span.tooltip').mouseleave(function() {
 });
 
 // Range Slider
-$(function(){
-
-	var currentValue = $('#currentValue');
-
-	$('input').change(function(){
-	    currentValue.html(this.value);
-	});
-
-	// Trigger the event on load, so
-	// the value field is populated:
-
-	$('#defaultSlider').change();
-
+$('input[type=range]').on('change', function() {
+	var value = $(this).val();
+	$(this).prev().text(value);
 });

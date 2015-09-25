@@ -163,10 +163,17 @@ $tooltip-color:$white;
 $tooltip-tail-size:6px;
 
 // Range Sliders
-$range-slider-height:10px;
-$range-slider-width:100%;
+$range-handle-height:20px;
+$range-handle-width:40px;
+$range-handle-border-radius:3px;
+$range-handle-color:$primary;
+$range-handle-color-active:$secondary;
 $range-default-track-bg:$black;
 $range-track-height:5px;
-$range-slider-border-radius:3px;
 $toggle-handle-off-bg-color:blue;
 $range-slider-box-shadow:none;
+$range-output-bg:$black;
+$range-output-color:$white;
+$range-output-width:60px;
+$range-output-size:14px;
+$range-output-border-radius:3px;

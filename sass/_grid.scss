@@ -88,6 +88,27 @@
 	width: grid-calc(12);
 }
 
+// Block Grid
+.block-grid {
+	li {
+		display:inline;
+		padding: gutter-maker($gutter);
+		float:left;
+	}
+	&.s-1 li, &.m-1 li, &.l-1 li {
+		width: grid-calc(12);		
+	}
+	&.s-2 li, &.m-2 li, &.l-2 li {
+		width: grid-calc(6);
+	}
+	&.s-3 li, &.m-3 li, &.l-3 li {
+		width: grid-calc(4);
+	}
+	&.s-4 li, &.m-4 li, &.l-4 li {
+		width: grid-calc(3);
+	}
+}
+
 // large breakpoint
 @media (min-width: $medium-breakpoint) {
 	.l-clear {
@@ -118,6 +139,21 @@
 	.m-100 {
 		width: grid-calc(12);
 	}
+	
+	.block-grid {
+		&.m-1 li {
+			width: grid-calc(12);		
+		}
+		&.m-2 li {
+			width: grid-calc(6);
+		}
+		&.m-3 li {
+			width: grid-calc(4);
+		}
+		&.m-4 li {
+			width: grid-calc(3);
+		}
+	}
 }
 
 // small breakpoint
@@ -146,47 +182,19 @@
 	.grid .grid .s-100 {
 		padding-right: 0;
 	}
+	
+	.block-grid {
+		&.s-1 li {
+			width: grid-calc(12);		
+		}
+		&.s-2 li {
+			width: grid-calc(6);
+		}
+		&.s-3 li {
+			width: grid-calc(4);
+		}
+		&.s-4 li {
+			width: grid-calc(3);
+		}
+	}
 }
-
-// Clearing issues
-
-
-// old 12 column grid
-/*
-	.s-1 {
-		width: grid-calc(1);
-	}
-	.s-2 {
-		width: grid-calc(2);
-	}
-	.s-3 {
-		width: grid-calc(3);
-	}
-	.s-4 {
-		width: grid-calc(4);
-	}
-	.s-5 {
-		width: grid-calc(5);
-	}
-	.s-6 {
-		width: grid-calc(6);
-	}
-	.s-7 {
-		width: grid-calc(7);
-	}
-	.s-8 {
-		width: grid-calc(8);
-	}
-	.s-9 {
-		width: grid-calc(9);
-	}
-	.s-10 {
-		width: grid-calc(10);
-	}
-	.s-11 {
-		width: grid-calc(11);
-	}
-	.s-12 {
-		width: grid-calc(12);
-	}
-*/

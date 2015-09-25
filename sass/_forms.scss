@@ -80,53 +80,52 @@ button {
 
 // Range Slider Badassness
 .range-slider {
-    
+    margin-bottom: 1rem;
   // Slider
   .input-range {
     -webkit-appearance: none;
-    width: 300px;
-    height: 20px;
+    width: 100%;
+    height: $range-track-height;
     border-radius: 5px;
-    background: #ccc;
-    outline: none;
-    
+    background: $range-default-track-bg;
+    outline: none;    
     // Slider Handle
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #353535;
+      width: $range-handle-width;
+      height: $range-handle-height;
+      border-radius: $range-handle-border-radius;
+      background: $range-handle-color;
       cursor: pointer;
       -webkit-transition: background .15s ease-in-out;
       transition: background .15s ease-in-out;
       
       &:hover {
-        background: #e06161;
+        background: $range-handle-color-active;
       }
     }
     
     &:active::-webkit-slider-thumb {
-      background: #e06161;
+      background: $range-handle-color-active;
     }
     
     &::-moz-range-thumb {
-      width:20px;
-      height: 20px;
+      width:$range-handle-width;
+      height: $range-handle-height;
       border: 0;
-      border-radius: 50%;
-      background: #353535;
+      border-radius: $range-handle-border-radius;
+      background: $range-handle-color;
       cursor: pointer;
       -webkit-transition: background .15s ease-in-out;
       transition: background .15s ease-in-out;
       
       &:hover {
-        background: #e06161;
+        background: $range-handle-color-active;
       }
     }
     
     &:active::-moz-range-thumb {
-      background: #e06161;
+      background: $range-handle-color;
     }
   }
   
@@ -134,33 +133,32 @@ button {
   output {
     display: inline-block;
     position: relative;
-    width: 60px;
-    color: #fff;
-    font-size: 16px;
+	text-align: center;
+    width: $range-output-width;
+    color: $range-output-color;
+    font-size: $range-output-size;
     line-height: 20px;
-    text-align: center;
-    border-radius: 3px;
-    background: #353535;
+    border-radius: $range-output-border-radius;
+    background: $range-output-bg;
     padding: 5px 10px;
-    margin-left: 7px;
-    
-    &:before {
-      position: absolute;
-      top: 8px;
-      right: -7px;
-      width: 0;
-      height: 0;
-      border-top: 7px solid transparent;
-      border-left: 7px solid #353535;
-      border-bottom: 7px solid transparent;
-      content: '';
-    }
+    font-family: $sans-serif;
+//    &:before {
+//      position: absolute;
+//      top: 8px;
+//      right: -7px;
+//      width: 0;
+//      height: 0;
+//      border-top: 7px solid transparent;
+//      border-left: 7px solid #353535;
+//      border-bottom: 7px solid transparent;
+//      content: '';
+//    }
   }
 }
 
 // Firefox Overrides
 ::-moz-range-track {
-    background: #ccc;
+    background: $range-default-track-bg;
     border: 0;
 }
 
