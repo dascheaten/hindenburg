@@ -97,3 +97,19 @@ $('span.tooltip').mouseleave(function() {
 		$('.this-tip').remove();
 	}
 });
+
+// Range Slider
+$(function(){
+
+	var currentValue = $('#currentValue');
+
+	$('input').change(function(){
+	    currentValue.html(this.value);
+	});
+
+	// Trigger the event on load, so
+	// the value field is populated:
+
+	$('#defaultSlider').change();
+
+});

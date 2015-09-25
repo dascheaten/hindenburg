@@ -137,7 +137,7 @@ $pricing-table-price-size:$h1-font-size;
 $pricing-table-info-color:$jumbo;
 $pricing-table-size:1rem;
 
-//Progress Bar
+// Progress Bar
 $progress-height:20px;
 $progress-bg:$white;
 $progress-border-color:$white;
@@ -154,7 +154,16 @@ $progress-donut-overlay-height:90px;
 $progress-donut-border-color:$gainsboro;
 $progress-donut-complete-color:$primary;
 
-//Tooltips
+// Tooltips
 $tooltip-bg:rgba($black,0.8);
 $tooltip-color:$white;
 $tooltip-tail-size:6px;
+
+// Range Sliders
+$range-slider-height:10px;
+$range-slider-width:100%;
+$range-default-track-bg:$black;
+$range-track-height:5px;
+$range-slider-border-radius:3px;
+$toggle-handle-off-bg-color:blue;
+$range-slider-box-shadow:none;
