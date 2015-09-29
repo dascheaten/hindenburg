@@ -78,9 +78,6 @@ li {
 	line-height: rem-me($body-copy-font-size * 1.8);
 	font-family: $body-copy-font-family;
 }
-dd {
-	@extend p;
-}
 a {
 	line-height: rem-me($body-copy-font-size * 1.8);
 	font-family: $body-copy-font-family;
@@ -146,6 +143,17 @@ ol {
 	}
 	&.number {
 		list-style-type: decimal;
+	}
+}
+dl {
+	@extend ul;
+	dt {
+		font-size: $body-copy-font-size;
+		line-height: rem-me($body-copy-font-size * 1.8);
+		font-family: $body-copy-font-family;
+	}
+	dd {
+		@extend p;
 	}
 }
 

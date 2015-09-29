@@ -22,11 +22,11 @@ img.iconic {
 
 // Theme-specific rules
 .iconic * {
-	@include iconic-color($primary);
+	@include iconic-color($icon-primary);
 }
 
 .iconic .iconic-property-accent {
-	@include iconic-color($secondary);
+	@include iconic-color($icon-secondary);
 }
 
 // Specific icon styles

@@ -34,6 +34,9 @@ $serif: Georgia, "Times New Roman", Times, serif;
 $brand-font:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 $body-copy:$sans-serif;
 
+// Utility
+$global-radius:3px;
+
 // Headings
 $h1-font-size:rem-me(32);
 $h2-font-size:rem-me(28);
@@ -112,6 +115,10 @@ $input-placeholder-text-align: right;
 // Alerts
 $alert-bg:$white;
 
+// Iconic
+$icon-primary:$secondary;
+$icon-secondary:$accent;
+
 // Modals
 $modal-close-bg:rgba($white,0.6);
 $modal-close-hover-bg:rgba($white,0.8);
@@ -177,3 +184,10 @@ $range-output-color:$white;
 $range-output-width:60px;
 $range-output-size:14px;
 $range-output-border-radius:3px;
+
+// Accordion
+$accordion-title-bg:$primary;
+$accordion-title-font-size:rem-me(16);
+$accordion-title-font-color:$white;
+$accordion-title-padding:10px;
+$accordion-gutter:15px;

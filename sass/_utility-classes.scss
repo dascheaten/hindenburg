@@ -11,17 +11,19 @@
 	text-align: right;
 }
 
-.no-show {
-	display: none !important;
-}
 
+// Not Text Related
 .center {
 	margin:0 auto;
 	display: block;
 }
 .round {
-	
+	border-radius: 1000px;
 }
 .rounded {
-	
+	border-radius:$global-radius;
+}
+
+.no-show {
+	display: none !important;
 }

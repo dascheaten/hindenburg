@@ -26,6 +26,9 @@ $gutter: 30px;
 @import "progress-bar";
 @import "iconic";
 @import "tooltips";
+@import "accordion";
+@import "slider";
+@import "utility-classes";
 
 body {
 	background: #D6D6D6 image-url('hindenburg_bg.png') no-repeat center top;

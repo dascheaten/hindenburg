@@ -1,0 +1,18 @@
+dl.accordion {
+	dt {
+		font-size: $accordion-title-font-size;
+		color: $accordion-title-font-color;
+		line-height: rem-me($body-copy-font-size * 1.8);
+		font-family: $body-copy-font-family;
+		background: $accordion-title-bg;
+		padding: gutter-maker($accordion-title-padding);
+		margin-top: $accordion-gutter;
+		&:hover {
+			cursor:pointer;
+		}
+	}
+	dd {
+		@extend p;
+		display: none;
+	}
+}
