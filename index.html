@@ -79,24 +79,26 @@
 
 	<div class="grid">
 		<div class="s-100 clm">
-			<div class="slider">
+			<div id="slider">
+				<a class="control_next">>></a>
+				<a class="control_prev"><</a>
 				<ul>
-					<li style="background-image: url('images/sunset.jpg');">
+					<li>
 						<h1>The jQuery slider that just slides.</h1>
 						<p>No fancy effects or unnecessary markup, and it’s less than 3kb.</p>
 						<a class="button small info" href="#download">Download</a>
 					</li>
-					<li style="background-image: url('images/wood.jpg');">
+					<li>
 						<h1>Fluid, flexible, fantastically minimal.</h1>
 						<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
 						<a class="button small info" href="#download">Download</a>
 					</li>
-					<li style="background-image: url('images/subway.jpg');">
+					<li>
 						<h1>Open-source.</h1>
 						<p>Everything to do with Unslider is hosted on GitHub.</p>
 						<a class="button small info" href="//github.com/idiot/unslider">Contribute</a>
 					</li>
-					<li style="background-image: url('images/shop.jpg');">
+					<li>
 						<h1>Uh, that’s about it.</h1>
 						<p>I just wanted to show you another slide.</p>
 						<a class="button small info" href="#download">Download</a>
@@ -689,16 +691,6 @@
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/hindenburg.js"></script>
 	<script src="/js/iconic.min.js"></script>
-	
-	<script>
-	$('.slider').unslider({
-		speed: 500,               //  The speed to animate each slide (in milliseconds)
-		delay: 3000,              //  The delay between slide animations (in milliseconds)
-		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-		dots: true,               //  Display dot navigation
-		fluid: false              //  Support responsive design. May break non-responsive designs
-	});
-	</script>
 	
 </body>
 </html>
