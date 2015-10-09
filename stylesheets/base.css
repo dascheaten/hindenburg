@@ -1777,17 +1777,16 @@ dl.accordion dd {
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
-  border-radius: 4px;
   width: 100%;
 }
-/* line 8, ../sass/_slider.scss */
+/* line 7, ../sass/_slider.scss */
 #slider ul, #slider ol, #slider dl {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 13, ../sass/_slider.scss */
+/* line 12, ../sass/_slider.scss */
 #slider ul li, #slider ol li, #slider dl li {
   position: relative;
   display: block;
@@ -1797,19 +1796,17 @@ dl.accordion dd {
   background: #FFFFFF;
   text-align: center;
 }
-/* line 21, ../sass/_slider.scss */
+/* line 20, ../sass/_slider.scss */
 #slider ul li div, #slider ol li div, #slider dl li div {
   padding: 2rem 6rem;
 }
 
-/* line 29, ../sass/_slider.scss */
+/* line 28, ../sass/_slider.scss */
 a.control_prev, a.control_next {
   position: absolute;
   top: 45%;
   z-index: 999;
   display: block;
-  background: #DDDDDD;
-  border-radius: 50%;
   padding: 0.75rem;
   width: auto;
   height: auto;
@@ -1817,16 +1814,16 @@ a.control_prev, a.control_next {
   font-weight: 600;
   cursor: pointer;
 }
-/* line 43, ../sass/_slider.scss */
+/* line 40, ../sass/_slider.scss */
 a.control_prev:hover .iconic-property-stroke, a.control_next:hover .iconic-property-stroke {
+  stroke: orange;
+}
+/* line 44, ../sass/_slider.scss */
+a.control_prev .iconic-property-stroke, a.control_next .iconic-property-stroke {
   stroke: #000000;
 }
-/* line 47, ../sass/_slider.scss */
-a.control_prev .iconic-property-stroke, a.control_next .iconic-property-stroke {
-  stroke: #FFFFFF;
-}
 
-/* line 51, ../sass/_slider.scss */
+/* line 48, ../sass/_slider.scss */
 a.control_next {
   right: 0;
 }
@@ -1902,7 +1899,7 @@ a.control_next {
 
 /* line 33, ../sass/base.scss */
 body {
-  background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
+  background: #D6D6D6 url('/images/hindenburg_bg.png?1438601469') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }

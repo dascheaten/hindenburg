@@ -3,7 +3,6 @@
 	position: relative;
 	overflow: hidden;
 	margin: 20px auto 0 auto;
-	border-radius: 4px;
 	width: 100%;
 	ul {
 		position: relative;
@@ -31,8 +30,6 @@ a.control_prev, a.control_next {
 	top: 45%;
 	z-index: 999;
 	display: block;
-	background: $gainsboro;
-	border-radius:50%;
 	padding:0.75rem;
 	width: auto;
 	height: auto;
@@ -41,11 +38,11 @@ a.control_prev, a.control_next {
 	cursor: pointer;
 	&:hover {
 		.iconic-property-stroke {
-			stroke: $black;
+			stroke: $slider-button-color-hover;
 		}
 	}
 	.iconic-property-stroke {
-		stroke: $white;
+		stroke: $slider-button-color;
 	}
 }
 a.control_next {
