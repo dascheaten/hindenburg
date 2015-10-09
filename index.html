@@ -80,28 +80,37 @@
 	<div class="grid">
 		<div class="s-100 clm">
 			<div id="slider">
-				<a class="control_next">></a>
-				<a class="control_prev"><</a>
+				<a class="control_prev"><img class="iconic iconic-md" data-direction="left" data-src="images/iconic/chevron.svg"></a>
+				<a class="control_next"><img class="iconic iconic-md" data-direction="right" data-src="images/iconic/chevron.svg"></a>
+
 				<ul>
-					<li class="active">
-						<h1>The jQuery slider that just slides.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<a class="button small info" href="#download">Download</a>
+					<li class="one active">
+						<div>
+							<h1>The jQuery slider that just slides.</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<a class="button small info" href="#download">Download</a>
+						</div>
 					</li>
-					<li>
-						<h1>Fluid, flexible, fantastically minimal.</h1>
-						<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
-						<a class="button small info" href="#download">Download</a>
+					<li class="two">
+						<div>							
+							<h1>Fluid, flexible, fantastically minimal.</h1>
+							<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
+							<a class="button small info" href="#download">Download</a>
+						</div>
 					</li>
-					<li>
-						<h1>Open-source.</h1>
-						<p>Everything to do with Unslider is hosted on GitHub.</p>
-						<a class="button small info" href="//github.com/idiot/unslider">Contribute</a>
+					<li class="three">
+						<div>
+							<h1>Open-source.</h1>
+							<p>Everything to do with Unslider is hosted on GitHub.</p>
+							<a class="button small info" href="//github.com/idiot/unslider">Contribute</a>
+						</div>
 					</li>
-					<li>
-						<h1>Uh, that’s about it.</h1>
-						<p>I just wanted to show you another slide.</p>
-						<a class="button small info" href="#download">Download</a>
+					<li class="four">
+						<div>
+							<h1>Uh, that’s about it.</h1>
+							<p>I just wanted to show you another slide.</p>
+							<a class="button small info" href="#download">Download</a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -120,7 +129,7 @@
 				<li><strike>Inline Lists</strike></li>
 				<li><strike>Lists</strike></li>
 				<li><strike>Modals</strike></li>
-				<li>Slider (Unslider)</li>
+				<li>Slider</li>
 				<li><strike>Panels</strike></li>
 				<li><strike>Pricing Tables</strike></li>
 				<li><strike>Progress Bar</strike></li>
@@ -134,6 +143,7 @@
 			<ul class="square">
 				<li><strike>Accordion</strike></li>
 				<li><strike>Grid Layout</strike></li>
+				<li><strike>Source Ordering</strike></li>
 				<li><strike>Navigation</strike></li>
 				<li><strike>Off-canvas menu</strike></li>
 				<li><strike>Range Slider</strike></li>
@@ -190,7 +200,12 @@
 		</div>
 	</div>
 	<div class="grid">
-		<ul class="pricing-table s-100 m-33 clm">
+		<div class="s-100 clm">
+			<h4>Going to change the order of these objects just cuz</h4>
+		</div>
+	</div>
+	<div class="grid">
+		<ul class="pricing-table s-100 m-33 l-33 clm m-push-66">
 			<li class="title">Basic</li>
 			<li class="price">$12.75</li>
 			<li class="information">This includes a $1 For Fun Fee</li>
@@ -200,7 +215,7 @@
 			<li class="not-included"><img class="iconic iconic-sm" data-src="images/iconic/circle-x.svg"> Interesting Thing</li>
 			<li class="get-it"><a class="button medium fill info">Get It Get It</a></li>
 		</ul>
-		<ul class="pricing-table s-100 m-33 clm">
+		<ul class="pricing-table s-100 m-33 l-33 clm">
 			<li class="title">Mid Range</li>
 			<li class="price">$24.50</li>
 			<li class="information">This includes a $1 For Fun Fee</li>
@@ -210,7 +225,7 @@
 			<li class="not-included"><img class="iconic iconic-sm" data-src="images/iconic/circle-x.svg"> Interesting Thing</li>
 			<li class="get-it"><a class="button medium fill info">Get It Get It</a></li>
 		</ul>
-		<ul class="pricing-table s-100 m-33 clm">
+		<ul class="pricing-table s-100 m-33 l-33 clm m-pull-66">
 			<li class="title">De Works</li>
 			<li class="price">$158.14</li>
 			<li class="information">This includes a $1 For Fun Fee</li>
@@ -222,7 +237,7 @@
 		</ul>
 	</div>
 
-	<div class="grid">
+	<div class="grid s-hide">
 		<div class="s-100 clm">
 			<table>
 				<tr>

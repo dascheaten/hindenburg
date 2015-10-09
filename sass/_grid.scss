@@ -114,6 +114,58 @@
 	.l-clear {
 		clear:left;
 	}
+	// Breakpoint Shuffle
+	.l-pull-25 {
+		position: relative;
+		left: auto;
+		right: grid-calc(3);
+	}
+	.l-pull-33 {
+		position: relative;
+		left: auto;
+		right: grid-calc(4);
+	}
+	.l-pull-50 {
+		position: relative;
+		left: auto;
+		right: grid-calc(6);
+	}
+	.l-pull-66 {
+		position: relative;
+		left: auto;
+		right: grid-calc(8);
+	}
+	.l-pull-75 {
+		position: relative;
+		left: auto;
+		right: grid-calc(9);
+	}
+	
+	.l-push-25 {
+		position: relative;
+		right: auto;
+		left: grid-calc(3);
+	}
+	.l-push-33 {
+		position: relative;
+		right: auto;
+		left: grid-calc(4);
+	}
+	.l-push-50 {
+		position: relative;
+		right: auto;
+		left: grid-calc(6);
+	}
+	.l-push-66 {
+		position: relative;
+		right: auto;
+		left: grid-calc(8);
+	}
+	.l-push-75 {
+		position: relative;
+		right: auto;
+		left: grid-calc(9);
+	}
 }
 
 // medium breakpoint
@@ -123,21 +175,27 @@
 	}
 	.m-25 {
 		width: grid-calc(3);
+		position:static;
 	}
 	.m-33 {
 		width: grid-calc(4);
+		position:static;
 	}
 	.m-50 {
 		width: grid-calc(6);
+		position:static;
 	}
 	.m-66 {
 		width: grid-calc(8);
+		position:static;
 	}
 	.m-75 {
 		width: grid-calc(9);
+		position:static;
 	}
 	.m-100 {
 		width: grid-calc(12);
+		position:static;
 	}
 	
 	.block-grid {
@@ -154,6 +212,58 @@
 			width: grid-calc(3);
 		}
 	}
+	// Breakpoint Shuffle
+	.m-pull-25 {
+		position: relative;
+		left: auto;
+		right: grid-calc(3);
+	}
+	.m-pull-33 {
+		position: relative;
+		left: auto;
+		right: grid-calc(4);
+	}
+	.m-pull-50 {
+		position: relative;
+		left: auto;
+		right: grid-calc(6);
+	}
+	.m-pull-66 {
+		position: relative;
+		left: auto;
+		right: grid-calc(8);
+	}
+	.m-pull-75 {
+		position: relative;
+		left: auto;
+		right: grid-calc(9);
+	}
+	
+	.m-push-25 {
+		position: relative;
+		right: auto;
+		left: grid-calc(3);
+	}
+	.m-push-33 {
+		position: relative;
+		right: auto;
+		left: grid-calc(4);
+	}
+	.m-push-50 {
+		position: relative;
+		right: auto;
+		left: grid-calc(6);
+	}
+	.m-push-66 {
+		position: relative;
+		right: auto;
+		left: grid-calc(8);
+	}
+	.m-push-75 {
+		position: relative;
+		right: auto;
+		left: grid-calc(9);
+	}
 }
 
 // small breakpoint
@@ -163,21 +273,27 @@
 	}
 	.s-25 {
 		width: grid-calc(3);
+		position:static;
 	}
 	.s-33 {
 		width: grid-calc(4);
+		position:static;
 	}
 	.s-50 {
 		width: grid-calc(6);
+		position:static;
 	}
 	.s-66 {
 		width: grid-calc(8);
+		position:static;
 	}
 	.s-75 {
 		width: grid-calc(9);
+		position:static;
 	}
 	.s-100 {
 		width: grid-calc(12);
+		position:static;
 	}
 	.grid .grid .s-100 {
 		padding-right: 0;
@@ -196,5 +312,56 @@
 		&.s-4 li {
 			width: grid-calc(3);
 		}
+	}
+	.s-pull-25 {
+		position: relative;
+		left: auto;
+		right: grid-calc(3);
+	}
+	.s-pull-33 {
+		position: relative;
+		left: auto;
+		right: grid-calc(4);
+	}
+	.s-pull-50 {
+		position: relative;
+		left: auto;
+		right: grid-calc(6);
+	}
+	.s-pull-66 {
+		position: relative;
+		left: auto;
+		right: grid-calc(8);
+	}
+	.s-pull-75 {
+		position: relative;
+		left: auto;
+		right: grid-calc(9);
+	}
+	
+	.s-push-25 {
+		position: relative;
+		right: auto;
+		left: grid-calc(3);
+	}
+	.s-push-33 {
+		position: relative;
+		right: auto;
+		left: grid-calc(4);
+	}
+	.s-push-50 {
+		position: relative;
+		right: auto;
+		left: grid-calc(6);
+	}
+	.s-push-66 {
+		position: relative;
+		right: auto;
+		left: grid-calc(8);
+	}
+	.s-push-75 {
+		position: relative;
+		right: auto;
+		left: grid-calc(9);
 	}
 }

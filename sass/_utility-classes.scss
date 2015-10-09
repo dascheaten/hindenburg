@@ -24,6 +24,37 @@
 	border-radius:$global-radius;
 }
 
+
+
+@media (min-width: $medium-breakpoint) {
+	.l-show {
+		display: block;
+	}
+	.l-hide {
+		display: none;
+	}
+}
+
+@media (max-width: $medium-breakpoint) {
+	.m-show {
+		display: block;
+	}
+	.m-hide {
+		display: none;
+	}	
+}
+
+@media (max-width: $small-breakpoint) {
+	.s-show {
+		display: block;
+	}
+	.s-hide {
+		display: none;
+	}
+}
+
+
+// this has to stay at the bottom of the stylesheet so it doesn't get over written by other styles
 .no-show {
 	display: none !important;
 }

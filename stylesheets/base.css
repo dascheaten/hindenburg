@@ -224,116 +224,338 @@ html {
   .l-clear {
     clear: left;
   }
+
+  /* line 118, ../sass/_grid.scss */
+  .l-pull-25 {
+    position: relative;
+    left: auto;
+    right: 25%;
+  }
+
+  /* line 123, ../sass/_grid.scss */
+  .l-pull-33 {
+    position: relative;
+    left: auto;
+    right: 33.33333%;
+  }
+
+  /* line 128, ../sass/_grid.scss */
+  .l-pull-50 {
+    position: relative;
+    left: auto;
+    right: 50%;
+  }
+
+  /* line 133, ../sass/_grid.scss */
+  .l-pull-66 {
+    position: relative;
+    left: auto;
+    right: 66.66667%;
+  }
+
+  /* line 138, ../sass/_grid.scss */
+  .l-pull-75 {
+    position: relative;
+    left: auto;
+    right: 75%;
+  }
+
+  /* line 144, ../sass/_grid.scss */
+  .l-push-25 {
+    position: relative;
+    right: auto;
+    left: 25%;
+  }
+
+  /* line 149, ../sass/_grid.scss */
+  .l-push-33 {
+    position: relative;
+    right: auto;
+    left: 33.33333%;
+  }
+
+  /* line 154, ../sass/_grid.scss */
+  .l-push-50 {
+    position: relative;
+    right: auto;
+    left: 50%;
+  }
+
+  /* line 159, ../sass/_grid.scss */
+  .l-push-66 {
+    position: relative;
+    right: auto;
+    left: 66.66667%;
+  }
+
+  /* line 164, ../sass/_grid.scss */
+  .l-push-75 {
+    position: relative;
+    right: auto;
+    left: 75%;
+  }
 }
 @media (max-width: 56.25rem) {
-  /* line 121, ../sass/_grid.scss */
+  /* line 173, ../sass/_grid.scss */
   .m-clear {
     clear: left;
   }
 
-  /* line 124, ../sass/_grid.scss */
+  /* line 176, ../sass/_grid.scss */
   .m-25 {
     width: 25%;
+    position: static;
   }
 
-  /* line 127, ../sass/_grid.scss */
+  /* line 180, ../sass/_grid.scss */
   .m-33 {
     width: 33.33333%;
+    position: static;
   }
 
-  /* line 130, ../sass/_grid.scss */
+  /* line 184, ../sass/_grid.scss */
   .m-50 {
     width: 50%;
+    position: static;
   }
 
-  /* line 133, ../sass/_grid.scss */
+  /* line 188, ../sass/_grid.scss */
   .m-66 {
     width: 66.66667%;
+    position: static;
   }
 
-  /* line 136, ../sass/_grid.scss */
+  /* line 192, ../sass/_grid.scss */
   .m-75 {
     width: 75%;
+    position: static;
   }
 
-  /* line 139, ../sass/_grid.scss */
+  /* line 196, ../sass/_grid.scss */
   .m-100 {
     width: 100%;
+    position: static;
   }
 
-  /* line 144, ../sass/_grid.scss */
+  /* line 202, ../sass/_grid.scss */
   .block-grid.m-1 li {
     width: 100%;
   }
-  /* line 147, ../sass/_grid.scss */
+  /* line 205, ../sass/_grid.scss */
   .block-grid.m-2 li {
     width: 50%;
   }
-  /* line 150, ../sass/_grid.scss */
+  /* line 208, ../sass/_grid.scss */
   .block-grid.m-3 li {
     width: 33.33333%;
   }
-  /* line 153, ../sass/_grid.scss */
+  /* line 211, ../sass/_grid.scss */
   .block-grid.m-4 li {
     width: 25%;
   }
+
+  /* line 216, ../sass/_grid.scss */
+  .m-pull-25 {
+    position: relative;
+    left: auto;
+    right: 25%;
+  }
+
+  /* line 221, ../sass/_grid.scss */
+  .m-pull-33 {
+    position: relative;
+    left: auto;
+    right: 33.33333%;
+  }
+
+  /* line 226, ../sass/_grid.scss */
+  .m-pull-50 {
+    position: relative;
+    left: auto;
+    right: 50%;
+  }
+
+  /* line 231, ../sass/_grid.scss */
+  .m-pull-66 {
+    position: relative;
+    left: auto;
+    right: 66.66667%;
+  }
+
+  /* line 236, ../sass/_grid.scss */
+  .m-pull-75 {
+    position: relative;
+    left: auto;
+    right: 75%;
+  }
+
+  /* line 242, ../sass/_grid.scss */
+  .m-push-25 {
+    position: relative;
+    right: auto;
+    left: 25%;
+  }
+
+  /* line 247, ../sass/_grid.scss */
+  .m-push-33 {
+    position: relative;
+    right: auto;
+    left: 33.33333%;
+  }
+
+  /* line 252, ../sass/_grid.scss */
+  .m-push-50 {
+    position: relative;
+    right: auto;
+    left: 50%;
+  }
+
+  /* line 257, ../sass/_grid.scss */
+  .m-push-66 {
+    position: relative;
+    right: auto;
+    left: 66.66667%;
+  }
+
+  /* line 262, ../sass/_grid.scss */
+  .m-push-75 {
+    position: relative;
+    right: auto;
+    left: 75%;
+  }
 }
 @media (max-width: 37.5rem) {
-  /* line 161, ../sass/_grid.scss */
+  /* line 271, ../sass/_grid.scss */
   .s-clear {
     clear: left;
   }
 
-  /* line 164, ../sass/_grid.scss */
+  /* line 274, ../sass/_grid.scss */
   .s-25 {
     width: 25%;
+    position: static;
   }
 
-  /* line 167, ../sass/_grid.scss */
+  /* line 278, ../sass/_grid.scss */
   .s-33 {
     width: 33.33333%;
+    position: static;
   }
 
-  /* line 170, ../sass/_grid.scss */
+  /* line 282, ../sass/_grid.scss */
   .s-50 {
     width: 50%;
+    position: static;
   }
 
-  /* line 173, ../sass/_grid.scss */
+  /* line 286, ../sass/_grid.scss */
   .s-66 {
     width: 66.66667%;
+    position: static;
   }
 
-  /* line 176, ../sass/_grid.scss */
+  /* line 290, ../sass/_grid.scss */
   .s-75 {
     width: 75%;
+    position: static;
   }
 
-  /* line 179, ../sass/_grid.scss */
+  /* line 294, ../sass/_grid.scss */
   .s-100 {
     width: 100%;
+    position: static;
   }
 
-  /* line 182, ../sass/_grid.scss */
+  /* line 298, ../sass/_grid.scss */
   .grid .grid .s-100 {
     padding-right: 0;
   }
 
-  /* line 187, ../sass/_grid.scss */
+  /* line 303, ../sass/_grid.scss */
   .block-grid.s-1 li {
     width: 100%;
   }
-  /* line 190, ../sass/_grid.scss */
+  /* line 306, ../sass/_grid.scss */
   .block-grid.s-2 li {
     width: 50%;
   }
-  /* line 193, ../sass/_grid.scss */
+  /* line 309, ../sass/_grid.scss */
   .block-grid.s-3 li {
     width: 33.33333%;
   }
-  /* line 196, ../sass/_grid.scss */
+  /* line 312, ../sass/_grid.scss */
   .block-grid.s-4 li {
     width: 25%;
+  }
+
+  /* line 316, ../sass/_grid.scss */
+  .s-pull-25 {
+    position: relative;
+    left: auto;
+    right: 25%;
+  }
+
+  /* line 321, ../sass/_grid.scss */
+  .s-pull-33 {
+    position: relative;
+    left: auto;
+    right: 33.33333%;
+  }
+
+  /* line 326, ../sass/_grid.scss */
+  .s-pull-50 {
+    position: relative;
+    left: auto;
+    right: 50%;
+  }
+
+  /* line 331, ../sass/_grid.scss */
+  .s-pull-66 {
+    position: relative;
+    left: auto;
+    right: 66.66667%;
+  }
+
+  /* line 336, ../sass/_grid.scss */
+  .s-pull-75 {
+    position: relative;
+    left: auto;
+    right: 75%;
+  }
+
+  /* line 342, ../sass/_grid.scss */
+  .s-push-25 {
+    position: relative;
+    right: auto;
+    left: 25%;
+  }
+
+  /* line 347, ../sass/_grid.scss */
+  .s-push-33 {
+    position: relative;
+    right: auto;
+    left: 33.33333%;
+  }
+
+  /* line 352, ../sass/_grid.scss */
+  .s-push-50 {
+    position: relative;
+    right: auto;
+    left: 50%;
+  }
+
+  /* line 357, ../sass/_grid.scss */
+  .s-push-66 {
+    position: relative;
+    right: auto;
+    left: 66.66667%;
+  }
+
+  /* line 362, ../sass/_grid.scss */
+  .s-push-75 {
+    position: relative;
+    right: auto;
+    left: 75%;
   }
 }
 /* line 4, ../sass/_typography.scss */
@@ -1551,63 +1773,62 @@ dl.accordion dd {
 
 /* line 1, ../sass/_slider.scss */
 #slider {
+  background: #FFFFFF;
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
   border-radius: 4px;
   width: 100%;
 }
-/* line 7, ../sass/_slider.scss */
+/* line 8, ../sass/_slider.scss */
 #slider ul, #slider ol, #slider dl {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 12, ../sass/_slider.scss */
+/* line 13, ../sass/_slider.scss */
 #slider ul li, #slider ol li, #slider dl li {
   position: relative;
   display: block;
   float: left;
   margin: 0;
-  padding: 2rem;
   width: 100%;
-  background: #ccc;
+  background: #FFFFFF;
   text-align: center;
 }
+/* line 21, ../sass/_slider.scss */
+#slider ul li div, #slider ol li div, #slider dl li div {
+  padding: 2rem 6rem;
+}
 
-/* line 26, ../sass/_slider.scss */
+/* line 29, ../sass/_slider.scss */
 a.control_prev, a.control_next {
   position: absolute;
-  top: 40%;
+  top: 45%;
   z-index: 999;
   display: block;
-  padding: 4% 3%;
+  background: #DDDDDD;
+  border-radius: 50%;
+  padding: 0.75rem;
   width: auto;
   height: auto;
-  background: #2a2a2a;
-  color: #fff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
   cursor: pointer;
 }
-/* line 41, ../sass/_slider.scss */
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
+/* line 43, ../sass/_slider.scss */
+a.control_prev:hover .iconic-property-stroke, a.control_next:hover .iconic-property-stroke {
+  stroke: #000000;
 }
-
 /* line 47, ../sass/_slider.scss */
-a.control_prev {
-  border-radius: 0 2px 2px 0;
+a.control_prev .iconic-property-stroke, a.control_next .iconic-property-stroke {
+  stroke: #FFFFFF;
 }
 
 /* line 51, ../sass/_slider.scss */
 a.control_next {
   right: 0;
-  border-radius: 2px 0 0 2px;
 }
 
 /* line 4, ../sass/_utility-classes.scss */
@@ -1641,7 +1862,40 @@ a.control_next {
   border-radius: 3px;
 }
 
-/* line 27, ../sass/_utility-classes.scss */
+@media (min-width: 56.25rem) {
+  /* line 30, ../sass/_utility-classes.scss */
+  .l-show {
+    display: block;
+  }
+
+  /* line 33, ../sass/_utility-classes.scss */
+  .l-hide {
+    display: none;
+  }
+}
+@media (max-width: 56.25rem) {
+  /* line 39, ../sass/_utility-classes.scss */
+  .m-show {
+    display: block;
+  }
+
+  /* line 42, ../sass/_utility-classes.scss */
+  .m-hide {
+    display: none;
+  }
+}
+@media (max-width: 37.5rem) {
+  /* line 48, ../sass/_utility-classes.scss */
+  .s-show {
+    display: block;
+  }
+
+  /* line 51, ../sass/_utility-classes.scss */
+  .s-hide {
+    display: none;
+  }
+}
+/* line 58, ../sass/_utility-classes.scss */
 .no-show {
   display: none !important;
 }
