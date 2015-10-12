@@ -156,13 +156,8 @@ $progress-complete-color:$primary;
 $progress-tick-color:$black;
 $progress-tick-height:5px;
 $progress-tick-alignment:6px;
-$progress-donut-height:134px;
-$progress-donut-border-size:2px;
-$progress-donut-bg:$white;
-$progress-donut-overlay-bg:$white;
-$progress-donut-overlay-height:90px;
-$progress-donut-border-color:$gainsboro;
-$progress-donut-complete-color:$primary;
+$progress-donut-bg:$gainsboro;
+$progress-donut-complete-color:$secondary;
 
 // Tooltips
 $tooltip-bg:rgba($black,0.8);

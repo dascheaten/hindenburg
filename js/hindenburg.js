@@ -1,5 +1,5 @@
 // hide the modals and the background on load
-$(document).ready(function() {
+$(document).ready(function () {
 	if ($('.modal-go').length) {
 		$('body').append('<a class="modal-bg"></a>');
 		$('.modal').hide();
@@ -7,7 +7,7 @@ $(document).ready(function() {
 	}
 	
 	// Show me modal windows
-	$('.modal-go').bind('click', function() {
+	$('.modal-go').bind('click', function () {
 		var dis_modal = $(this).attr('data-modal-id')
 		$('.modal').hide().removeClass('modal-on');
 		$('.modal-bg').fadeIn();
@@ -15,21 +15,21 @@ $(document).ready(function() {
 	});
 
 	// Close on button
-	$('.close').bind('click', function() {
+	$('.close').bind('click', function () {
 		$('.modal-bg').fadeOut();
 		$('.modal').fadeOut().removeClass('modal-on');
 	});
 
 	// close on background click, sometimes
-	$('.modal-bg').bind('click', function() {
+	$('.modal-bg').bind('click', function () {
 		var close_bg = $('.modal-on').attr('data-modal-closebg')
-		if (close_bg != 'false') {
+		if (close_bg !== 'false') {
 			$('.modal-bg').fadeOut();
 			$('.modal').fadeOut();
 		}
 	});
 
-	$('span.close').bind('click', function() {
+	$('span.close').bind('click', function () {
 		$(this).parent().slideUp();
 	});
 
@@ -40,17 +40,17 @@ $(document).ready(function() {
 // Functions for Mega Menu
 if ($('nav').hasClass('mega-menu')) {
 	if(!$('.off-canvas.button').is(":visible")) {
-		$('.drop').mouseenter(function() {
+		$('.drop').mouseenter(function () {
 			$(this).children('.drop-menu').slideDown();
 		});
-		$('.drop').mouseleave(function() {
+		$('.drop').mouseleave(function () {
 			$('.drop-menu').slideUp();
 		});
 	} 
 }
 
 // off canvas nav
-$('.off-canvas').bind('click', function() {
+$('.off-canvas').bind('click', function () {
 	$(this).toggleClass('open');
 	if ($(this).hasClass('open')) {
 		$(this).text('Close');
@@ -61,7 +61,7 @@ $('.off-canvas').bind('click', function() {
 });
 
 // Functions for off canvans nav
-$('.drop').bind('click', function() {
+$('.drop').bind('click', function () {
 	if ($('.off-canvas').hasClass('open')) {
 		$(this).toggleClass('drop-open');
 		if ($(this).hasClass('drop-open')) {
@@ -78,7 +78,7 @@ $('.drop').bind('click', function() {
 });	
 
 // Tool Tips
-$('span.tooltip').mouseenter(function() {
+$('span.tooltip').mouseenter(function () {
 	var tip = $(this).attr('data-tip');
 	var content = $(this).html();
 	if (!$(this).hasClass('tip-open')){
@@ -88,7 +88,7 @@ $('span.tooltip').mouseenter(function() {
 		$('.this-tip').remove();
 	}
 });
-$('span.tooltip').mouseleave(function() {
+$('span.tooltip').mouseleave(function () {
 	if ($(this).hasClass('tip-open')) {
 		$(this).removeClass('tip-open');
 		$('.this-tip').remove();
@@ -96,13 +96,13 @@ $('span.tooltip').mouseleave(function() {
 });
 
 // Range Slider
-$('input[type=range]').on('change', function() {
+$('input[type=range]').on('change', function () {
 	var value = $(this).val();
 	$(this).prev().text(value);
 });
 
 // Accordion make do'er
-$('dl.accordion dt').on('click', function() {
+$('dl.accordion dt').on('click', function () {
 	if ($(this).next('dd').is(":visible")) {
 		$('dl.accordion dd').slideUp();
 	} else {
@@ -113,7 +113,7 @@ $('dl.accordion dt').on('click', function() {
 
 
 // Slider
-$('#checkbox').change(function(){
+$('#checkbox').change(function (){
 setInterval(function () {
     moveRight();
 }, 3000);
@@ -158,9 +158,11 @@ jQuery(document).ready(function ($) {
 	});
 });
 
-$( window ).resize(function() {
+$( window ).resize(function () {
 	var slideHeight = $('#slider ul li.active').height();
 	var sliderUlWidth = '100%';
 
 	$('#slider').css({ width: '100%', height: slideHeight });
 });
+
+// Donut progress bar setter'er

@@ -192,13 +192,34 @@
 				<div class="complete" style="width:50%;"></div>
 			</div>
 		</div>
-		<div class="s-50 clm">
-			<div class="progress-radial progress-50">
-				<div class="overlay">
-					<span class="progress-pct">0</span>% <br /> Complete
-				</div>
-			</div>
-		</div>
+        <div class="s-50 clm">
+           <div class="donut" data-complete="54">
+               <h2>54% <br><small>Complete</small></h2>
+                <style>
+                    @-webkit-keyframes donut {
+                      to {
+                        stroke-dashoffset: 439;
+                      }
+                    }
+
+                    @keyframes donut {
+                      to {
+                        stroke-dashoffset: 439;
+                      }
+                    }
+                </style>
+                <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                     <g>
+                         <title>bottom circle</title>
+                         <circle id="circle" class="rail" r="69.85699" cy="81" cx="81" stroke-width="10" stroke-linecap="round" fill="none"></circle>
+                     </g>
+                     <g>
+                         <title>Layer 1</title>
+                         <circle id="circle" class="circle-animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke-linecap="round"  fill="none"></circle>
+                     </g>
+                </svg>
+           </div>
+        </div>
 	</div>
 	<div class="grid">
 		<div class="s-100 clm">

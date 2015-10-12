@@ -1579,112 +1579,40 @@ ul.pricing-table .not-included, ol.pricing-table .not-included, dl.pricing-table
 }
 
 /* line 37, ../sass/_progress-bar.scss */
-.progress-radial {
+.donut {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  width: 134px;
-  height: 134px;
-  border-radius: 50%;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
 }
-/* line 44, ../sass/_progress-bar.scss */
-.progress-radial .overlay {
-  width: 90px;
-  height: 90px;
-  background-color: #FFFFFF;
-  color: #1E6F38;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  border-radius: 50%;
-  margin-left: 20px;
-  margin-top: 20px;
+/* line 41, ../sass/_progress-bar.scss */
+.donut h2 {
   text-align: center;
-  padding-top: 25px;
-  line-height: 15px;
-  font-size: 16px;
+  position: absolute;
+  line-height: 1em;
+  width: 100%;
+  margin-top: 3rem;
 }
-/* line 58, ../sass/_progress-bar.scss */
-.progress-radial.progress-0 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(90deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
+/* line 48, ../sass/_progress-bar.scss */
+.donut svg {
+  margin: 0 auto;
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
-/* line 62, ../sass/_progress-bar.scss */
-.progress-radial.progress-5 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(108deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
+/* line 57, ../sass/_progress-bar.scss */
+.donut .rail {
+  stroke: #DDDDDD;
 }
-/* line 66, ../sass/_progress-bar.scss */
-.progress-radial.progress-10 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(126deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 70, ../sass/_progress-bar.scss */
-.progress-radial.progress-15 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(144deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 74, ../sass/_progress-bar.scss */
-.progress-radial.progress-20 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(162deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 78, ../sass/_progress-bar.scss */
-.progress-radial.progress-25 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(180deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 82, ../sass/_progress-bar.scss */
-.progress-radial.progress-30 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(198deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 86, ../sass/_progress-bar.scss */
-.progress-radial.progress-35 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(216deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 90, ../sass/_progress-bar.scss */
-.progress-radial.progress-40 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(234deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 94, ../sass/_progress-bar.scss */
-.progress-radial.progress-45 {
-  background-image: linear-gradient(90deg, #FFFFFF 50%, transparent 50%, transparent), linear-gradient(252deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 98, ../sass/_progress-bar.scss */
-.progress-radial.progress-50 {
-  background-image: linear-gradient(-90deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 102, ../sass/_progress-bar.scss */
-.progress-radial.progress-55 {
-  background-image: linear-gradient(-72deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 106, ../sass/_progress-bar.scss */
-.progress-radial.progress-60 {
-  background-image: linear-gradient(-54deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 110, ../sass/_progress-bar.scss */
-.progress-radial.progress-65 {
-  background-image: linear-gradient(-36deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 114, ../sass/_progress-bar.scss */
-.progress-radial.progress-70 {
-  background-image: linear-gradient(-18deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 118, ../sass/_progress-bar.scss */
-.progress-radial.progress-75 {
-  background-image: linear-gradient(0deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 122, ../sass/_progress-bar.scss */
-.progress-radial.progress-80 {
-  background-image: linear-gradient(18deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 126, ../sass/_progress-bar.scss */
-.progress-radial.progress-85 {
-  background-image: linear-gradient(36deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 130, ../sass/_progress-bar.scss */
-.progress-radial.progress-90 {
-  background-image: linear-gradient(54deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 134, ../sass/_progress-bar.scss */
-.progress-radial.progress-95 {
-  background-image: linear-gradient(72deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
-}
-/* line 138, ../sass/_progress-bar.scss */
-.progress-radial.progress-100 {
-  background-image: linear-gradient(90deg, #1E6F38 50%, transparent 50%, transparent), linear-gradient(270deg, #1E6F38 50%, #FFFFFF 50%, #FFFFFF);
+/* line 60, ../sass/_progress-bar.scss */
+.donut .circle-animation {
+  stroke: #96C93F;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  -webkit-animation: donut 1s ease-out forwards;
+  animation: donut 1s ease-out forwards;
 }
 
 /* line 9, ../sass/_iconic.scss */
@@ -1899,7 +1827,7 @@ a.control_next {
 
 /* line 33, ../sass/base.scss */
 body {
-  background: #D6D6D6 url('/images/hindenburg_bg.png?1438601469') no-repeat center top;
+  background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }
