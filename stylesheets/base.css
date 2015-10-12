@@ -1540,7 +1540,7 @@ ul.pricing-table .not-included, ol.pricing-table .not-included, dl.pricing-table
 }
 
 /* line 2, ../sass/_progress-bar.scss */
-.progress-bar {
+.progress-bar.bar {
   height: 20px;
   width: 100%;
   background: #FFFFFF;
@@ -1548,19 +1548,19 @@ ul.pricing-table .not-included, ol.pricing-table .not-included, dl.pricing-table
   box-sizing: content-box;
 }
 /* line 8, ../sass/_progress-bar.scss */
-.progress-bar.round {
+.progress-bar.bar.round {
   border-radius: 1000px;
   height: 20px;
 }
 /* line 11, ../sass/_progress-bar.scss */
-.progress-bar.round .complete {
+.progress-bar.bar.round .complete {
   background: #1E6F38;
   height: 20px;
   border-top-left-radius: 1000px;
   border-bottom-left-radius: 1000px;
 }
 /* line 18, ../sass/_progress-bar.scss */
-.progress-bar .tick-marks {
+.progress-bar.bar .tick-marks {
   height: 5px;
   width: 100%;
   display: block;
@@ -1573,19 +1573,19 @@ ul.pricing-table .not-included, ol.pricing-table .not-included, dl.pricing-table
   overflow: hidden;
 }
 /* line 30, ../sass/_progress-bar.scss */
-.progress-bar .complete {
+.progress-bar.bar .complete {
   background: #1E6F38;
   height: 20px;
 }
 
 /* line 37, ../sass/_progress-bar.scss */
-.donut {
+.progress-bar.donut {
   display: block;
   margin: 0 auto;
   position: relative;
 }
 /* line 41, ../sass/_progress-bar.scss */
-.donut h2 {
+.progress-bar.donut h2 {
   text-align: center;
   position: absolute;
   line-height: 1em;
@@ -1593,7 +1593,7 @@ ul.pricing-table .not-included, ol.pricing-table .not-included, dl.pricing-table
   margin-top: 3rem;
 }
 /* line 48, ../sass/_progress-bar.scss */
-.donut svg {
+.progress-bar.donut svg {
   margin: 0 auto;
   display: block;
   -webkit-transform: rotate(-90deg);
@@ -1603,11 +1603,11 @@ ul.pricing-table .not-included, ol.pricing-table .not-included, dl.pricing-table
   transform: rotate(-90deg);
 }
 /* line 57, ../sass/_progress-bar.scss */
-.donut .rail {
+.progress-bar.donut .rail {
   stroke: #DDDDDD;
 }
 /* line 60, ../sass/_progress-bar.scss */
-.donut .circle-animation {
+.progress-bar.donut .circle-animation {
   stroke: #96C93F;
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
@@ -1827,7 +1827,7 @@ a.control_next {
 
 /* line 33, ../sass/base.scss */
 body {
-  background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
+  background: #D6D6D6 url('/images/hindenburg_bg.png?1438601469') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }

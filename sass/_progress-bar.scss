@@ -1,5 +1,5 @@
 // Progress bar
-.progress-bar {
+.progress-bar.bar {
 	height: $progress-height;
 	width: 100%;
 	background: $progress-bg;
@@ -34,7 +34,7 @@
 }
 
 // Progress Donut
-.donut {
+.progress-bar.donut {
     display: block;
     margin: 0 auto;
     position:relative;

@@ -37,6 +37,40 @@ $(document).ready(function () {
 	
 });
 
+
+// Donut progress bar setter'er on load
+if ($('.progress-bar').hasClass('donut')) {
+    var percentage = $('.donut').attr('data-complete')
+    var donut_length = 440 - (percentage * 4.4)
+    var animation = '<div class="destroy-me"><style>@-webkit-keyframes donut { to { stroke-dashoffset: ' + donut_length + '; } } @keyframes donut { to { stroke-dashoffset: ' + donut_length + '; } }</style></div>'
+
+    $('.done').html(percentage);
+    $('.donut').prepend(animation).delay(1).show();
+} else if ($('.progress-bar').hasClass('bar')) {
+    var percent = $('.progress-bar').attr('data-complete')
+    $('.progress-bar.bar').children('.complete').css('width', percent + '%');
+}
+
+
+
+// call this function if you change the percentage value
+function changeValue() {
+    var percentage = $('.donut').attr('data-complete')
+    var new_length = 440 - (percentage * 4.4)
+    var animation = '<div class="destroy-me"><style>.circle-animation{stroke-dashoffset: ' + donut_length + ' !important;}@-webkit-keyframes donut { to { stroke-dashoffset: ' + new_length + '; } } @keyframes donut { to { stroke-dashoffset: ' + new_length + '; } }</style></div>'
+    var height = $('.donut').height()
+    
+    $('.destroy-me').remove();
+    $('.done').html(percentage);
+    $('.donut').css('height', height);
+    $('.donut svg').hide().prepend(animation).delay(1).show(1);
+};
+
+$('.change-value').bind('click', function() {
+    $('.donut').attr('data-complete', '90');
+});
+
+
 // Functions for Mega Menu
 if ($('nav').hasClass('mega-menu')) {
 	if(!$('.off-canvas.button').is(":visible")) {
@@ -165,4 +199,3 @@ $( window ).resize(function () {
 	$('#slider').css({ width: '100%', height: slideHeight });
 });
 
-// Donut progress bar setter'er

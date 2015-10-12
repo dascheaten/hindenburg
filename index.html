@@ -178,37 +178,26 @@
 		</div>
 	</div>
 	
-	
 	<div class="grid">
 		<div class="s-50 clm">
 			<h4>Progress Bar</h4>
-			<div class="progress-bar">
-				<div class="complete" style="width:10%;"></div>
+			<div class="progress-bar bar" data-complete="80">
+				<div class="complete" style="width:0%;"></div>
 				<div class="tick-marks"></div>
 			</div>
 		</div>
-		<div class="s-50 clm">
-			<div class="progress-bar round">
-				<div class="complete" style="width:50%;"></div>
+		<div class="s-50 clm" data-complete="40">
+			<div class="progress-bar bar round">
+				<div class="complete" style="width:0%;"></div>
 			</div>
 		</div>
         <div class="s-50 clm">
-           <div class="donut" data-complete="54">
-               <h2>54% <br><small>Complete</small></h2>
-                <style>
-                    @-webkit-keyframes donut {
-                      to {
-                        stroke-dashoffset: 439;
-                      }
-                    }
-
-                    @keyframes donut {
-                      to {
-                        stroke-dashoffset: 439;
-                      }
-                    }
-                </style>
-                <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+          <div class="change-value" onclick="changeValue();">change value</div>
+           <div class="progress-bar donut" data-complete="40" style="display:none;">
+              
+               <h2><span class="done">0</span>% <br><small>Complete</small></h2>
+                
+                <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg" >
                      <g>
                          <title>bottom circle</title>
                          <circle id="circle" class="rail" r="69.85699" cy="81" cx="81" stroke-width="10" stroke-linecap="round" fill="none"></circle>
