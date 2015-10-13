@@ -134,7 +134,7 @@
 				<li><strike>Panels</strike></li>
 				<li><strike>Pricing Tables</strike></li>
 				<li><strike>Progress Bar</strike></li>
-				<li>Tabs</li>
+				<li><strike>Tabs</strike></li>
 				<li><strike>Type</strike></li>
 				<li>Video</li>
 			</ul>
@@ -166,44 +166,76 @@
 	<div class="grid">
 		<div class="s-100 clm">
 			<dl class="accordion">
-				<dt class="round">This thing is round</dt>
+				<dt class="round"><img data-direction="bottom" data-src="images/iconic/caret.svg" class="iconic iconic-sm" alt="caret" /> This thing is round</dt>
 				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-				<dt class="rounded">That thing is rounded</dt>
+				<dt class="rounded"><img data-direction="bottom" data-src="images/iconic/caret.svg" class="iconic iconic-sm" alt="caret" /> That thing is rounded</dt>
 				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-				<dt>This stuff</dt>
+				<dt><img data-direction="bottom" data-src="images/iconic/caret.svg" class="iconic iconic-sm" alt="caret" /> This stuff</dt>
 				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-				<dt>That stuff</dt>
+				<dt><img data-direction="bottom" data-src="images/iconic/caret.svg" class="iconic iconic-sm" alt="caret" /> That stuff</dt>
 				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
 			</dl>
 		</div>
 	</div>
 	
 	<div class="grid">
-		<div class="s-50 clm">
-			<h4>Progress Bar</h4>
-			<div class="progress-bar bar" data-complete="80">
-				<div class="complete" style="width:0%;"></div>
+	    <div class="s-100 clm">
+	        <h4>Tabs</h4>
+	        <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1">Tab One</li>
+                <li class="tab-link" data-tab="tab-2">Tab Two</li>
+                <li class="tab-link" data-tab="tab-3">Tab Three</li>
+                <li class="tab-link" data-tab="tab-4">Tab Four</li>
+            </ul>
+
+            <div id="tab-1" class="tab-content current">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="tab-2" class="tab-content">
+                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="tab-3" class="tab-content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div id="tab-4" class="tab-content">
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+	    </div>
+	</div>
+	
+	<div class="grid">
+	    <div class="s-50 clm">
+	        <h4>Progress Bar</h4>
+	    </div>
+	    <div class="s-50 clm">
+            <div class="button small info change-value">New progress number</div>
+        </div>
+	</div>
+	
+	<div class="grid">
+		<div class="s-33 clm clear">
+			<div class="progress-bar bar" data-complete="20">
+			    <div class="complete" style="width:0%;"></div>
 				<div class="tick-marks"></div>
 			</div>
 		</div>
-		<div class="s-50 clm" data-complete="40">
+		<div class="s-33 clm" data-complete="40">
 			<div class="progress-bar bar round">
 				<div class="complete" style="width:0%;"></div>
 			</div>
 		</div>
-        <div class="s-50 clm">
-          <div class="change-value" onclick="changeValue();">change value</div>
-           <div class="progress-bar donut" data-complete="40" style="display:none;">
+        <div class="s-33 clm">
+           <div class="progress-bar donut" data-complete="20" style="display:none;">
               
                <h2><span class="done">0</span>% <br><small>Complete</small></h2>
                 
                 <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg" >
                      <g>
-                         <title>bottom circle</title>
+                         <title>Bottom circle</title>
                          <circle id="circle" class="rail" r="69.85699" cy="81" cx="81" stroke-width="10" stroke-linecap="round" fill="none"></circle>
                      </g>
                      <g>
-                         <title>Layer 1</title>
+                         <title>Complete circle</title>
                          <circle id="circle" class="circle-animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke-linecap="round"  fill="none"></circle>
                      </g>
                 </svg>
@@ -715,8 +747,15 @@
 	</div>
 	
 	<script src="/js/jquery.min.js"></script>
-	<script src="/js/hindenburg.js"></script>
 	<script src="/js/iconic.min.js"></script>
-	
+	<script src="/js/hindenburg.js"></script>
+	<script>
+            $('.change-value').bind('click', function() {
+                var num = (Math.random() * 100 | 0) + 1
+                $('.progress-bar').attr('data-complete', num);
+                setProgress();
+                changeValue();
+            });
+           </script>
 </body>
 </html>

@@ -45,31 +45,34 @@ if ($('.progress-bar').hasClass('donut')) {
     var animation = '<div class="destroy-me"><style>@-webkit-keyframes donut { to { stroke-dashoffset: ' + donut_length + '; } } @keyframes donut { to { stroke-dashoffset: ' + donut_length + '; } }</style></div>'
 
     $('.done').html(percentage);
-    $('.donut').prepend(animation).delay(1).show();
-} else if ($('.progress-bar').hasClass('bar')) {
-    var percent = $('.progress-bar').attr('data-complete')
-    $('.progress-bar.bar').children('.complete').css('width', percent + '%');
+    $('.donut').prepend(animation).delay(1).show(1).attr('data-old-value', donut_length);
 }
-
-
 
 // call this function if you change the percentage value
 function changeValue() {
+    var old_value = $('.donut').attr('data-old-value');
     var percentage = $('.donut').attr('data-complete')
     var new_length = 440 - (percentage * 4.4)
-    var animation = '<div class="destroy-me"><style>.circle-animation{stroke-dashoffset: ' + donut_length + ' !important;}@-webkit-keyframes donut { to { stroke-dashoffset: ' + new_length + '; } } @keyframes donut { to { stroke-dashoffset: ' + new_length + '; } }</style></div>'
+    var animation = '<div class="destroy-me"><style>.circle-animation{stroke-dashoffset: ' + old_value + ' !important;}@-webkit-keyframes donut { to { stroke-dashoffset: ' + new_length + '; } } @keyframes donut { to { stroke-dashoffset: ' + new_length + '; } }</style></div>'
     var height = $('.donut').height()
     
     $('.destroy-me').remove();
     $('.done').html(percentage);
-    $('.donut').css('height', height);
-    $('.donut svg').hide().prepend(animation).delay(1).show(1);
+    $('.donut').css('height', height).attr('data-old-value', new_length);
+    $('.donut svg').hide(1).prepend(animation).delay(1).show(1);
 };
 
-$('.change-value').bind('click', function() {
-    $('.donut').attr('data-complete', '90');
-});
+// Set the progress on bar style progress bars
+function setProgress()  {
+    var percent = $('.progress-bar').attr('data-complete')
+    $('.progress-bar.bar').children('.complete').animate({
+    width: percent + '%'
+  }, 1000 );  
+}
 
+if ($('.progress-bar').hasClass('bar')) {
+  setProgress();
+}
 
 // Functions for Mega Menu
 if ($('nav').hasClass('mega-menu')) {
@@ -139,8 +142,13 @@ $('input[type=range]').on('change', function () {
 $('dl.accordion dt').on('click', function () {
 	if ($(this).next('dd').is(":visible")) {
 		$('dl.accordion dd').slideUp();
+        $(this).find('.iconic-caret').attr( "data-direction", "bottom" );
+        IconicJS().update();
 	} else {
 		$('dl.accordion dd').slideUp();
+        $('dl.accordion dt').find('.iconic-caret').attr( "data-direction", "bottom" );
+        $(this).find('.iconic-caret').attr( "data-direction", "top" );
+        IconicJS().update();
 		$(this).next('dd').slideDown();
 	}
 });
@@ -199,3 +207,13 @@ $( window ).resize(function () {
 	$('#slider').css({ width: '100%', height: slideHeight });
 });
 
+// Tabs
+$('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+});

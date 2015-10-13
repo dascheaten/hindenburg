@@ -1,5 +1,6 @@
 // buttons make the internet happen
 .button, button {
+	@extend a;
 	display: inline-block;
 	padding: 1em 2em;
 	color: $button-text-color;
