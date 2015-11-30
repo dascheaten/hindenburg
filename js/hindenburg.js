@@ -153,6 +153,16 @@ $('dl.accordion dt').on('click', function () {
 	}
 });
 
+// Make the labels do junk
+$('input').focus(function(){
+    $(this).prev('label').addClass('focus');
+});
+
+$('input').focusout(function(){
+    if( !$(this).val() ) {
+        $(this).prev('label').removeClass('focus');
+    }
+});
 
 // Slider
 $('#checkbox').change(function (){
@@ -160,6 +170,7 @@ setInterval(function () {
     moveRight();
 }, 3000);
 });
+
 jQuery(document).ready(function ($) {
 	var slideCount = $('#slider ul li').length;
  	var slideWidth = '100%';

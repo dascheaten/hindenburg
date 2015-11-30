@@ -1894,14 +1894,14 @@ a.control_next, .control_next.button, button.control_next {
   display: none !important;
 }
 
-/* line 34, ../sass/base.scss */
+/* line 34, ../sass/game.scss */
 body {
-  background: #D6D6D6 url('/images/hindenburg_bg.png?1431985845') no-repeat center top;
   background-size: 100% auto;
-  margin-top: 23rem;
+  margin-top: 100px;
+  background: #333333;
 }
 
-/* line 39, ../sass/base.scss */
+/* line 39, ../sass/game.scss */
 header {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1909,17 +1909,8 @@ header {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 43, ../sass/base.scss */
-.color-me p, .color-me dl dd, dl .color-me dd {
-  background: #484848;
-  color: white;
-  font-size: 20px;
+/* line 43, ../sass/game.scss */
+input.invisable {
+  border: none;
   text-align: center;
-  padding: 1rem;
-  border-radius: 3px;
-}
-
-/* line 53, ../sass/base.scss */
-hr {
-  margin: 4rem 1rem;
 }

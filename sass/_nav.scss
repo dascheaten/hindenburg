@@ -6,13 +6,13 @@ header {
 		position:absolute;
 		top:0;
 		width: 100%;
-		height: $nav-height;
+		height: $header-height;
 	}
 	&.fixed {
 		position:fixed;
 		top:0;
 		width: 100%;
-		height: $nav-height;
+		height: $header-height;
 	}
 	
 	.clm {
@@ -32,6 +32,7 @@ header {
 	nav.inline {
 		float:$nav-direction;
 		display: inline-block;
+        background: $nav-bg;
 		.off-canvas {
 			display: none;
 		}
@@ -57,6 +58,7 @@ header {
 				a {
 					padding: (($nav-height - $nav-font-size)/2) $nav-padding;
 					font-size: $nav-font-size;
+                    font-family:$nav-font-family;
 					line-height: 1em;
 					display: block;
 					color:$nav-color;
@@ -228,5 +230,3 @@ header {
 		} 
 	}	
 }
-
-

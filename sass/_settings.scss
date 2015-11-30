@@ -56,12 +56,15 @@ $body-copy-font-family: $sans-serif;
 $link-color: $primary;
 
 // Header
-$header-bg:$white;
+$header-bg:rgba($white, 0.95);
+$header-height:rem-me(75);
 
 // Navigation
-$nav-height:70px;
+$nav-height:74px;
+$nav-bg:transparent;
 $nav-direction:right; // Sets the float for the link
 $nav-font-size:$body-copy-font-size;
+$nav-font-family:$brand-font;
 $nav-padding:20px;
 $nav-hover-bg:$primary;
 $nav-color:$primary;
@@ -101,7 +104,7 @@ $bq-text-size: 1.5rem;
 $bq-color: $steel;
 
 //Forms
-$label-font-size: 18px;
+$label-font-size: 16px;
 $label-font-color:$oil;
 $input-height: 60px; // Basic math is surprisingly difficult in SASS, so leave this value in pixels to calculate the padding and text size accordingly
 $input-bg:$white;
@@ -126,7 +129,7 @@ $modal-window-bg:$white;
 
 // Panel
 $panel-bg:$white;
-$panel-border-color:red;
+$panel-border-color:$secondary;
 
 // Tabels
 $table-bg: $white;
