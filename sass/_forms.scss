@@ -5,7 +5,7 @@ form {
 textarea, input, select { 
 	outline: none;
 }
-input[type=text], input[type=phone], input[type=email] {
+input[type=text], input[type=phone], input[type=email], input[type=password] {
 	height: rem-me($input-height);
 	width: 100%;
 	background: $input-bg;
