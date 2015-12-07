@@ -14,7 +14,11 @@ input[type=text], input[type=phone], input[type=email], input[type=password] {
 	font-size:do-math-divide($input-height,3);
 	color:$input-font-color;
 	@include transition;
-    position:relative;
+	position:relative;
+    &:disabled, &:read-only {
+      background: $disabled-color;
+      color: darken($disabled-color, 20%);
+    }
 	&:focus {
 		background: $input-focus-bg;
 		border:1px solid $input-border-focus-color;
@@ -61,6 +65,10 @@ select {
 	height: rem-me($input-height);
 	margin:0;
 	width: 100%;
+    &:disabled {
+      background: $disabled-color;
+      color: darken($disabled-color, 20%);
+    }
 }
 button {
 	border:none;
