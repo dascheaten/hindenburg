@@ -1,6 +1,6 @@
 // hide the modals and the background on load
 $(document).ready(function () {
-	if ($('.modal-go').length) {
+	if ($('.modal').length) {
 		$('body').append('<a class="modal-bg"></a>');
 		$('.modal').hide();
 		$('.modal-bg').hide();
