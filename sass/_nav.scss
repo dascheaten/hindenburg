@@ -146,7 +146,6 @@ header {
 		nav.inline, nav.mega-menu {
 			float:$nav-direction;
 			display: block;
-			overflow:scroll;
 			background: $tuatara;
 			.off-canvas {
 				display: block;
@@ -160,6 +159,7 @@ header {
 				min-height: 100vh;
 				width: 50vw;
 				position:absolute;
+                overflow:scroll;
 				top:$nav-height;
 				right:-50vw;
 				@include transition(.35s);
