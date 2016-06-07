@@ -14,6 +14,11 @@
 	@return (100 / 12) * $grid * 1%;
 }
 
+// block-grid-calc because calculating percentages is a pain in the ass
+@function block-grid-calc($grid) {
+	@return (100 / $grid) * 1%;
+}
+
 // do some basic division that I can't seem to get sass to do inline
 @function gutter-maker($gutter) {
 	@return $gutter / 2;

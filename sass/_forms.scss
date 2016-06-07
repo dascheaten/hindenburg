@@ -5,71 +5,186 @@ form {
 textarea, input, select { 
 	outline: none;
 }
-input[type=text], input[type=phone], input[type=email], input[type=password] {
-	height: rem-me($input-height);
+
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"] {
+	background:rgba(0,0,0,0);
+	border-radius: $global-radius;
+	border:none;
+	height:$input-height;
+	display: block;
 	width: 100%;
-	background: $input-bg;
-	border:1px solid $input-border-color;
-	padding: $input-height / 5px * 1px;
-	font-size:do-math-divide($input-height,3);
-	color:$input-font-color;
+	padding-top: $input-height / 3px * 1px;
+	padding-left: $input-height / 3.25px * 1px;
+	margin-top:$input-height * -1;
+	outline:none;
+	font-family: $body-copy-font-family;
+	font-size: $input-font-size;
 	@include transition;
-	position:relative;
-    &:disabled, &:read-only {
-      background: $disabled-color;
-      color: darken($disabled-color, 20%);
-    }
 	&:focus {
-		background: $input-focus-bg;
-		border:1px solid $input-border-focus-color;
+		height:$input-focus-height;
+		margin-top:$input-focus-height * -1;
+		& + small.error {
+			background: $primary;
+		}
+	}
+	&:disabled, &:read-only {
+		background: rgba(0,0,0,0);
+		color: darken($disabled-color, 20%);
+     }
+	&.error {
+	}
+	&.valid {
+		box-shadow:none;
+		border:none;
+		padding-left: 10px;
 	}
 }
-label {
+
+label:not(.button-radio) {
 	font-size: $label-font-size;
 	font-family: $body-copy-font-family;
 	color: $label-font-color;
-	margin-bottom: .5em;
+	background: $input-bg;
+	border: 1px solid $input-border-color;
+	height:$input-height;
+	width: 100%;
 	display: block;
-    position: absolute;
-    top:2rem;
-    z-index: 100;
-    left:1rem;
-    @include transition;
-    &.focus {
-        top:1rem;
-        font-size: 10px;
-    }
-}
-// radios and checkboxes are special
-input[type=radio] + label, input[type=checkbox] + label {
-	display: inline-block;
-	margin-left: rem-me(5);
-    position: relative;
-    top:0;
-    left:0;
+	padding: $input-height / 3px * 1px;
+	border-radius: $global-radius;
+	line-height: 1rem;
+	@include transition;
+	&.complete:not(.spin) {
+		font-size: $label-font-size;
+		color: $label-complete-font-color;
+		background: $input-complete-bg;
+		border: 1px solid $input-border-complete-color;
+		padding:5px 0 0 10px;
+	}
+	&.disabled {
+		background: $disabled-color;
+		color:darken($disabled-color, 20%);
+	}
+	&.error {
+		background: white;
+		color:$error;
+		padding:5px 0 0 10px;
+		border:1px solid $error;
+		border-bottom-left-radius:0px;
+		border-bottom-right-radius:0px;
+	}
+	&.focused {
+		font-size: 12px;
+		color: $label-focus-font-color;
+		background: $input-focus-bg;
+		padding:5px 0 0 10px;
+		border: 1px solid $input-border-focus-color;
+		height:$input-focus-height;
+		@include shadow;
+	}
 }
 
 select {
 	-webkit-appearance: none !important;
-	border-radius: 0;
-	background-color: $input-bg;
-	// swap out for cheveron, somehow...
+	position:absolute;
+	top:0;
+	right: gutter-maker($gutter);
+	left: gutter-maker($gutter);
+	outline:none;
+	margin-bottom: gutter-maker($gutter);
+	background:rgba(0,0,0,0);
+	border:none;
+	border-radius: $global-radius;
+	height:$input-height;
+	padding-top: $input-height / 3px * 1px;
+	padding-left: $input-height / 3px * 1px;
+	font-size: $input-font-size;
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
-	background-position: 100% center;
+	background-position: 95% center;
 	background-repeat: no-repeat;
-	border: 1px solid $input-border-color;
-	padding: $input-height / 5px * 1px;
-	font-size:do-math-divide($input-height,3);
-	font-family: $body-copy;
-	color: $input-font-color;
-	height: rem-me($input-height);
-	margin:0;
-	width: 100%;
-    &:disabled {
-      background: $disabled-color;
-      color: darken($disabled-color, 20%);
-    }
+	&:focus {
+		border-color:$input-border-focus-color;
+		height:$input-focus-height;
+		& + small.error {
+			background: $primary;
+		}
+	}
+	&.error {
+//		border:1px solid $error;
+//		border-bottom-left-radius:0px;
+//		border-bottom-right-radius:0px;
+		& + small.error {
+			color:$white;
+			background: $error;
+			width: 100%;
+			padding:5px 10px;
+			border-bottom-left-radius:$global-radius;
+			border-bottom-right-radius:$global-radius;
+		}
+	}
+	&:disabled {
+		background: rgba(0,0,0,0);
+		color: darken($disabled-color, 20%);
+	}
+	&.valid {
+		padding-left: 10px;
+	}
 }
+
+// Error styles
+small.error {
+//	margin-top: $input-height * -1;
+	color:$white;
+	background: $error;
+	width: 100%;
+	display: block;
+	padding:5px 10px;
+	border-bottom-left-radius:$global-radius;
+	border-bottom-right-radius:$global-radius;
+}
+
+// button-y radios	
+input[type=radio], input[type=checkbox] {
+	z-index: 0;
+	opacity: 0;
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	& + label.button-radio {
+		position: relative;
+		font-size: $label-font-size;
+		line-height: 1.5em;
+	}
+}
+
+label.button-radio {
+	height: $input-height;
+	padding: $input-height / 3.25px * 1px;
+}
+
+input[type=radio]:checked + label.button-radio,
+input[type=radio].disabled:checked + label.button-radio.disabled,
+input[type=checkbox]:checked + label.button-radio,
+input[type=checkbox].disabled:checked + label.button-radio.disabled{
+	background: darken($primary, 10%);
+	&:before {
+		font-family: 'Iconic';
+		display: inline-block;
+		speak: none;
+		line-height: 1;
+		vertical-align: baseline;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 12px;
+		position: absolute;
+		top: $input-focus-height / 3;
+		left: 15px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: '\e159';
+	}
+}
+
 button {
 	border:none;
 }
@@ -101,80 +216,79 @@ button {
 
 // Range Slider Badassness
 .range-slider {
-    margin-bottom: 1rem;
-  // Slider
-  .input-range {
-    -webkit-appearance: none;
-    width: 100%;
-    height: $range-track-height;
-    border-radius: 5px;
-    background: $range-default-track-bg;
-    outline: none;    
-    // Slider Handle
-    &::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: $range-handle-width;
-      height: $range-handle-height;
-      border-radius: $range-handle-border-radius;
-      background: $range-handle-color;
-      cursor: pointer;
-      -webkit-transition: background .15s ease-in-out;
-      transition: background .15s ease-in-out;
-      
-      &:hover {
-        background: $range-handle-color-active;
-      }
-    }
-    
-    &:active::-webkit-slider-thumb {
-      background: $range-handle-color-active;
-    }
-    
-    &::-moz-range-thumb {
-      width:$range-handle-width;
-      height: $range-handle-height;
-      border: 0;
-      border-radius: $range-handle-border-radius;
-      background: $range-handle-color;
-      cursor: pointer;
-      -webkit-transition: background .15s ease-in-out;
-      transition: background .15s ease-in-out;
-      
-      &:hover {
-        background: $range-handle-color-active;
-      }
-    }
-    
-    &:active::-moz-range-thumb {
-      background: $range-handle-color;
-    }
-  }
-  
-  // Tooltip Tag
-  output {
-    display: inline-block;
-    position: relative;
-	text-align: center;
-    width: $range-output-width;
-    color: $range-output-color;
-    font-size: $range-output-size;
-    line-height: 20px;
-    border-radius: $range-output-border-radius;
-    background: $range-output-bg;
-    padding: 5px 10px;
-    font-family: $sans-serif;
-//    &:before {
-//      position: absolute;
-//      top: 8px;
-//      right: -7px;
-//      width: 0;
-//      height: 0;
-//      border-top: 7px solid transparent;
-//      border-left: 7px solid #353535;
-//      border-bottom: 7px solid transparent;
-//      content: '';
-//    }
-  }
+	margin-bottom: 1rem;
+	// Slider
+	.input-range {
+		-webkit-appearance: none;
+		width: 100%;
+		height: $range-track-height;
+		border-radius: 5px;
+		background: $range-default-track-bg;
+		outline: none;    
+		// Slider Handle
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			width: $range-handle-width;
+			height: $range-handle-height;
+			border-radius: $range-handle-border-radius;
+			background: $range-handle-color;
+			cursor: pointer;
+			-webkit-transition: background .15s ease-in-out;
+			transition: background .15s ease-in-out;
+
+			&:hover {
+				background: $range-handle-color-active;
+			}
+		}
+
+		&:active::-webkit-slider-thumb {
+			background: $range-handle-color-active;
+		}
+
+		&::-moz-range-thumb {
+			width:$range-handle-width;
+			height: $range-handle-height;
+			border: 0;
+			border-radius: $range-handle-border-radius;
+			background: $range-handle-color;
+			cursor: pointer;
+			-webkit-transition: background .15s ease-in-out;
+			transition: background .15s ease-in-out;
+
+			&:hover {
+				background: $range-handle-color-active;
+			}
+		}
+
+		&:active::-moz-range-thumb {
+			background: $range-handle-color;
+		}
+	}
+	// Tooltip Tag
+	output {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		width: $range-output-width;
+		color: $range-output-color;
+		font-size: $range-output-size;
+		line-height: 20px;
+		border-radius: $range-output-border-radius;
+		background: $range-output-bg;
+		padding: 5px 10px;
+		font-family: $sans-serif;
+		//    &:before {
+		//      position: absolute;
+		//      top: 8px;
+		//      right: -7px;
+		//      width: 0;
+		//      height: 0;
+		//      border-top: 7px solid transparent;
+		//      border-left: 7px solid #353535;
+		//      border-bottom: 7px solid transparent;
+		//      content: '';
+		//    }
+	}
 }
 
 // Firefox Overrides
@@ -185,4 +299,106 @@ button {
 
 input::-moz-focus-inner { 
   border: 0; 
+}
+
+//  goodbye spinners on number inputs
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+#age {
+	height: 1px !important;
+	width: 1px !important;
+	opacity: 0 !important;
+	border:none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+// Spinners
+.spinner {
+	position: relative;
+	.subtract {
+		border-top-left-radius:5px;
+		border-bottom-left-radius:5px;
+		background: $primary;
+		display: block;
+		padding: 12px 17px;
+		height: $input-height;
+		width: $input-height;
+		position:absolute;
+		bottom:$gutter /2;
+		left:$gutter /2;
+		@include transition;
+		&:hover {
+			cursor:pointer;
+			background: darken($primary,10%);
+		}
+		&:active {
+			background: $alert;
+		}
+	}
+	.add {
+		border-top-right-radius:5px;
+		border-bottom-right-radius:5px;
+		background: $primary;
+		display: block;
+		padding: 12px 17px;
+		height: $input-height;
+		width: $input-height;
+		position:absolute;
+		bottom:$gutter /2;
+		left: ($input-height * 2) + ($gutter /2);
+		@include transition;
+		&:hover {
+			cursor:pointer;
+			background: darken($primary,10%);
+		}
+	}
+	label {
+		background: transparent;
+		border:none;
+		border-radius:0px;
+		text-align: center;
+		padding: 0 15px 17px;
+		font-size: 14px;
+		height: auto;
+		width: $input-height * 3;
+		&.focused {
+			padding: 17px 15px 0;
+			height: $input-height;
+			background: transparent;
+			border:none;
+			border-radius:0px;
+			box-shadow:none;
+		}
+	}
+	
+	input {
+		margin-top: 0;
+		text-align: center;
+		font-family: $body-copy-font-family;
+		font-size: $input-font-size;
+		color: $label-font-color;
+		background: $input-bg;
+		border: 1px solid $input-border-color;
+		height:$input-height;
+		width: $input-height * 3;
+		
+		display: block;
+		padding: $input-height / 3.25px * 1px;
+		border-radius: $global-radius;
+		@include transition;
+		&:focus {
+			height: $input-height;
+			margin-top: 0px;
+		}
+		&:valid {
+			border: 1px solid $input-border-color;
+		}
+	}
 }

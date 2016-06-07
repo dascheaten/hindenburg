@@ -2,45 +2,111 @@
 .button, button {
 	@extend a;
 	display: inline-block;
-	padding: 1em 2em;
+	padding: $medium-button-size/2 $medium-button-size;
+	font-size: $medium-button-size;
+	font-family: $button-font;
 	color: $button-text-color;
 	text-align: center;
+	background: $button-color;
+	@include transition;
 	&:hover {
 		color: $button-text-color;
+		background: darken($button-color,5%);
+		cursor:pointer;
+	}
+	// Sizes
+	&.humongous-big {
+		font-size: $humongous-big-button-size;
+		padding: $humongous-big-button-size $humongous-big-button-size*2;
+	}
+	&.large {
+		font-size: $large-button-size;
+		padding: $large-button-size $large-button-size*2;
+	}
+	&.medium {
+		font-size: $medium-button-size;
+		padding: $medium-button-size $medium-button-size*2;
+	}
+	&.small {
+		font-size: $small-button-size;
+		padding: $small-button-size/2 $small-button-size*2;
+	}
+	&.fill {
+		width: 100%;
 	}
 }
 
-// Sizes
-.humongous-big {
-	font-size: $humongous-big-button-size;
-}
-.large {
-	font-size: $large-button-size;
-}
-.medium {
-	font-size: $medium-button-size;
-}
-.small {
-	font-size: $small-button-size;
-}
-.fill {
-	width: 100%;
-}
+
 
 // Colors
 .action {
-	background: $action-color;
+	@if $button-style == gradient {
+		background-image: -webkit-linear-gradient($action-color 0%, darken($action-color, 5%) 100%);
+		background-image: -o-linear-gradient($action-color 0%, darken($action-color, 5%) 100%);
+		background-image: linear-gradient($action-color 0%, darken($action-color, 5%) 100%);
+  	}
+	@else if $button-style == flat {
+		background-color:$action-color;
+  	}
+	background-position: 0px;
 	@include transition;
 	&:hover {
-		background: darken($action-color, 15%);
+		@if $button-style == gradient {
+			background-image: -webkit-linear-gradient(darken($action-color, 5%) 0%, darken($action-color, 10%) 100%);
+			background-image: -o-linear-gradient(darken($action-color, 5%) 0%, darken($action-color, 10%) 100%);
+			background-image: linear-gradient(darken($action-color, 5%) 0%, darken($action-color, 10%) 100%);
+		}
+		@else if $button-style == flat {
+			background-color:darken($action-color, 10%);
+		}
+	}
+}
+
+.secondary-action {
+	@if $button-style == gradient {
+		background-image: -webkit-linear-gradient($secondary-action-color 0%, darken($secondary-action-color, 5%) 100%);
+		background-image: -o-linear-gradient($secondary-action-color 0%, darken($secondary-action-color, 5%) 100%);
+		background-image: linear-gradient($secondary-action-color 0%, darken($secondary-action-color, 5%) 100%);
+  	}
+	@else if $button-style == flat {
+		background-color:$secondary-action-color;
+  	}
+	background-position: 0px;
+	@include transition;
+	&:hover {
+		@if $button-style == gradient {
+			background-image: -webkit-linear-gradient(darken($secondary-action-color, 5%) 0%, darken($secondary-action-color, 10%) 100%);
+			background-image: -o-linear-gradient(darken($secondary-action-color, 5%) 0%, darken($secondary-action-color, 10%) 100%);
+			background-image: linear-gradient(darken($secondary-action-color, 5%) 0%, darken($secondary-action-color, 10%) 100%);
+		}
+		@else if $button-style == flat {
+			background-color:darken($secondary-action-color, 10%);
+		}
+
 	}
 }
 
 .info {
+	@if $button-style == gradient {
+		background-image: -webkit-linear-gradient($info-color 0%, darken($info-color, 5%) 100%);
+		background-image: -o-linear-gradient($info-color 0%, darken($info-color, 5%) 100%);
+		background-image: linear-gradient($info-color 0%, darken($info-color, 5%) 100%);
+  	}
+	@else if $button-style == flat {
+		background-color:$info-color;
+  	}
+	background-position: 0px;
 	@include transition;
-	background: $info-color;
 	&:hover {
-		background: darken($info-color, 15%);
+		@if $button-style == gradient {
+			background-image: -webkit-linear-gradient(darken($info-color, 5%) 0%, darken($info-color, 10%) 100%);
+			background-image: -o-linear-gradient(darken($info-color, 5%) 0%, darken($info-color, 10%) 100%);
+			background-image: linear-gradient(darken($info-color, 5%) 0%, darken($info-color, 10%) 100%);
+		}
+		@else if $button-style == flat {
+			background-color:darken($info-color, 10%);
+		}
+
 	}
 }
 .disabled {
@@ -48,7 +114,8 @@
 	color: darken($disabled-color, 20%);
 	&:hover {
 		text-decoration: none;
+		background: $disabled-color;
 		color: darken($disabled-color, 20%);
-		cursor:arrow;
+		cursor:default;
 	}
 }

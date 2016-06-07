@@ -1,5 +1,4 @@
 // time to show some information that's more or less important than the base window
-
 // background settings
 .modal-bg {
 	z-index: 1000;
@@ -7,9 +6,9 @@
 	height: 100vh;
 	display: block;
 	background: $modal-close-bg;
-	position:fixed;
-	top:0;
-	left:0;
+	position: fixed;
+	top: 0;
+	left: 0;
 	@include transition;
 	&:hover {
 		background: $modal-close-hover-bg;
@@ -18,22 +17,23 @@
 
 // window settings
 .modal {
-    background: $modal-window-bg;
-    z-index: 1001;
-    display: block;
-    position: fixed;
-    top:2rem;
-    margin:0 20vw;
-    width: 75vw;
-    max-height:90vh;
-    overflow: scroll;
-    @include shadow;
-   &.medium {
-       width: 50vw;
-       margin:0 25vw;
-   }
-   &.small {
-       width: 25vw;
-       margin:0 37.5vw;
-   }
+	background: $modal-window-bg;
+	z-index: 1001;
+	display: block;
+	position: fixed;
+	top: 2rem;
+	left:0;
+	margin: 0 12.5vw;
+	width: 75vw;
+	max-height: 90vh;
+	overflow: scroll;
+	@include shadow;
+	&.medium {
+		width: 50vw;
+		margin: 0 25vw;
+	}
+	&.small {
+		width: 25vw;
+		margin: 0 37.5vw;
+	}
 }

@@ -6,6 +6,9 @@ h1 {
 	font-size: $h1-font-size;
 	margin-bottom: $h1-font-size;
 	color:$heading-color;
+	.title {
+		margin-bottom: 0;
+	}
 	small {
 		font-size: 0.75em;
 		color:$sub-head-color;
@@ -62,11 +65,18 @@ h6 {
 	}
 }
 
+h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+	margin-bottom: 0;
+}
+
 p {
 	font-size: $body-copy-font-size;
 	line-height: rem-me($body-copy-font-size * 1.8);
 	font-family: $body-copy-font-family;
 	margin-bottom: rem-me($body-copy-font-size * 1.8);
+}
+strong {
+	font-weight: bold;
 }
 small {
 	font-size:  rem-me($body-copy-font-size * 0.8);
