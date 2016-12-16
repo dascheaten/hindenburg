@@ -9,19 +9,16 @@
 	text-align: center;
 	background: $button-color;
 	@include transition;
-
 	border-radius:$button-radius;
 	&:hover {
 		color: $button-text-color;
 		background: tint($button-color,5%);
-
 		cursor:pointer;
 	}
 	// Sizes
 	&.humongous-big {
 		font-size: $humongous-big-button-size;
 		padding: $humongous-big-button-size $humongous-big-button-size*2;
-
 		&.icon {
 			padding-left: 0;
 			svg {
@@ -32,12 +29,10 @@
 				}
 			}
 		}
-
 	}
 	&.large {
 		font-size: $large-button-size;
 		padding: $large-button-size $large-button-size*2;
-
 		&.icon {
 			padding-left: 0;
 			svg {
@@ -48,7 +43,6 @@
 				}
 			}
 		}
-
 	}
 	&.medium {
 		font-size: $medium-button-size;
@@ -104,9 +98,7 @@
 				background-color:tint($action-color, 10%);
 			}
 		}
-
 	}
-
 
 	&.secondary-action {
 		@if $button-style == gradient {
@@ -212,6 +204,5 @@
 			color: darken($disabled-color, 20%);
 			cursor:default;
 		}
-
 	}
 }

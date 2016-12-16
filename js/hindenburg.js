@@ -73,7 +73,6 @@ $(document).ready(function () {
 		$(this).removeAttr('title').attr('data-tip', tip);
 	});
 	
-
 	$('select').each(function() {
 		if ($(this).val() !== '') {
 			var disput = $(this).attr('id');
@@ -85,7 +84,6 @@ $(document).ready(function () {
 			$(label).addClass("disabled");
 		}
 	});
-
 });
 
 // Set the progress on bar style progress bars
@@ -200,7 +198,6 @@ $('input[type=range]').on('input', function () {
 
 
 
-
 // Accordion make do'er
 $('dl.accordion dt').on('click', function () {
 	if ($(this).next('dd').is(":visible")) {
@@ -215,7 +212,6 @@ $('dl.accordion dt').on('click', function () {
 		$(this).next('dd').slideDown();
 	}
 });
-
 
 // Additional Questions
 var slide_number = 1;
@@ -308,7 +304,6 @@ $("input, select").blur(function() {
 	}
 });
 
-
 // because chrome and likely ie are little babies, we have to do this BS
 $("input, select").on('input', function() {
 	if (!$(this).is(":focus")) {
@@ -344,7 +339,6 @@ $('.toggle').click(function() {
 		}
 	}
 });
-
 
 // Count To function for the progress precentage
 // Have the percent complete count up all completely awesome like

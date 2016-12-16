@@ -4854,7 +4854,7 @@ header .clm {
 /* line 21, ../sass/_nav.scss */
 header h1 {
   display: inline-block;
-  height: 3.75rem;
+  height: 74px;
   margin-bottom: 0;
   width: 100%;
 }
@@ -4862,7 +4862,7 @@ header h1 {
 header h1 a, header h1 .button, header h1 button {
   padding: 20px;
   display: block;
-  height: 3.75rem;
+  height: 74px;
 }
 /* line 32, ../sass/_nav.scss */
 header nav.inline {
@@ -4900,7 +4900,7 @@ header nav.inline ul li:hover, header nav.inline ol li:hover, header nav.inline 
 }
 /* line 58, ../sass/_nav.scss */
 header nav.inline ul li a, header nav.inline ol li a, header nav.inline dl li a, header nav.inline ul li .button, header nav.inline ol li .button, header nav.inline dl li .button, header nav.inline ul li button, header nav.inline ol li button, header nav.inline dl li button {
-  padding: 3.75rem-14px/2 20px;
+  padding: 30px 20px;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1em;
@@ -4913,7 +4913,7 @@ header nav.inline ul li a:hover, header nav.inline ol li a:hover, header nav.inl
 }
 /* line 70, ../sass/_nav.scss */
 header nav.inline ul li.drop a, header nav.inline ol li.drop a, header nav.inline dl li.drop a, header nav.inline ul li.drop .button, header nav.inline ol li.drop .button, header nav.inline dl li.drop .button, header nav.inline ul li.drop button, header nav.inline ol li.drop button, header nav.inline dl li.drop button {
-  padding: 3.75rem-14px/2 30px 3.75rem-14px/2 20px;
+  padding: 30px 30px 30px 20px;
   font-size: 14px;
   line-height: 1em;
   color: #4A90E2;
@@ -4925,7 +4925,7 @@ header nav.inline ul li.drop a::after, header nav.inline ol li.drop a::after, he
   width: 0;
   height: 0;
   position: absolute;
-  top: 3.75rem/2-1px;
+  top: 36px;
   right: 10px;
   border: inset 4px;
   border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
@@ -4942,7 +4942,7 @@ header nav.inline ul li.drop:hover a::after, header nav.inline ol li.drop:hover 
   width: 0;
   height: 0;
   position: absolute;
-  top: 3.75rem/2-1px;
+  top: 36px;
   right: 10px;
   border: inset 4px;
   border-color: #FFFFFF transparent transparent transparent;
@@ -4955,7 +4955,7 @@ header nav.inline ul li.drop:hover ul.drop-menu, header nav.inline ol li.drop:ho
   position: absolute;
   right: 0;
   left: auto;
-  top: 3.75rem;
+  top: 74px;
   min-width: 100%;
   overflow: visible;
 }
@@ -5000,9 +5000,9 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   /* line 150, ../sass/_nav.scss */
   header nav.inline .off-canvas, header nav.mega-menu .off-canvas {
     display: block;
-    height: 3.75rem;
-    padding-top: 3.75rem-12px/2;
-    padding-bottom: 3.75rem-12px/2;
+    height: 74px;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
   /* line 156, ../sass/_nav.scss */
   header nav.inline ul, header nav.inline ol, header nav.inline dl, header nav.mega-menu ul, header nav.mega-menu ol, header nav.mega-menu dl {
@@ -5012,7 +5012,7 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
     width: 275px;
     position: absolute;
     overflow: scroll;
-    top: 3.75rem;
+    top: 74px;
     left: -275px;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -5038,8 +5038,8 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
     overflow: scroll;
     left: 0;
     top: 0;
-    margin-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    margin-top: 74px;
+    padding-bottom: 74px;
   }
   /* line 193, ../sass/_nav.scss */
   header nav.inline .off-canvas.open + ul li, header nav.inline .off-canvas.open + ol li, header nav.inline .off-canvas.open + dl li, header nav.mega-menu .off-canvas.open + ul li, header nav.mega-menu .off-canvas.open + ol li, header nav.mega-menu .off-canvas.open + dl li {
@@ -5180,89 +5180,89 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
 }
-/* line 14, ../sass/_buttons.scss */
+/* line 13, ../sass/_buttons.scss */
 .button:hover, button:hover {
   color: #FFFFFF;
   background: #5395e3;
   cursor: pointer;
 }
-/* line 21, ../sass/_buttons.scss */
+/* line 19, ../sass/_buttons.scss */
 .button.humongous-big, button.humongous-big {
   font-size: 20px;
   padding: 20px 40px;
 }
-/* line 25, ../sass/_buttons.scss */
+/* line 22, ../sass/_buttons.scss */
 .button.humongous-big.icon, button.humongous-big.icon {
   padding-left: 0;
 }
-/* line 27, ../sass/_buttons.scss */
+/* line 24, ../sass/_buttons.scss */
 .button.humongous-big.icon svg, button.humongous-big.icon svg {
   margin: 0.25em 1.5em 0 1.5em;
 }
-/* line 29, ../sass/_buttons.scss */
+/* line 26, ../sass/_buttons.scss */
 .button.humongous-big.icon svg.iconic *, button.humongous-big.icon svg.iconic * {
   fill: #FFFFFF;
   stroke: #FFFFFF;
 }
-/* line 37, ../sass/_buttons.scss */
+/* line 33, ../sass/_buttons.scss */
 .button.large, button.large {
   font-size: 15px;
   padding: 15px 30px;
 }
-/* line 41, ../sass/_buttons.scss */
+/* line 36, ../sass/_buttons.scss */
 .button.large.icon, button.large.icon {
   padding-left: 0;
 }
-/* line 43, ../sass/_buttons.scss */
+/* line 38, ../sass/_buttons.scss */
 .button.large.icon svg, button.large.icon svg {
   margin: 0.25em 1.5em 0 1.5em;
 }
-/* line 45, ../sass/_buttons.scss */
+/* line 40, ../sass/_buttons.scss */
 .button.large.icon svg.iconic *, button.large.icon svg.iconic * {
   fill: #FFFFFF;
   stroke: #FFFFFF;
 }
-/* line 53, ../sass/_buttons.scss */
+/* line 47, ../sass/_buttons.scss */
 .button.medium, button.medium {
   font-size: 12px;
   padding: 12px 24px;
 }
-/* line 56, ../sass/_buttons.scss */
+/* line 50, ../sass/_buttons.scss */
 .button.medium.icon, button.medium.icon {
   padding-left: 0;
 }
-/* line 58, ../sass/_buttons.scss */
+/* line 52, ../sass/_buttons.scss */
 .button.medium.icon svg, button.medium.icon svg {
   margin: 0.25em 1.5em -0.25em 1.5em;
 }
-/* line 60, ../sass/_buttons.scss */
+/* line 54, ../sass/_buttons.scss */
 .button.medium.icon svg.iconic *, button.medium.icon svg.iconic * {
   fill: #FFFFFF;
   stroke: #FFFFFF;
 }
-/* line 67, ../sass/_buttons.scss */
+/* line 61, ../sass/_buttons.scss */
 .button.small, button.small {
   font-size: 12px;
   padding: 4px 24px;
 }
-/* line 70, ../sass/_buttons.scss */
+/* line 64, ../sass/_buttons.scss */
 .button.small.icon, button.small.icon {
   padding-left: 0;
 }
-/* line 72, ../sass/_buttons.scss */
+/* line 66, ../sass/_buttons.scss */
 .button.small.icon svg, button.small.icon svg {
   margin: 0.25em 1.5em -0.35em 1.5em;
 }
-/* line 74, ../sass/_buttons.scss */
+/* line 68, ../sass/_buttons.scss */
 .button.small.icon svg.iconic *, button.small.icon svg.iconic * {
   fill: #FFFFFF;
   stroke: #FFFFFF;
 }
-/* line 81, ../sass/_buttons.scss */
+/* line 75, ../sass/_buttons.scss */
 .button.fill, button.fill {
   width: 100%;
 }
-/* line 86, ../sass/_buttons.scss */
+/* line 80, ../sass/_buttons.scss */
 .button.action, button.action {
   background-image: -webkit-linear-gradient(#FC7D3B 0%, #fc8344 100%);
   background-image: -o-linear-gradient(#FC7D3B 0%, #fc8344 100%);
@@ -5274,13 +5274,13 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 97, ../sass/_buttons.scss */
+/* line 91, ../sass/_buttons.scss */
 .button.action:hover, button.action:hover {
   background-image: -webkit-linear-gradient(#fc8344 0%, #fc8a4e 100%);
   background-image: -o-linear-gradient(#fc8344 0%, #fc8a4e 100%);
   background-image: linear-gradient(#fc8344 0%, #fc8a4e 100%);
 }
-/* line 111, ../sass/_buttons.scss */
+/* line 103, ../sass/_buttons.scss */
 .button.secondary-action, button.secondary-action {
   background-image: -webkit-linear-gradient(#4CC378 0%, #54c67e 100%);
   background-image: -o-linear-gradient(#4CC378 0%, #54c67e 100%);
@@ -5292,13 +5292,13 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 122, ../sass/_buttons.scss */
+/* line 114, ../sass/_buttons.scss */
 .button.secondary-action:hover, button.secondary-action:hover {
   background-image: -webkit-linear-gradient(#54c67e 0%, #5dc985 100%);
   background-image: -o-linear-gradient(#54c67e 0%, #5dc985 100%);
   background-image: linear-gradient(#54c67e 0%, #5dc985 100%);
 }
-/* line 135, ../sass/_buttons.scss */
+/* line 127, ../sass/_buttons.scss */
 .button.info, button.info {
   background-image: -webkit-linear-gradient(#4A90E2 0%, #5395e3 100%);
   background-image: -o-linear-gradient(#4A90E2 0%, #5395e3 100%);
@@ -5310,13 +5310,13 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 146, ../sass/_buttons.scss */
+/* line 138, ../sass/_buttons.scss */
 .button.info:hover, button.info:hover {
   background-image: -webkit-linear-gradient(#5395e3 0%, #5c9be4 100%);
   background-image: -o-linear-gradient(#5395e3 0%, #5c9be4 100%);
   background-image: linear-gradient(#5395e3 0%, #5c9be4 100%);
 }
-/* line 159, ../sass/_buttons.scss */
+/* line 151, ../sass/_buttons.scss */
 .button.success, button.success {
   background-image: -webkit-linear-gradient(#64AF0D 0%, #6bb319 100%);
   background-image: -o-linear-gradient(#64AF0D 0%, #6bb319 100%);
@@ -5328,13 +5328,13 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 170, ../sass/_buttons.scss */
+/* line 162, ../sass/_buttons.scss */
 .button.success:hover, button.success:hover {
   background-image: -webkit-linear-gradient(#6bb319 0%, #73b725 100%);
   background-image: -o-linear-gradient(#6bb319 0%, #73b725 100%);
   background-image: linear-gradient(#6bb319 0%, #73b725 100%);
 }
-/* line 183, ../sass/_buttons.scss */
+/* line 175, ../sass/_buttons.scss */
 .button.error, button.error {
   background-image: -webkit-linear-gradient(#D0021B 0%, #d20e26 100%);
   background-image: -o-linear-gradient(#D0021B 0%, #d20e26 100%);
@@ -5346,18 +5346,18 @@ header nav.inline ul li.drop ul.drop-menu, header nav.inline ol li.drop ul.drop-
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 194, ../sass/_buttons.scss */
+/* line 186, ../sass/_buttons.scss */
 .button.error:hover, button.error:hover {
   background-image: -webkit-linear-gradient(#d20e26 0%, #d41b31 100%);
   background-image: -o-linear-gradient(#d20e26 0%, #d41b31 100%);
   background-image: linear-gradient(#d20e26 0%, #d41b31 100%);
 }
-/* line 206, ../sass/_buttons.scss */
+/* line 198, ../sass/_buttons.scss */
 .button.disabled, button.disabled {
   background: #DDDDDD;
   color: #aaaaaa;
 }
-/* line 209, ../sass/_buttons.scss */
+/* line 201, ../sass/_buttons.scss */
 .button.disabled:hover, button.disabled:hover {
   text-decoration: none;
   background: #DDDDDD;
@@ -5706,7 +5706,7 @@ button {
   height: 19px;
   border-radius: 5px;
   border: 1px solid #E1961A;
-  background: #F5A623 url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #F5A623 url('/images/slider-arrows.svg?1481910087') no-repeat center center;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -5716,11 +5716,11 @@ button {
 }
 /* line 340, ../sass/_forms.scss */
 .range-slider input[type="range"]::-webkit-slider-thumb:hover {
-  background: #f0752f url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #f0752f url('/images/slider-arrows.svg?1481910087') no-repeat center center;
 }
 /* line 345, ../sass/_forms.scss */
 .range-slider input[type="range"]:active::-webkit-slider-thumb {
-  background: #f0752f url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #f0752f url('/images/slider-arrows.svg?1481910087') no-repeat center center;
 }
 /* line 350, ../sass/_forms.scss */
 .range-slider input[type="range"]::-moz-range-thumb {
@@ -5728,7 +5728,7 @@ button {
   height: 19px;
   border-radius: 5px;
   border: 1px solid #E1961A;
-  background: #F5A623 url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #F5A623 url('/images/slider-arrows.svg?1481910087') no-repeat center center;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -5738,7 +5738,7 @@ button {
 }
 /* line 359, ../sass/_forms.scss */
 .range-slider input[type="range"]::-moz-range-thumb:hover {
-  background: #f0752f url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #f0752f url('/images/slider-arrows.svg?1481910087') no-repeat center center;
 }
 /* line 363, ../sass/_forms.scss */
 .range-slider input[type="range"]::-moz-range-progress {
@@ -5746,14 +5746,14 @@ button {
 }
 /* line 366, ../sass/_forms.scss */
 .range-slider input[type="range"]:active::-moz-range-thumb {
-  background: #f0752f url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #f0752f url('/images/slider-arrows.svg?1481910087') no-repeat center center;
 }
 /* line 377, ../sass/_forms.scss */
 .range-slider input[type="range"]::-ms-thumb {
   width: 41px;
   height: 19px;
   border-radius: 5px;
-  background: #F5A623 url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #F5A623 url('/images/slider-arrows.svg?1481910087') no-repeat center center;
   cursor: pointer;
 }
 /* line 384, ../sass/_forms.scss */
@@ -5775,7 +5775,7 @@ button {
   height: 19px;
   border-radius: 5px;
   border: 1px solid #c4c4c4;
-  background: #DDDDDD url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #DDDDDD url('/images/slider-arrows.svg?1481910087') no-repeat center center;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -5785,7 +5785,7 @@ button {
 }
 /* line 409, ../sass/_forms.scss */
 .range-slider input[type="range"]:disabled::-webkit-slider-thumb:hover {
-  background: #DDDDDD url('/images/slider-arrows.svg?1481902253') no-repeat center center;
+  background: #DDDDDD url('/images/slider-arrows.svg?1481910087') no-repeat center center;
 }
 /* line 416, ../sass/_forms.scss */
 .range-slider output {
@@ -6448,6 +6448,222 @@ a.control_next, .control_next.button, button.control_next {
   cursor: default;
 }
 
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+/* line 17, ../sass/_bxslider.scss */
+div.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+  max-width: 100% !important;
+}
+
+/* line 25, ../sass/_bxslider.scss */
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+/** THEME
+===================================*/
+/* line 33, ../sass/_bxslider.scss */
+.bx-wrapper .bx-viewport {
+  left: -5px;
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+/* line 43, ../sass/_bxslider.scss */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* LOADER */
+/* line 52, ../sass/_bxslider.scss */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('/images/bx_loader.gif?1481902254') center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* PAGER */
+/* line 65, ../sass/_bxslider.scss */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+
+/* line 74, ../sass/_bxslider.scss */
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 81, ../sass/_bxslider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a, .bx-wrapper .bx-pager.bx-default-pager .button, .bx-wrapper .bx-pager.bx-default-pager button {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 94, ../sass/_bxslider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager .button:hover, .bx-wrapper .bx-pager.bx-default-pager button:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager .active.button,
+.bx-wrapper .bx-pager.bx-default-pager button.active {
+  background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/* line 101, ../sass/_bxslider.scss */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url('/images/controls.png?1481902254') no-repeat 0 -32px;
+}
+
+/* line 106, ../sass/_bxslider.scss */
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url('/images/controls.png?1481902254') no-repeat -43px -32px;
+}
+
+/* line 111, ../sass/_bxslider.scss */
+.bx-wrapper .bx-prev:hover {
+  background-position: 0 0;
+}
+
+/* line 115, ../sass/_bxslider.scss */
+.bx-wrapper .bx-next:hover {
+  background-position: -43px 0;
+}
+
+/* line 119, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-direction a, .bx-wrapper .bx-controls-direction .button, .bx-wrapper .bx-controls-direction button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+/* line 130, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-direction a.disabled, .bx-wrapper .bx-controls-direction .disabled.button, .bx-wrapper .bx-controls-direction button.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+/* line 136, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+/* line 140, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('/images/controls.png?1481902254') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+
+/* line 150, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0;
+}
+
+/* line 155, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('/images/controls.png?1481902254') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+
+/* line 165, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+/* line 172, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+/* line 177, ../sass/_bxslider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+/* line 184, ../sass/_bxslider.scss */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666 \9;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+
+/* line 193, ../sass/_bxslider.scss */
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
 /* line 4, ../sass/_utility-classes.scss */
 hr {
   border-top: 1px solid #FFFFFF;
@@ -6525,14 +6741,14 @@ hr {
   display: none;
 }
 
-/* line 32, ../sass/base.scss */
+/* line 33, ../sass/base.scss */
 body {
   background: #D6D6D6 url('/images/hindenburg_bg.png?1438601469') no-repeat center top;
   background-size: 100% auto;
   margin-top: 23rem;
 }
 
-/* line 37, ../sass/base.scss */
+/* line 38, ../sass/base.scss */
 header {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -6540,7 +6756,7 @@ header {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 41, ../sass/base.scss */
+/* line 42, ../sass/base.scss */
 .color-me p, .color-me dl dd, dl .color-me dd {
   background: #484848;
   color: white;
@@ -6550,7 +6766,7 @@ header {
   border-radius: 3px;
 }
 
-/* line 51, ../sass/base.scss */
+/* line 52, ../sass/base.scss */
 hr {
   margin: 4rem 1rem;
 }

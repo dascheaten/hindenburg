@@ -72,7 +72,6 @@ $hr-size:1px;
 $hr-top-color:$white;
 $hr-bottom-color:$white-smoke;
 
-
 // Headings
 $h1-font-size:rem-me(32);
 $h2-font-size:rem-me(28);
@@ -95,9 +94,8 @@ $link-color: $primary;
 $header-bg:#313A48;
 $header-height:rem-me(60);
 
-
 // Navigation
-$nav-height:$header-height;
+$nav-height:74px;
 $nav-bg:transparent;
 $nav-direction:right; // Sets the float for the link
 $nav-font-size:$body-copy-font-size;
@@ -129,7 +127,6 @@ $off-canvas-drop-link-color-hover:$white;
 $button-style: gradient;  // flat or gradient
 $button-font: $brand-font;
 $action-color: #FC7D3B;
-
 $button-radius: $global-radius;
 $secondary-action-color:$secondary;
 $button-color: $primary;
@@ -171,7 +168,6 @@ $input-placeholder-text-align: left;
 
 // Alerts
 $alert-bg:$white;
-$iconic-color:$white;
 
 // Iconic
 $icon-primary:$white;
