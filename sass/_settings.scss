@@ -1,12 +1,3 @@
-// Colors!!!
-$primary: #1E6F38;
-$secondary: #96C93F;
-$accent: rgb(224,228,204);
-$error: rgb(192,41,66);
-$success: rgb(138,155,15);
-$alert: rgb(255,144,0);
-$note: rgb(69,173,168);
-
 // gray scale CSS color names
 $white       : #FFFFFF;
 $ghost       : #FAFAFA;
@@ -28,14 +19,59 @@ $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
 
+// Colors!!!
+$primary: #4A90E2;
+$secondary: #4CC378;
+$accent: #50E3C2;
+$error: #D0021B;
+$success: #64AF0D;
+$alert: #FC7D3B;
+$note: #4A90E2;
+$action:#FC7D3B;
+$light-gray: $gainsboro;
+$dark-gray: #424D5D;
+
+// MLP Colors
+$blue: #0066B4;
+$lightblue: #43ADDF;
+$light-blue: #43ADDF;
+$gray: #585858;
+$orange: #f0752f;
+$green: #6FA431;
+$blue-gray: #3a5273;
+$purple: #933569;
+$yellow: #F5AB13;
+$red: #9c3028;
+
+// Tray
+$tray-width:270;
+$tray-bg:#313A48;
+$logo-url:'mylifeprotected/logo-horiz-ko.svg';
+$aspca-logo-color: #ffffff;
+$tray-header-bg:#515E70;
+$tray-header-text-transform:uppercase;
+$tray-header-color:#CFDBEA;
+$tray-active-bg:#374150;
+$tray-active-color:$white;
+$tray-toggle-handle:#8495AC;
+$tray-toggle-handle-off:$smoke;
+$tray-active: #00C0FF;
+$tray-complete: $accent;
+$tray-color:#8998AD;
+$tray-progress-color:$white;
+
 // Font settings
 $sans-serif:'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 $serif: Georgia, "Times New Roman", Times, serif;
-$brand-font:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$brand-font: 'Roboto Condensed', sans-serif;
 $body-copy:$sans-serif;
 
 // Utility
-$global-radius:3px;
+$global-radius:5px;
+$hr-size:1px;
+$hr-top-color:$white;
+$hr-bottom-color:$white-smoke;
+
 
 // Headings
 $h1-font-size:rem-me(32);
@@ -44,7 +80,7 @@ $h3-font-size:rem-me(24);
 $h4-font-size:rem-me(20);
 $h5-font-size:rem-me(16);
 $h6-font-size:rem-me(16);
-$heading-color:$primary;
+$heading-color:$dark-gray;
 $sub-head-color: $steel;
 
 // Body copy
@@ -56,11 +92,12 @@ $body-copy-font-family: $sans-serif;
 $link-color: $primary;
 
 // Header
-$header-bg:rgba($white, 0.95);
-$header-height:rem-me(75);
+$header-bg:#313A48;
+$header-height:rem-me(60);
+
 
 // Navigation
-$nav-height:74px;
+$nav-height:$header-height;
 $nav-bg:transparent;
 $nav-direction:right; // Sets the float for the link
 $nav-font-size:$body-copy-font-size;
@@ -80,6 +117,8 @@ $mega-menu-link-bg:$primary;
 
 //Off Canvas Nav
 $nav-break-point:$medium-breakpoint;
+$off-canvas-side:left;  // set left or right
+$off-canvas-width:275px; // leave in pixels
 $off-canvas-bg:$tuatara;
 $off-canvas-link-color:$white;
 $off-canvas-drop-bg-color:$white;
@@ -87,15 +126,23 @@ $off-canvas-drop-link-color:$primary;
 $off-canvas-drop-link-color-hover:$white;
 
 // Buttons
-$action-color: $primary;
-$info-color: $secondary;
+$button-style: gradient;  // flat or gradient
+$button-font: $brand-font;
+$action-color: #FC7D3B;
+
+$button-radius: $global-radius;
+$secondary-action-color:$secondary;
+$button-color: $primary;
+$success-color:$success;
+$info-color: $note;
+$error-color:$error;
 $button-text-color: $white;
 $disabled-color: $gainsboro;
 
-$humongous-big-button-size: 3rem;
-$large-button-size:2rem;
-$medium-button-size:1.5rem;
-$small-button-size:$base-font-size;
+$humongous-big-button-size: 20px;
+$large-button-size:15px;
+$medium-button-size:12px;
+$small-button-size:12px;
 
 // Blockquote
 $bq-bg: $white;
@@ -104,81 +151,98 @@ $bq-text-size: 1.5rem;
 $bq-color: $steel;
 
 //Forms
-$label-font-size: 16px;
+$label-style: inner;  // Can be outer or inner
+$label-font-size: 12px;
 $label-font-color:$oil;
-$input-height: 60px; // Basic math is surprisingly difficult in SASS, so leave this value in pixels to calculate the padding and text size accordingly
+$label-focus-font-color:$primary;
+$label-complete-font-color:darken(#f5f5f5,20%);
+$input-height: 45px; // Basic math is surprisingly difficult in SASS, so leave this value in pixels to calculate the padding and text size accordingly
+$input-focus-height: 45px;
 $input-bg:$white;
-$input-focus-bg:darken($input-bg,5%);
-$input-border-color:$primary;
-$input-border-focus-color:$secondary;
+$input-focus-bg:$white;
+$input-complete-bg:$white;
+$input-font-size: 14px;
+$input-border-color:$gainsboro;
+$input-border-focus-color:$primary;
+$input-border-complete-color:$smoke;
 $input-font-color:$oil;
 $input-placeholder-color:$jumbo;
-$input-placeholder-text-align: right;
+$input-placeholder-text-align: left;
 
 // Alerts
 $alert-bg:$white;
+$iconic-color:$white;
 
 // Iconic
-$icon-primary:$secondary;
-$icon-secondary:$accent;
+$icon-primary:$white;
+$icon-secondary:$white;
 
 // Modals
-$modal-close-bg:rgba($white,0.6);
-$modal-close-hover-bg:rgba($white,0.8);
+$modal-close-bg:rgba($black,0.6);
+$modal-close-hover-bg:rgba($black,0.8);
 $modal-window-bg:$white;
 
 // Panel
 $panel-bg:$white;
-$panel-border-color:$secondary;
+$panel-border-color:$gainsboro;
 
 // Tabels
 $table-bg: $white;
-$table-th-bg:$primary;
-$table-th-color:$white;
+$table-th-bg:$gainsboro;
+$table-th-color:$oil;
 $table-border-color: $snow;
 $table-alt-row: $smoke;
 
 //Pricing Tables
 $pricing-table-bg: $white;
-$pricing-table-border-color:#D6D6D6;
+$pricing-table-alt-bg:$snow;
+$pricing-table-border-color:$gainsboro;
 $pricing-table-title-bg:$primary;
 $pricing-table-title-color:$white;
-$pricing-table-title-size:$h4-font-size;
-$pricing-table-price-bg:$vapor;
-$pricing-table-price-color:$secondary;
-$pricing-table-price-size:$h1-font-size;
+$pricing-table-title-font:$brand-font;
+$pricing-table-title-size:rem-me(24);
+$pricing-table-price-bg:$white;
+$pricing-table-price-color:$dark-gray;
+$pricing-table-price-size:rem-me(18);
 $pricing-table-info-color:$jumbo;
-$pricing-table-size:1rem;
+$pricing-table-size:rem-me(15);
 
 // Progress Bar
 $progress-height:20px;
 $progress-bg:$white;
 $progress-border-color:$white;
 $progress-border-width:1px;
-$progress-complete-color:$primary;
+$progress-complete-color:$accent;
 $progress-tick-color:$black;
 $progress-tick-height:5px;
 $progress-tick-alignment:6px;
-$progress-donut-bg:$gainsboro;
-$progress-donut-complete-color:$secondary;
+$progress-donut-bg:lighten(#313A48,2%);
+$progress-donut-complete-color:$accent;
 
 // Tooltips
-$tooltip-bg:rgba($black,0.8);
-$tooltip-color:$white;
-$tooltip-tail-size:6px;
+$tooltip-span-color:$dark-gray;
+$tooltip-span-font-style:normal;
+$tooltip-tip-bg:rgba($black,0.8);
+$tooltip-tip-width:rem-me(400);
+$tooltip-tip-font-size:rem-me(14);
+$tooltip-tip-color:$white;
+$tooltip-tip-tail-size:6px;
 
 // Range Sliders
-$range-handle-height:20px;
-$range-handle-width:40px;
-$range-handle-border-radius:3px;
-$range-handle-color:$primary;
-$range-handle-color-active:$secondary;
-$range-default-track-bg:$black;
-$range-track-height:5px;
+$range-handle-height:19px;
+$range-handle-width:41px;
+$range-handle-border-radius:$global-radius;
+$range-handle-border-color:#E1961A;
+$range-handle-color:#F5A623;
+$range-handle-color-active:$orange;
+$range-default-track-bg:$white;
+$range-active-track-bg:$accent;
+$range-track-border-color:$gainsboro;
+$range-track-height:7px;
 $toggle-handle-off-bg-color:blue;
-$range-slider-box-shadow:none;
-$range-output-bg:$black;
-$range-output-color:$white;
+$range-slider-box-shadow:$white;
+$range-output-bg:transparent;
+$range-output-color:$dark-gray;
 $range-output-width:60px;
 $range-output-size:14px;
 $range-output-border-radius:3px;
@@ -191,6 +255,7 @@ $accordion-title-padding:10px;
 $accordion-gutter:15px;
 
 // Slider
+$slider-top-margin:3rem;
 $slider-bg:$white;
 $slider-slide-bg:$white;
 $slider-slide-padding:2rem 6rem;
@@ -198,8 +263,21 @@ $slider-button-color:$black;
 $slider-button-color-hover:orange;
 
 // Tabs
-$tab-bar-bg:$gainsboro;
-$tabs-bg:$note;
-$tabs-bg-active:$white;
-$tabs-color:$black;
-$tabs-content-bg:$white;
+$tab-bar-bg:#F3F3F3;
+$tabs-bg:#F3F3F3;
+$tabs-bg-active:$orange;
+$tabs-active-color:#222;
+$tabs-color:$white;
+$tabs-content-bg:#F3F3F3;
+$tabs-tab-padding:5px 8px;
+
+// Jquery UI
+$jquery-ui-header-bg: #e9e9e9;
+$jquery-ui-header-text: #333;
+$jquery-ui-header-border: #ddd;
+$jquery-ui-active-bg: #007fff;
+$jquery-ui-active-border:#007eff;
+$jquery-ui-active-text:#fff;
+$jquery-ui-highlight-bg: #fffa90;
+$jquery-ui-highlight-border:#dad55e;
+$jquery-ui-highlight-text:#777620;

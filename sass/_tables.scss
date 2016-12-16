@@ -14,11 +14,18 @@ table {
 	tr {
 		td {
 			padding:1em;
+			position: relative;
+			vertical-align: middle;
+			select {
+				top:1em;
+				margin-bottom: 0;
+			}
 		}
 		th {
 			padding:1em;
 			background: $table-th-bg;
 			color:  $table-th-color;
+			vertical-align: middle;
 		}
 
 	}

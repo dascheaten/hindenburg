@@ -13,24 +13,22 @@ $gutter: 30px;
 
 @import "settings";
 @import "grid";
+@import "iconic";
 @import "typography";
 @import "nav";
-@import "mega-menu";
 @import "alerts";
 @import "buttons";
 @import "forms";
 @import "modals";
 @import "panel";
 @import "tables";
+@import "tabs";
 @import "pricing-tables";
 @import "progress-bar";
-@import "iconic";
-@import "tabs";
 @import "tooltips";
-@import "accordion";
 @import "slider";
 @import "utility-classes";
-
+ 
 body {
 	background: #D6D6D6 image-url('hindenburg_bg.png') no-repeat center top;
 	background-size: 100% auto;

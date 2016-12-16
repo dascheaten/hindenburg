@@ -1,5 +1,13 @@
 // Brock Holt Classes
 
+// Not sure where else to put this
+hr {
+	border-top:$hr-size solid $hr-top-color;
+	border-bottom:$hr-size solid $hr-bottom-color;
+	border-left:none;
+	border-right:none;
+}
+
 // Text Related
 .text-center {
 	text-align: center;
@@ -24,13 +32,12 @@
 	border-radius:$global-radius;
 }
 
-
-
+// show hide based on breakpoints
 @media (min-width: $medium-breakpoint) {
 	.l-show {
 		display: block;
 	}
-	.l-hide {
+	.l-hide, .m-show, .s-show {
 		display: none;
 	}
 }
@@ -39,16 +46,16 @@
 	.m-show {
 		display: block;
 	}
-	.m-hide {
+	.m-hide, .l-show, .s-show {
 		display: none;
-	}	
+	}
 }
 
 @media (max-width: $small-breakpoint) {
 	.s-show {
 		display: block;
 	}
-	.s-hide {
+	.s-hide, .l-show, .m-show {
 		display: none;
 	}
 }
@@ -56,5 +63,5 @@
 
 // this has to stay at the bottom of the stylesheet so it doesn't get over written by other styles
 .no-show {
-	display: none !important;
+	display: none;
 }

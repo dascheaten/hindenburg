@@ -1,0 +1,226 @@
+// Progress Tray
+
+// Set the body padding for obvious reasons
+body {
+	padding-left: rem-me($tray-width);
+}
+
+#progress-tray {
+	background: $tray-bg;
+	min-height: 100vh;
+	height: 100%;
+	width: rem-me($tray-width);
+	overflow: scroll;
+	position: fixed;
+	top: 0;
+	left: 0;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	img {
+		padding: 1rem;
+		width: 100%;
+	}
+	.aspca-logo {
+		padding: 1rem 0.5rem;
+		svg .fill{
+			fill:$aspca-logo-color;
+		}
+	}
+	.logo {
+		background: image-url($logo-url) no-repeat center center;
+		background-size: contain;
+		height: rem-me(80);
+		display: block;
+		margin:10px;
+		box-sizing:border-box;
+	}
+	.progress-bar.donut {
+		height: 120px;
+		margin-bottom: 0.5rem;
+		h2 {
+			font-family: $brand-font;
+			font-size: rem-me(24);
+			color: $tray-progress-color;
+			small {
+				font-size: rem-me(14);
+				color: $tray-progress-color;
+				font-family: $brand-font;
+			}
+		}
+	}
+	.height-fix {
+		height: 14rem;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: $tray-progress-color;
+		&.talk-it-out {
+			font-family: $brand-font;
+			font-size: rem-me(14);
+			font-weight: 300;
+			text-align: center;
+			margin-bottom: 0.5rem;
+			a {
+				color: $tray-progress-color;
+			}
+		}		
+	}
+
+	.pf-toggle {
+		small {
+			font-family: $brand-font;
+			font-size: rem-me(16);
+			color: $white;
+		}
+		.toggle-button {
+			.toggle {
+				background: $tray-active-bg;
+				border: 1px solid $tray-header-bg;
+				border-radius: 100px;
+				position: relative;
+				display: inline-block;
+				width: rem-me(40);
+				height: rem-me(22);
+				margin: 0 rem-me(20);
+				@include transition;
+				&:before {
+					font-family: $brand-font;
+					font-size: rem-me(11);
+					color: $tray-toggle-handle;
+					content: 'Off';
+					position: absolute;
+					left: -20px;
+					top: 5px;
+				}
+				&:after {
+					font-family: $brand-font;
+					font-size: rem-me(11);
+					color: $tray-toggle-handle;
+					content: 'On';
+					position: absolute;
+					right: -20px;
+					top: 5px;
+				}
+				.slider {
+					width: rem-me(20);
+					height: rem-me(20);
+					background: $tray-toggle-handle;
+					position: absolute;
+					border-radius: 100%;
+					@include transition;
+				}
+				&.off .slider {
+					top: 0;
+					left: 0;
+					@include transition;
+				}
+				&.on {
+					background: darken($tray-complete,20%);
+					.slider {
+						top: 0;
+						left: 50%;
+						@include transition;
+						background: $tray-toggle-handle-off;
+					}
+				}
+			}
+		}
+	}
+	section {
+		header {
+			background: $tray-header-bg;
+			font-family: $brand-font;
+			font-size: 14px;
+			color: $tray-header-color;
+			text-transform: $tray-header-text-transform;
+			padding: 6px 0 6px 15px;
+			margin-top: 1px;
+		}
+		ul.no-bullet {
+			li {
+				font-family: $brand-font;
+				font-size: rem-me(16);
+				color: $tray-color;
+				padding: 13px 0 13px 15px;
+				margin-bottom: 1px;
+				@include last(1) {
+					margin-bottom: 0px;
+				}
+				&.active {
+					color: $tray-active-color;
+					background: $tray-active-bg;
+					border-left: 4px solid $tray-active;
+					svg {
+						.iconic-property-fill {
+							fill: $tray-active-color;
+						}
+						.iconic-property-stroke {
+							stroke: $tray-active-color;
+						}
+					}
+				}
+				&.complete {
+					color: $tray-complete;
+					background: $tray-bg;
+					border-left: 4px solid $tray-complete;
+//					font-size: 14px;
+					svg {
+						.iconic-property-fill {
+							fill: $tray-complete;
+						}
+						.iconic-property-stroke {
+							stroke: $tray-complete;
+						}
+					}
+				}
+				svg {
+					margin-right: 15px;
+					top:1px;
+					.iconic-property-fill {
+						fill: $tray-color;
+					}
+					.iconic-property-stroke {
+						stroke: $tray-color;
+					}
+				}
+				ul.no-bullet {
+					li {
+						padding: 16px 0 0 0;
+					}
+				}
+			}
+		}
+		&.complete {
+			header {
+				background: transparent;
+				font-family: $brand-font;
+				font-size: 14px;
+				color: $tray-complete;
+				text-transform: uppercase;
+				padding: 7px 0 7px 19px;
+				svg {
+					width: 14px;
+					height: 14px;
+					margin: 0px 8px -2px 0;
+					.iconic-property-fill {
+						fill: $tray-complete;
+						stroke: $tray-complete;
+					}
+				}
+			}
+			ul.no-bullet {
+				display: none;
+			}
+		}
+	}
+}
+
+.progress-header {
+	a:hover {
+		text-decoration: none;
+	}
+	.logo {
+		background: image-url($logo-url) no-repeat center center;
+		height: $header-height;
+		background-size: contain;
+		display: block;
+	}
+}

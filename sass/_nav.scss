@@ -58,7 +58,7 @@ header {
 				a {
 					padding: (($nav-height - $nav-font-size)/2) $nav-padding;
 					font-size: $nav-font-size;
-                    font-family:$nav-font-family;
+                 	     font-family:$nav-font-family;
 					line-height: 1em;
 					display: block;
 					color:$nav-color;
@@ -157,11 +157,16 @@ header {
 				list-style-type: none;
 				background: $tuatara;
 				min-height: 100vh;
-				width: 50vw;
+				width: $off-canvas-width;
 				position:absolute;
-                overflow:scroll;
+                	overflow:scroll;
 				top:$nav-height;
-				right:-50vw;
+				
+				@if $off-canvas-side == left {
+					left: ($off-canvas-width * -1);
+				} @else {
+					right: ($off-canvas-width * -1);
+				}
 				@include transition(.35s);
 				li {
 					display: block;
@@ -177,7 +182,11 @@ header {
 				height: 100%;
 				position:absolute;
 				overflow:scroll;
-				right:0vh;
+				@if $off-canvas-side == left {
+					left: 0;
+				} @else {
+					right: 0;
+				}
 				top:0;
 				margin-top: $nav-height;
 				padding-bottom: $nav-height;
@@ -187,6 +196,7 @@ header {
 					position: relative;
 					a {
 						color: $off-canvas-link-color;
+						padding:$nav-padding;
 					}
 				}
 				li.drop, li.drop:hover {
@@ -229,4 +239,15 @@ header {
 			}
 		} 
 	}	
+}
+
+// Modal BG to close
+.off-canvas-bg {
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	background: rgba($black,0.5);
+	position:fixed;
+	top:0;
+	right:0;
 }

@@ -8,11 +8,11 @@ ul.tabs {
         background: $tabs-bg;
         color: $tabs-color;
         display: inline-block;
-        padding: 10px 15px;
+        padding: $tabs-tab-padding;
         cursor: pointer;
         &.current{
             background: $tabs-bg-active;
-            color: #222;
+            color: $tabs-active-color;
         }
     }
 }
