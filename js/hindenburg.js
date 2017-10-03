@@ -1,19 +1,29 @@
 $(window).on('load', function() {
 	// Fix the forms if there's already data
-	$('input').each(function() {
-		if ($(this).val() !== '') {
-			var disput = $(this).attr('id');
-			var label = $("label[for='" + disput + "']");
-			$(label).addClass("complete");
-		} else if ($(this).attr('disabled')) {
-			var disput = $(this).attr('id');
-			var label = $("label[for='" + disput + "']");
-			$(label).addClass("disabled");
-		}
-		if ($(this).prop('type') == 'range') {
-			insaneSlider($(this));
-		}
-	});
+    $('input').each(function() {
+        var input = $(this),
+            disput = input.attr('id'),
+            label = $("label[for='" + disput + "']");
+
+        if (input.val() !== '') {
+            label.addClass("complete");
+        } else if ($(this).attr('disabled')) {
+            label.addClass("disabled");
+        }
+        if (input.prop('type') == 'range') {
+            insaneSlider($(this));
+        }
+
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === "disabled") {
+                    input.attr("disabled") ? label.addClass("disabled") : label.removeClass("disabled");
+                }
+            });
+        });
+
+        observer.observe(this, {attributes: true});
+    });
 });
 
 // hide the modals and the background on load
@@ -72,18 +82,28 @@ $(document).ready(function () {
 		var tip = $(this).attr('title')
 		$(this).removeAttr('title').attr('data-tip', tip);
 	});
-	
-	$('select').each(function() {
-		if ($(this).val() !== '') {
-			var disput = $(this).attr('id');
-			var label = $("label[for='" + disput + "']");
-			$(label).addClass("complete");
-		} else if ($(this).attr('disabled')) {
-			var disput = $(this).attr('id');
-			var label = $("label[for='" + disput + "']");
-			$(label).addClass("disabled");
-		}
-	});
+
+    $('select').each(function() {
+        var select = $(this),
+            disput = select.attr('id'),
+            label = $("label[for='" + disput + "']");
+
+        if (select.val() !== '') {
+            label.addClass("complete");
+        } else if (select.attr('disabled')) {
+            label.addClass("disabled");
+        }
+
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === "disabled") {
+                    select.attr("disabled") ? label.addClass("disabled") : label.removeClass("disabled");
+                }
+            });
+        });
+
+        observer.observe(this, {attributes: true});
+    });
 });
 
 // Set the progress on bar style progress bars
